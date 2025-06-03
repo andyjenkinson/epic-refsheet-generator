@@ -1,0 +1,58 @@
+--- netea-tau-6.6.json	2016-04-12 16:53:07.000000000 +0100
++++ netea-tau-6.8.json	2016-04-12 16:55:15.000000000 +0100
+@@ -11,9 +11,6 @@
+             {
+             "name": "Shas’el Commander",
+             "type": "Character",
+-            "weapons": [
+-                        { "name": "Plasma Rifle" }
+-                        ],
+             "notes": [ "Co-ordinated Fire", "Leader" ]
+             },
+             {
+@@ -22,12 +19,7 @@
+             "weapons": [
+                         { "name": "Honour Blade" }
+                         ],
+-            "notes": [ "Invulnerable Save", "Leader", "A formation joined by an Ethereal becomes fearless, but breaks instantly if he is killed." ]
+-            },
+-            {
+-            "name": "Bonded Team",
+-            "type": "Character",
+-            "notes": [ "Leader" ]
++            "notes": [ "Invulnerable Save", "Leader", "A formation joined by an Ethereal becomes fearless, but takes D3 blast markers if he is killed." ]
+             },
+             {
+             "name": "XV8 Crisis Battlesuit unit",
+@@ -120,7 +112,7 @@
+             "speed": "15cm",
+             "armour": "4+",
+             "CC": "4+",
+-            "FF": "4+",
++            "FF": "5+",
+             "weapons": [
+                         { "name": "Claws" },
+                         { "name": "Kroot Guns" }
+@@ -325,7 +317,7 @@
+               {
+               "name": "Twin Railguns",
+               "attacks": [{
+-              "range": "75cm",
++              "range": "60cm",
+               "AT": "3+"
+               }]
+               },
+@@ -410,8 +402,11 @@
+               "name": "Hammerhead Railgun",
+               "attacks": [{
+               "range": "75cm",
+-              "AP": "5+",
+-              "AT": "4+"
++              "AP": "5+"
++              },{
++              "range": "75cm",
++              "AT": "4+",
++              "notes": ["Lance"]
+               }]
+               },
+               {

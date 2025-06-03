@@ -1,0 +1,19 @@
+{
+  "name": "epic-refsheet-generator",
+  "version": "1.0.0",
+  "description": "Web application for generating reference sheets for Epic-scale wargaming",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andyjenkinson/epic-refsheet-generator.git"
+  },
+  "author": "Andy Jenkinson",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/andyjenkinson/epic-refsheet-generator/issues"
+  },
+  "homepage": "https://github.com/andyjenkinson/epic-refsheet-generator/"
+}

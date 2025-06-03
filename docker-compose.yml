@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  epic-refsheet:
+    image: epic-refsheet:latest
+    build:
+      context: .
+    ports:
+      - "8080:80"

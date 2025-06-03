@@ -1,0 +1,174 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd"
+    >
+<html lang="en">
+<head>
+  <title>Legions Imperialis Army Lists</title>
+  <meta charset="utf-8" />
+  <script src="../common/js/jquery-1.9.1.js"></script>
+  <script src="../common/js/jstorage.js"></script>
+  <script src="../common/blitzer/jquery-ui.min.js"></script>
+  <script src="js/list-builder.js"></script>
+  <link href="../common/blitzer/jquery-ui.min.css" rel="stylesheet" />
+  <link href="../common/css/list-builder.css" rel="stylesheet" />
+  <link href="css/list-builder.css" rel="stylesheet" />
+  <link href="css/reference-list.css" rel="stylesheet" />
+
+<style type="text/css" media="print">
+  #entry-list-section { page-break-inside: avoid;}
+  .noprint { display: none; }
+  @page { size: landscape; }
+</style>
+
+</head>
+<body>
+  <h1 class="noprint">Legions Imperialis Army Lists</h1>
+  
+  <div id="sections">
+    <div id="army-section" class="noprint">
+    <h2>Select Army</h2>
+
+    <div id="army" class="noprint">
+      <form id="army-form">
+      <label for="el-source">List Source</label>
+      <select name="source" id="el-source">
+        <option>-- Select --</option>
+        <option>Games Workshop</option>
+        <option>Community</option>
+      </select>
+  
+      <label for="el-army">Army</label>
+      <select name="army" id="el-army">
+        <!-- start empty -->
+      </select>
+      
+      </form>
+    </div>
+    </div>
+    
+
+    <!-- In future this will be tailored to the detachment options of each formation type.
+         For now it's built manually from all the detachments available to the army -->
+    <div id="edit-section" class="noprint">
+
+      <!-- Form to select detachments in the formation -->
+      <div id="formation-edit" title="Edit Formation">
+
+        <div>
+          <label for="formation-name">Name (optional)</label>
+          <input name="formation-name" type="text" id="formation-name"></input>
+        </div>
+
+        <div>
+          <form class="formation-type">
+            <div>Formation Type:</div>
+            <div id="formation-edit-type">
+            </div>
+          </form>
+        </div>
+
+        <div class="tabs">
+          <div>Add Detachments:</div>
+          <ul>
+            <li><a class="tab-link" href="#dets-infantry">Infantry, Cavalry & Walkers</a></li>
+            <li><a class="tab-link" href="#dets-vehicles">Vehicles & Super-heavy Vehicles</a></li>
+            <li><a class="tab-link" href="#dets-aircraft">Aircraft</a></li>
+            <li><a class="tab-link" href="#dets-knights">Knights</a></li>
+            <li><a class="tab-link" href="#dets-titans">Titans</a></li>
+          </ul>
+          <div class="tab" id="dets-infantry"></div>
+          <div class="tab" id="dets-vehicles"></div>
+          <div class="tab" id="dets-aircraft"></div>
+          <div class="tab" id="dets-knights"></div>
+          <div class="tab" id="dets-titans"></div>
+        </div>
+        <div>
+          <div>Selected Detachments</div>
+          <ul class="selected-detachments"></ul>
+        </div>
+        <div>
+          <a class="save-button"></a>
+          <a class="delete-button"></a>
+        </div>
+      </div>
+
+      <!-- Form to select units in the Detachment -->
+      <div id="detachment-edit" title="Edit Detachment">
+
+        <div>
+          <label for="detachment-name">Name (optional)</label>
+          <input name="detachment-name" type="text" id="detachment-name"></input>
+        </div>
+
+        <div class="tabs">
+          <div>Add Units:</div>
+          <ul>
+            <li><a class="tab-link" href="#units-infantry">Infantry, Cavalry & Walkers</a></li>
+            <li><a class="tab-link" href="#units-vehicles">Vehicles & Super-heavy Vehicles</a></li>
+            <li><a class="tab-link" href="#units-aircraft">Aircraft</a></li>
+            <li><a class="tab-link" href="#units-knights">Knights</a></li>
+            <li><a class="tab-link" href="#units-titans">Titans</a></li>
+          </ul>
+          <div class="tab" id="units-infantry"></div>
+          <div class="tab" id="units-vehicles"></div>
+          <div class="tab" id="units-aircraft"></div>
+          <div class="tab" id="units-knights"></div>
+          <div class="tab" id="units-titans"></div>
+        </div>
+        <div>
+          <div>Selected Units</div>
+          <ul class="selected-units"></ul>
+        </div>
+        <div>
+          <a class="save-button"></a>
+          <a class="delete-button"></a>
+        </div>
+      </div>
+
+    </div>
+    
+    
+    <div id="detachments-section">
+      <h2>Detachments</h2>
+    
+      <div id="detachments-block">
+
+        <div class="noprint">
+          <div id="buttons-block">
+            <a id="add-detachment">Add</a>
+            <a id="save-roster">Save</a>
+            <a id="import-roster">Import</a>
+            <a id="clear-roster">Clear</a>
+          </div>
+        </div>
+
+        <div id="detachments"></div>
+
+        <div id="detachment-template">
+          <div class="detachment">
+            <div class="detachment-heading"></div>
+            <div>
+              <ul class="selected-units"></ul>
+            </div>
+            <div class="noprint">
+              <span><a class="edit-button"></a></span>
+              <span><a class="delete-button"></a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="entry-list-section">
+      
+      <h2>Reference List</h2>
+      
+      <div class="entry-list">
+      </div>
+      
+    </div> <!-- end section -->
+    
+  </div> <!-- end sections -->
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+/** Reference List */
+
+/** 1000 px total width
+ *  each cell has 5px padding each side (i.e. +10px)
+ *  name: 175 + 10
+ *  stats: 190
+ *    -> type:   40 + 10
+ *    -> move:   25 + 10
+ *    -> save:   25 + 10
+ *    -> CAF:    25 + 10
+ *    -> wounds: 25 + 10
+ *  weapons: 457
+ *    -> name:  150 + 10
+ *    -> range: 28 + 10
+ *    -> shots: 64 + 10
+ *    -> notes: 175 + 10
+ *  notes: remaining 170 + 10
+**/
+
+.entry-list {
+  border: 1px solid;
+  border-collapse: collapse;
+  min-width: 1000px;
+  width: 100%;
+  overflow: auto;
+  display: table;
+}
+
+.entry-list div {
+  margin: 0;
+  vertical-align: top;
+}
+
+.cell {
+  display: inline-block;
+  padding: 2px 5px;
+}
+
+.row, .heading {
+  display: table-row;
+  min-width: 1000px;
+}
+
+.unit-name {
+  display: table-cell;
+  width: 175px;
+}
+
+.weapon-name {
+  /*white-space: nowrap; messes with the alignment when window shrinks */
+  width: 150px;
+}
+
+.stats {
+  display: table-cell;
+  width: 190px;
+}
+
+.stat {
+  text-align: center;
+  width: 25px;
+}
+
+.type {
+  width: 40px;
+}
+
+.weapon-shots {
+  text-align: right;
+  width: 64px;
+}
+
+.roll:after {
+  content: '+'
+}
+
+.distance:after {
+  content: '"'
+}
+
+.weapons {
+  display: table-cell;
+  width: 457px;
+}
+
+/* 1+ per weapons */
+.weapon {
+  /*  background-color: rgb(200,200,200); */
+  /*  width: 45em; */
+  /* display: block; */
+}
+
+/* 1 per weapon */
+.weapon-stats {
+  display: inline-block;
+}
+
+/* 1+ per weapon-stats */
+.weapon-line {
+  /*  display: inline-block; */
+  /*  display: table-row; */
+}
+
+/* 1 per weapon-line */
+.dice {
+  width: 10px;
+}
+
+/* 1 per weapon-line */
+.hit {
+  width: 10px;
+}
+
+/* 1 per weapon-line */
+.ap {
+  width: 10px;
+}
+
+/* 1 per weapon-line */
+.range {
+  width: 28px;
+}
+
+/* 1 per weapon */
+.weapon-notes {
+  width: 175px;
+}
+
+.unit-notes {
+  display: table-cell;
+}
+
+/* Other */
+
+.heading .cell {
+  font-weight: bold;
+}
+
+.color1 {
+  background-color: rgb(210,210,210);
+}
+
+.color2 {
+  background-color: rgb(240,240,240);
+}
+

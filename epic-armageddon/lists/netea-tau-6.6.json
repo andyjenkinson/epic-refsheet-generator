@@ -1,0 +1,483 @@
+{
+  "units": [
+            {
+            "name": "Shas’o Commander",
+            "type": "Character",
+            "weapons": [
+                        { "name": "Experimental Weapons" }
+                        ],
+            "notes": [ "Co-ordinated Fire", "Leader", "Re-roll" ]
+            },
+            {
+            "name": "Shas’el Commander",
+            "type": "Character",
+            "weapons": [
+                        { "name": "Plasma Rifle" }
+                        ],
+            "notes": [ "Co-ordinated Fire", "Leader" ]
+            },
+            {
+            "name": "Ethereal",
+            "type": "Character",
+            "weapons": [
+                        { "name": "Honour Blade" }
+                        ],
+            "notes": [ "Invulnerable Save", "Leader", "A formation joined by an Ethereal becomes fearless, but breaks instantly if he is killed." ]
+            },
+            {
+            "name": "Bonded Team",
+            "type": "Character",
+            "notes": [ "Leader" ]
+            },
+            {
+            "name": "XV8 Crisis Battlesuit unit",
+            "type": "Infantry",
+            "speed": "20cm",
+            "armour": "3+",
+            "CC": "5+",
+            "FF": "5+",
+            "weapons": [
+                        { "name": "Twin Missile Pods" },
+                        { "name": "Twin Plasma Rifles" },
+                        { "name": "Twin Fusion Blasters" }
+                        ],
+            "notes": [ "Invulnerable Save", "Tau Jet Packs" ]
+            },
+            {
+            "name": "XV15 Stealth Battlesuit unit",
+            "type": "Infantry",
+            "speed": "20cm",
+            "armour": "5+",
+            "CC": "6+",
+            "FF": "5+",
+            "weapons": [
+                        { "name": "Silenced Burst Cannons" }
+                        ],
+            "notes": [ "Reinforced Armour", "First Strike", "Markerlights", "Scouts", "Tau Jet Packs", "Teleport" ]
+            },
+            {
+            "name": "XV88 Broadside Battlesuit unit",
+            "type": "LV",
+            "speed": "15cm",
+            "armour": "4+",
+            "CC": "6+",
+            "FF": "5+",
+            "weapons": [
+                        { "name": "Twin Railguns" },
+                        { "name": "Smart Missile System" }
+                        ],
+            "notes": [ "Reinforced Armour", "Walker" ]
+            },
+            {
+            "name": "Fire Warrior unit",
+            "type": "Infantry",
+            "speed": "15cm",
+            "armour": "5+",
+            "CC": "6+",
+            "FF": "5+",
+            "weapons": [
+                        { "name": "Pulse Rifles" },
+                        { "name": "Pulse Carbines" }
+                        ]
+            },
+            {
+            "name": "Gun drone unit",
+            "type": "Infantry",
+            "speed": "20cm",
+            "armour": "5+",
+            "CC": "6+",
+            "FF": "5+",
+            "weapons": [
+                        { "name": "Twin Pulse Carbines" }
+                        ],
+            "notes": [ "Tau Jet Packs" ]
+            },
+            {
+            "name": "Kroot Master Shaper unit",
+            "type": "Infantry",
+            "speed": "15cm",
+            "armour": "6+",
+            "CC": "4+",
+            "FF": "5+",
+            "weapons": [
+                        { "name": "Mercenary Weapons" },
+                        { "name": "Kroot Rifles" }
+                        ],
+            "notes": [ "Infiltrators", "Scouts", "Leader" ]
+            },
+            {
+            "name": "Kroot Warrior unit",
+            "type": "Infantry",
+            "speed": "15cm",
+            "CC": "4+",
+            "FF": "5+",
+            "weapons": [
+                        { "name": "Kroot Rifles" }
+                        ],
+            "notes": [ "Infiltrators", "Scouts" ]
+            },
+            {
+            "name": "Kroot Hound unit",
+            "type": "Infantry",
+            "speed": "20cm",
+            "CC": "3+",
+            "weapons": [
+                        { "name": "Fangs" }
+                        ],
+            "notes": [ "Infiltrators", "Scouts" ]
+            },
+            {
+            "name": "Krootox Herd unit",
+            "type": "Infantry",
+            "speed": "15cm",
+            "armour": "4+",
+            "CC": "4+",
+            "FF": "4+",
+            "weapons": [
+                        { "name": "Claws" },
+                        { "name": "Kroot Guns" }
+                        ]
+            },
+            {
+            "name": "Tetra Light Skimmer",
+            "type": "LV",
+            "speed": "35cm",
+            "armour": "5+",
+            "CC": "6+",
+            "FF": "6+",
+            "weapons": [
+                        { "name": "Tetra Pulse Rifles" }
+                        ],
+            "notes": [ "Co-ordinated Fire", "Markerlights", "Scouts", "Skimmer" ]
+            },
+            {
+            "name": "Piranha Light Skimmer",
+            "type": "LV",
+            "speed": "35cm",
+            "armour": "5+",
+            "CC": "6+",
+            "FF": "6+",
+            "weapons": [
+                        { "id": "burst-cannon-and-gun-drones" },
+                        { "id": "seeker-missiles" }
+                        ],
+            "notes": [ "Skimmer" ]
+            },
+            {
+            "name": "Devilfish Troop Carrier",
+            "type": "AV",
+            "speed": "30cm",
+            "armour": "5+",
+            "CC": "6+",
+            "FF": "6+",
+            "weapons": [
+                        { "id": "burst-cannon-and-gun-drones" },
+                        { "id": "seeker-missiles" }
+                        ],
+            "notes": [ "Skimmer", "Transport" ]
+            },
+            {
+            "name": "Skyray Air Defence Gunship",
+            "type": "AV",
+            "speed": "30cm",
+            "armour": "5+",
+            "CC": "6+",
+            "FF": "6+",
+            "weapons": [
+                        { "id": "smart-missiles" },
+                        { "id": "hunter-missiles", "number": 2 },
+                        { "id": "seeker-missiles", "number": 2 }
+                        ],
+            "notes": [ "Markerlights", "Skimmer" ]
+            },
+            {
+            "name": "Hammerhead Gunship (Railgun)",
+            "type": "AV",
+            "speed": "30cm",
+            "armour": "4+",
+            "CC": "6+",
+            "FF": "5+",
+            "weapons": [
+                        { "id": "smart-missiles" },
+                        { "id": "seeker-missiles" },
+                        { "id": "hammerhead-railgun" }
+                        ],
+            "notes": [ "Skimmer" ]
+            },
+            {
+            "name": "Hammerhead Gunship (Ion Cannon)",
+            "type": "AV",
+            "speed": "30cm",
+            "armour": "4+",
+            "CC": "6+",
+            "FF": "5+",
+            "weapons": [
+                        { "id": "smart-missiles" },
+                        { "id": "seeker-missiles" },
+                        { "id": "ion-cannon" }
+                        ],
+            "notes": [ "Skimmer" ]
+            },
+            {
+            "name": "Hammerhead Gunship (Fusion Cannon)",
+            "type": "AV",
+            "speed": "30cm",
+            "armour": "4+",
+            "CC": "6+",
+            "FF": "5+",
+            "weapons": [
+                        { "id": "smart-missiles" },
+                        { "id": "seeker-missiles" },
+                        { "id": "twin-fusion-cannons" }
+                        ],
+            "notes": [ "Skimmer" ]
+            },
+            {
+            "name": "Orca Dropship",
+            "type": "Aircraft",
+            "DC": 2,
+            "speed": "Bomber",
+            "armour": "4+",
+            "CC": "6+",
+            "FF": "6+",
+            "weapons": [
+                        { "id": "aircraft-twin-burst-cannons" },
+                        { "id": "twin-missile-pods" },
+                        { "id": "aircraft-seeker-missiles" }
+                        ],
+            "notes": [ "Planetfall", "Transport" ],
+            "critical": "Orca and all units aboard are destroyed."
+            },
+            {
+            "name": "Barracuda Fighter",
+            "type": "Aircraft",
+            "speed": "Fighter",
+            "armour": "6+",
+            "weapons": [
+                        { "id": "aircraft-ion-cannon", "arc": "Fixed Forward" },
+                        { "id": "aircraft-twin-burst-cannons" },
+                        { "id": "twin-missile-pods", "arc": "Fixed Forward" }
+                        ]
+            }
+            ],
+  
+  
+  "weapons": [
+              {
+              "name": "Experimental Weapons",
+              "attacks": [
+                          {
+                          "range": "30cm",
+                          "AP": "4+"
+                          }
+                          ]
+              },
+              {
+              "name": "Plasma Rifle",
+              "attacks": [{
+              "range": "30cm",
+              "AP": "5+"
+              }]
+              },
+              {
+              "name": "Honour Blade",
+              "attacks": [
+               {
+                "CC": true,
+                "notes": ["Extra Attack (1)"]
+               }
+              ]
+              },
+              {
+              "name": "Pulse Rifles",
+              "attacks": [{
+              "range": "30cm",
+              "AP": "4+"
+              }]
+              },
+              {
+              "name": "Pulse Carbines",
+              "attacks": [{
+              "range": "15cm",
+              "AP": "5+",
+              "notes": ["Disrupt"]
+              }]
+              },
+              {
+              "name": "Twin Pulse Carbines",
+              "attacks": [{
+              "range": "15cm",
+              "AP": "4+",
+              "notes": ["Disrupt"]
+              }]
+              },
+              {
+              "id": "twin-missile-pods",
+              "name": "Twin Missile Pods",
+              "attacks": [{
+              "range": "45cm",
+              "AP": "5+",
+              "AT": "6+"
+              }]
+              },
+              {
+              "name": "Twin Plasma Rifles",
+              "attacks": [{
+              "range": "30cm",
+              "AP": "4+"
+              }]
+              },
+              {
+              "name": "Twin Fusion Blasters",
+              "attacks": [{
+              "range": "15cm",
+              "MW": "4+"
+              }]
+              },
+              {
+              "name": "Silenced Burst Cannons",
+              "attacks": [{
+                          "range": "15cm",
+                          "AP": "4+",
+                          "notes": ["Disrupt"]
+                          }]
+              },
+              {
+              "name": "Twin Railguns",
+              "attacks": [{
+              "range": "75cm",
+              "AT": "3+"
+              }]
+              },
+              {
+              "id": "burst-cannon-and-gun-drones",
+              "name": "Burst Cannon & Gun Drones",
+              "attacks": [{
+              "range": "15cm",
+              "AP": "5+"
+              }]
+              },
+              {
+              "name": "Mercenary Weapons",
+              "attacks": [{
+                          "CC": true,
+                          "notes": ["Extra Attack (1)"]
+                          }]
+              },
+              {
+              "name": "Claws",
+              "attacks": [{
+                          "CC": true,
+                          "notes": ["Extra Attack (1)"]
+                          }]
+              },
+              {
+              "name": "Fangs",
+              "attacks": [{
+                          "FF": true
+                          }]
+              },
+              {
+              "name": "Kroot Rifles",
+              "attacks": [{
+                          "FF": true
+                          }]
+              },
+              {
+              "name": "Kroot Guns",
+              "attacks": [{
+                          "range": "45cm",
+                          "AP": "5+",
+                          "AT": "6+"
+                          }]
+              },
+              {
+              "id": "tetra-pulse-rifles",
+              "name": "Tetra Pulse Rifles",
+              "attacks": [{
+              "range": "30cm",
+              "AP": "6+"
+              }]
+              },
+              {
+              "id": "seeker-missiles",
+              "name": "Seeker Missiles",
+              "attacks": [{
+              "range": "90cm",
+              "AT": "6+",
+              "notes": ["Guided Missiles"]
+                          }]
+              },
+              {
+              "id": "smart-missiles",
+              "name": "Smart Missile System",
+              "attacks": [{
+              "range": "30cm",
+              "AP": "5+",
+              "notes": ["Ignore Cover"]
+                          }]
+              },
+              {
+              "id": "hunter-missiles",
+              "name": "Hunter Missiles",
+              "attacks": [{
+              "range": "60cm",
+              "AA": "5+"
+              }]
+              },
+              {
+              "id": "hammerhead-railgun",
+              "name": "Hammerhead Railgun",
+              "attacks": [{
+              "range": "75cm",
+              "AP": "5+",
+              "AT": "4+"
+              }]
+              },
+              {
+              "id": "ion-cannon",
+              "name": "Ion Cannon",
+              "attacks": [{
+              "range": "60cm",
+              "AP": "4+",
+              "AT": "5+"
+              }]
+              },
+              {
+              "id": "twin-fusion-cannons",
+              "name": "Twin Fusion Cannons",
+              "attacks": [{
+              "range": "30cm",
+              "MW": "4+"
+              }]
+              },
+              {
+              "id": "aircraft-twin-burst-cannons",
+              "name": "Twin Burst Cannons",
+              "attacks": [{
+              "range": "15cm",
+              "AA": "6+"
+              }]
+              },
+              {
+              "id": "aircraft-seeker-missiles",
+              "name": "Seeker Missiles",
+              "attacks": [{
+              "range": "45cm",
+              "AT": "6+",
+              "notes": ["Guided Missiles"]
+                          }]
+              },
+              {
+              "id": "aircraft-ion-cannon",
+              "name": "Ion Cannon",
+              "attacks": [{
+              "range": "30cm",
+              "AP": "4+",
+              "AT": "5+",
+              "AA": "5+"
+              }]
+              }
+              ]
+  
+}

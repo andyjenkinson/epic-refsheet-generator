@@ -1,0 +1,615 @@
+{
+ "weapons": [
+  {
+   "name": "Demolisher cannon",
+   "attacks": {
+     "range": "30cm",
+     "AP": "3+",
+     "AT": "4+"
+   },
+   "notes": ["Ignore Cover"]
+  },
+  {
+   "name": "Bane Battle cannon",
+   "attacks": {
+     "range": "75cm",
+     "AP": "3+",
+     "AT": "4+"
+   }
+  },
+  {
+   "name": "Autocannon",
+   "attacks": {
+     "range": "45cm",
+     "AP": "5+",
+     "AT": "6+"
+   }
+  },
+  {
+   "name": "Twin Autocannon",
+   "attacks": {
+     "range": "45cm",
+     "AP": "4+",
+     "AT": "5+"
+   }
+  },
+  {
+   "id": "multilaser",
+   "name": "Multilaser",
+   "attacks": {
+     "range": "30cm",
+     "AP": "5+",
+     "AT": "6+"
+   }
+  },
+  {
+   "name": "Lascannon",
+   "attacks": {
+     "range": "45cm",
+     "AT": "5+"
+   }
+  },
+  {
+   "name": "Heavy Bolter",
+   "attacks": {
+     "range": "30cm",
+     "AP": "5+"
+   }
+  },
+  {
+   "name": "Battlecannon",
+   "attacks": {
+     "range": "75cm",
+     "AP": "4+",
+     "AT": "4+"
+   }
+  },
+  {
+   "name": "Vanquisher cannon",
+   "attacks": {
+     "range": "75cm",
+     "AP": "4+",
+     "AT": "2+"
+   }
+  },
+  {
+   "name": "Plasma cannon",
+   "attacks": {
+     "range": "30cm",
+     "AP": "4+",
+     "AT": "4+"
+   },
+   "notes": ["Slow Firing"]
+  },
+  {
+   "name": "Multi melta",
+   "attacks": {
+     "range": "15cm",
+     "MW": "5+"
+   },
+   "FF": true,
+   "notes": ["Macro Weapon"]
+  },
+  {
+   "name": "Volcano cannon",
+   "attacks": {
+     "range": "90cm",
+     "MW": "2+"
+   },
+   "notes": ["Titan Killer (D3)"]
+  },
+  {
+   "name": "Deathstrike missile",
+   "attacks": {
+     "range": "Unlimited",
+     "MW": "2+"
+   },
+   "notes": ["Titan Killer (D6)", "One Shot", "Indirect Fire"]
+  },
+  {
+   "name": "Rocket launcher",
+   "attacks": {
+     "range": "150cm",
+     "BP": "2"
+   },
+   "notes": ["Disrupt", "Slow Firing", "Indirect Fire"]
+  },
+  {
+   "name": "Rocket pods",
+   "attacks": {
+     "range": "30cm",
+     "BP": "1"
+   },
+   "notes": ["Disrupt", "One Shot"]
+  },
+  {
+   "name": "Hellstrike missiles",
+   "attacks": {
+     "range": "120cm",
+     "AT": "2+"
+   },
+   "notes": ["One Shot"]
+  },
+  {
+   "name": "Heavy Mortar",
+   "attacks": {
+     "range": "30cm",
+     "BP": "1"
+   },
+   "notes": ["Indirect Fire"]
+  },
+  {
+   "name": "Siege Mortar",
+   "attacks": {
+     "range": "45cm",
+     "BP": "2"
+   },
+   "notes": ["Ignore Cover", "Slow Firing", "Indirect Fire"]
+  },
+  {
+   "name": "Earthshaker cannon",
+   "attacks": {
+     "range": "120cm",
+     "AP": "4+",
+     "AT": "4+",
+     "BP": "1"
+   },
+   "notes": ["Indirect Fire", "May only fire indirectly when attacks a barrage"]
+  },
+  {
+   "name": "Inferno cannon",
+   "attacks": {
+     "range": "30cm",
+     "AP": "3+"
+   },
+   "notes": ["Ignore Cover"]
+  },
+  {
+   "name": "Lasguns",
+   "FF": true
+  },
+  {
+   "name": "Laspistols",
+   "FF": true
+  },
+  {
+   "name": "Hellguns",
+   "FF": true
+  },
+  {
+   "name": "Ripper guns",
+   "FF": true
+  },
+  {
+   "name": "Plasma guns",
+   "attacks": {
+     "range": "15cm",
+     "AP": "5+",
+     "AT": "5+"
+   }
+  },
+  {
+   "name": "Chainswords",
+   "CC": true
+  },
+  {
+   "name": "Power weapons",
+   "attacks": [{
+    "CC": true,
+    "notes": ["Macro Weapon", "Extra Attack (1)"]
+  }]
+  },
+  {
+   "name": "Ogryn combat weapons",
+   "attacks": [{
+      "CC": true,
+      "notes": ["Macro Weapon", "Extra Attack (1)"]
+   }]
+  },
+  {
+   "name": "Power lances",
+   "attacks": [
+    {
+      "CC": true,
+      "notes": ["First Strike", "Extra Attack (1)"]
+    }
+   ]
+  },
+  {
+   "name": "Sniper Rifles",
+   "attacks": {
+     "range": "30cm",
+     "AP": "5+",
+     "notes": ["Sniper"]
+   }
+  },
+  {
+   "name": "Twin Hydra cannon",
+   "attacks": {
+     "range": "45cm",
+     "AP": "4+",
+     "AT": "5+",
+     "AA": "5+"
+   }
+  },
+  {
+   "id": "storm-bolters-air",
+   "name": "Storm Bolters",
+   "attacks": {
+     "range": "15cm",
+     "AP": "4+",
+     "AA": "5+"
+   }
+  },
+  {
+   "id": "multilaser-air",
+   "name": "Multilaser",
+   "attacks": {
+     "range": "30cm",
+     "AP": "5+",
+     "AT": "6+",
+     "AA": "5+"
+   }
+  },
+  {
+   "id": "underwing-rockets",
+   "name": "Underwing Rockets",
+   "attacks": {
+     "range": "30cm",
+     "AT": "4+"
+   }
+  }
+ ],
+
+
+ "units": [
+  {
+   "name": "Supreme Commander",
+   "type": "Infantry",
+   "speed": "15cm",
+   "armour": "5+",
+   "CC": "4+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Autocannon" },
+    { "name": "Lasguns" },
+    { "name": "Power weapons" }
+   ],
+   "notes": [ "Supreme Commander" ]
+  },
+  {
+   "name": "Commander",
+   "type": "Infantry",
+   "speed": "15cm",
+   "armour": "6+",
+   "CC": "5+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Autocannon" },
+    { "name": "Lasguns" },
+    { "name": "Chainswords" }
+   ],
+   "notes": [ "Commander" ]
+  },
+  {
+   "name": "Commissar",
+   "type": "Character",
+   "weapons": [
+    { "name": "Power weapons" }
+   ],
+   "notes": [ "Leader", "Fearless", "Inspiring" ]
+  },
+  {
+   "name": "Infantry",
+   "type": "Infantry",
+   "speed": "15cm",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Autocannon",
+      "number": 0.5 },
+    { "name": "Lasguns" }
+   ]
+  },
+  {
+   "name": "Support Squad",
+   "type": "Infantry",
+   "speed": "15cm",
+   "CC": "6+",
+   "FF": "4+",
+   "weapons": [
+    { "name": "Autocannon",
+      "number": 2 },
+    { "name": "Lasguns" }
+   ]
+  },
+  {
+   "name": "Snipers",
+   "type": "Infantry",
+   "speed": "15cm",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Sniper Rifles" }
+   ],
+   "notes": [ "Scout" ]
+  },
+  {
+   "name": "Ogryns",
+   "type": "Infantry",
+   "speed": "15cm",
+   "armour": "3+",
+   "CC": "4+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Ripper guns" },
+    { "name": "Ogryn combat weapons" }
+   ],
+   "notes": [ "Scout" ]
+  },
+  {
+   "name": "Rough Riders",
+   "type": "Infantry",
+   "speed": "20cm",
+   "armour": "6+",
+   "CC": "4+",
+   "FF": "6+",
+   "weapons": [
+    { "name": "Laspistols" },
+    { "name": "Power lances" },
+    { "name": "Chainswords" }
+   ],
+   "notes": [ "Scout", "Mounted", "Infiltrate" ]
+  },
+  {
+   "name": "Storm Troopers",
+   "type": "Infantry",
+   "speed": "15cm",
+   "armour": "5+",
+   "CC": "5+",
+   "FF": "4+",
+   "weapons": [
+    { "name": "Hellguns" },
+    { "name": "Plasma guns" }
+   ],
+   "notes": [ "Scout" ]
+  },
+  {
+   "name": "Leman Russ",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "4+",
+   "CC": "6+",
+   "FF": "4+",
+   "weapons": [
+    { "name": "Battlecannon" },
+    { "name": "Lascannon" },
+    { "name": "Heavy Bolter",
+      "number": 2 }
+   ],
+   "notes": [ "Reinforced Armour" ]
+  },
+  {
+   "name": "Leman Russ Vanquisher",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "4+",
+   "CC": "6+",
+   "FF": "4+",
+   "weapons": [
+    { "name": "Vanquisher cannon" },
+    { "name": "Lascannon" },
+    { "name": "Heavy Bolter",
+      "number": 2 }
+   ],
+   "notes": [ "Reinforced Armour" ]
+  },
+  {
+   "name": "Leman Russ Demolisher",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "4+",
+   "CC": "6+",
+   "FF": "3+",
+   "weapons": [
+    { "name": "Demolisher cannon" },
+    { "name": "Lascannon" },
+    { "name": "Plasma cannon",
+      "number": 2 }
+   ],
+   "notes": [ "Reinforced Armour" ]
+  },
+  {
+   "name": "Deathstrike",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "6+",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Deathstrike missile" },
+    { "name": "Heavy Bolter" }
+   ]
+  },
+  {
+   "name": "Manticore",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "6+",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Rocket launcher" },
+    { "name": "Heavy Bolter" }
+   ]
+  },
+  {
+   "name": "Basilisk",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "5+",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Earthshaker cannon" },
+    { "name": "Heavy Bolter" }
+   ]
+  },
+  {
+   "name": "Bombard",
+   "type": "AV",
+   "speed": "20cm",
+   "armour": "6+",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Siege Mortar" },
+    { "name": "Heavy Bolter" }
+   ]
+  },
+  {
+   "name": "Chimera",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "5+",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "id": "multilaser" },
+    { "name": "Heavy Bolter" }
+   ]
+  },
+  {
+   "name": "Hydra",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "6+",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Twin Hydra cannon",
+      "number": 2 },
+    { "name": "Heavy Bolter" }
+   ]
+  },
+  {
+   "name": "Sentinel",
+   "type": "LV",
+   "speed": "20cm",
+   "armour": "6+",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "id": "multilaser" }
+   ],
+   "notes": [ "Scout", "Walker" ]
+  },
+  {
+   "name": "Griffon",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "6+",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Heavy Mortar" },
+    { "name": "Heavy Bolter" }
+   ]
+  },
+  {
+   "name": "Hellhound",
+   "type": "AV",
+   "speed": "30cm",
+   "armour": "4+",
+   "CC": "6+",
+   "FF": "3+",
+   "weapons": [
+    { "name": "Inferno cannon" },
+    { "name": "Heavy Bolter" }
+   ]
+  },
+  {
+   "name": "Valkyrie",
+   "type": "AV",
+   "speed": "35cm",
+   "armour": "5+",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "id": "multilaser" },
+    { "name": "Heavy Bolter",
+      "number": 2 },
+    { "name": "Rocket pods",
+      "number": 2 }
+   ],
+   "notes": ["Skimmer", "Scout"]
+  },
+  {
+   "name": "Vulture",
+   "type": "AV",
+   "speed": "35cm",
+   "armour": "5+",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Hellstrike missiles",
+      "number": 2 },
+    { "name": "Twin Autocannon" },
+    { "name": "Heavy Bolter" }
+   ],
+   "notes": ["Skimmer", "Scout"]
+  },
+  {
+   "name": "Baneblade",
+   "type": "WE",
+   "DC": 3,
+   "speed": "15cm",
+   "armour": "4+",
+   "CC": "6+",
+   "FF": "4+",
+   "weapons": [
+    { "name": "Bane Battle cannon" },
+    { "name": "Autocannon" },
+    { "name": "Lascannon",
+      "number": 2 },
+    { "name": "Heavy Bolter",
+      "number": 3 },
+    { "name": "Demolisher cannon",
+      "arc": "Fixed Forward" }
+   ],
+   "notes": [ "Reinforced Armour" ],
+   "critical": "Explodes. Units in 5cm hit on a 6+"
+  },
+  {
+   "name": "Shadowsword",
+   "type": "WE",
+   "DC": 3,
+   "speed": "15cm",
+   "armour": "4+",
+   "CC": "6+",
+   "FF": "5+",
+   "weapons": [
+    { "name": "Volcano cannon",
+      "arc": "Fixed Forward" },
+    { "name": "Heavy Bolter",
+      "number": 2 }
+   ],
+   "notes": [ "Reinforced Armour" ],
+   "critical": "Explodes. Units in 5cm hit on a 6+"
+  },
+  {
+   "name": "Thunderbolt Fighter",
+   "type": "Aircraft",
+   "speed": "Fighter-Bomber",
+   "armour": "6+",
+   "weapons": [
+    { "id": "storm-bolters-air",
+      "arc": "Fixed Forward" },
+    { "id": "multilaser-air",
+      "arc": "Fixed Forward" },
+    { "id": "underwing-rockets",
+      "arc": "Fixed Forward" }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,113 @@
+/** Reference List */
+
+
+.entry-list {
+  border: 1px solid;
+  border-collapse: collapse;
+  width: 1000px;
+  overflow: auto;
+  display: table;
+}
+
+.entry-list div {
+  margin: 0;
+  vertical-align: top;
+}
+
+.cell {
+  display: inline-block;
+  padding: 2px 5px;
+}
+
+.row, .heading {
+  display: table-row;
+  width: 1000px;
+}
+
+.unit-name {
+  display: table-cell;
+  width: 175px;
+}
+
+.weapon-name {
+  /*white-space: nowrap; messes with the alignment when window shrinks */
+  width: 150px;
+}
+
+.stats {
+  display: table-cell;
+  width: 185px;
+}
+
+.stat {
+  text-align: center;
+  width: 30px;
+}
+
+.roll {
+  width: 25px;
+}
+
+.weapons {
+  display: table-cell;
+  width: 400px;
+}
+
+.weapons-heading {
+  text-align: left;
+  width: 100%;
+}
+
+/* 1+ per weapons */
+.weapon {
+  /*  background-color: rgb(200,200,200); */
+  /*  width: 45em; */
+  /* display: block; */
+}
+
+/* 1 per weapon */
+.weapon-stats {
+  display: inline-block;
+  /*  width: 15em; */
+}
+
+/* 1+ per weapon-stats */
+.weapon-line {
+  /*  width: 15em; */
+  /*  display: inline-block; */
+  /*  display: table-row; */
+}
+
+/* 1 per weapon-line */
+.firepower {
+  width: 80px;
+}
+
+/* 1 per weapon-line */
+.range {
+  width: 30px;
+}
+
+/* 1 per weapon */
+.weapon-notes {
+  width: 100px;
+}
+
+.unit-notes {
+  display: table-cell;
+}
+
+/* Other */
+
+.heading .cell {
+  font-weight: bold;
+}
+
+.color1 {
+  background-color: rgb(210,210,210);
+}
+
+.color2 {
+  background-color: rgb(240,240,240);
+}
+

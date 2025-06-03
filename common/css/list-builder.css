@@ -1,0 +1,22 @@
+body {
+    /*  font: 62.5% "Trebuchet MS", sans-serif; */
+    /*font-size: 62.5%;*/
+    /*  font-family: "Helvetica", "Arial", "Garuda", sans-serif;*/
+    /*  font-family: "Trebuchet MS", sans-serif; */
+    font: 62.5% "Trebuchet MS", sans-serif;
+    margin: 50px;
+}
+
+.icon {
+    display: inline-block;
+    /*  margin-left: 1em; */
+}
+
+.tabs {
+    margin-top: 1em;
+}
+
+.ui-state-error {
+    display: none;
+    margin-top: 1em;
+}
