@@ -286,6 +286,17 @@ units:
           - Drop Pod
         weapons:
           - id: deathstorm-missile
+      - id: termite
+        name: Termite
+        move: 5
+        save: 4
+        CAF: 1
+        morale: 3
+        notes:
+          - Deep Strike
+          - Transport(2)
+        weapons:
+          - id: twin-bolter
       - id: kratos
         name: Kratos
         move: 8
@@ -308,6 +319,16 @@ units:
           - options:
               - id: heavy-bolter-sponsons
               - id: lascannon-sponsons
+      - id: kratos-commander
+        parent: kratos
+        name: Kratos Commander
+        CAF: 4
+        morale: 2
+        notes:
+          - Commander
+          - Inspire (8")
+          - Invulnerable Save (6+)
+          - Master Tactician (6")
       - id: predator
         name: Predator
         move: 9
@@ -321,6 +342,16 @@ units:
           - options:
               - id: lascannon-sponsons
               - id: heavy-bolter-sponsons
+      - id: predator-commander
+        parent: predator
+        name: Predator Commander
+        CAF: 3
+        morale: 2
+        notes:
+          - Commander
+          - Inspire (8")
+          - Invulnerable Save (6+)
+          - Master Tactician (6")
       - id: sicaran
         name: Sicaran
         move: 10
@@ -355,6 +386,25 @@ units:
           - id: arcus-missile
           - id: hull-heavy-bolter
           - id: lascannon-sponsons
+      - id: sicaran-commander
+        parent: sicaran
+        name: Sicaran Commander
+        CAF: 3
+        morale: 2
+        notes:
+          - Commander
+          - Inspire (8")
+          - Invulnerable Save (6+)
+          - Master Tactician (6")
+        weapons:
+          - id: hull-heavy-bolter
+          - options:
+              - id: accelerator-autocannon
+              - id: omega-plasma-array
+              - id: punisher-cannon
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
       - id: sabre
         name: Sabre
         move: 11
@@ -882,6 +932,17 @@ weapons:
           - Light
           - Assault
           - Point Defence
+  - id: termite-twin-bolter
+    name: Termite twin-linked bolters
+    profiles:
+      - range: 8
+        dice: 2
+        hit: 5
+        notes:
+          - Light
+          - Assault
+          - Point Defence
+          - Arc(F)
   - id: laser-destroyer-array
     name: Laser destroyer array
     profiles:
