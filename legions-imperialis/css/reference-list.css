@@ -1,13 +1,14 @@
 /** Reference List */
 
-/** 1000 px total width
+/** 1035 px total width
  *  each cell has 5px padding each side (i.e. +10px)
  *  name: 175 + 10
- *  stats: 190
+ *  stats: 225
  *    -> type:   40 + 10
  *    -> move:   25 + 10
  *    -> save:   25 + 10
  *    -> CAF:    25 + 10
+ *    -> morale: 25 + 10
  *    -> wounds: 25 + 10
  *  weapons: 457
  *    -> name:  150 + 10
@@ -20,7 +21,7 @@
 .entry-list {
   border: 1px solid;
   border-collapse: collapse;
-  min-width: 1000px;
+  min-width: 1035px;
   width: 100%;
   overflow: auto;
   display: table;
@@ -38,7 +39,7 @@
 
 .row, .heading {
   display: table-row;
-  min-width: 1000px;
+  min-width: 1035px;
 }
 
 .unit-name {
@@ -53,7 +54,7 @@
 
 .stats {
   display: table-cell;
-  width: 190px;
+  width: 225px;
 }
 
 .stat {
