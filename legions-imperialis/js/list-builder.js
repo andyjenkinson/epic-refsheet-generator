@@ -410,6 +410,7 @@ function buildUnitHeadingDiv() {
   $statsDiv.append($("<div class='cell stat'>Move</div>"));
   $statsDiv.append($("<div class='cell stat'>Sav</div>"));
   $statsDiv.append($("<div class='cell stat'>CAF</div>"));
+  $statsDiv.append($("<div class='cell stat'>M</div>"));
   $statsDiv.append($("<div class='cell stat'>W</div>"));
   
   var $weaponsDiv = $("<div class='weapons'><div class='cell'>Weapons</div></div>");
@@ -448,6 +449,7 @@ function buildRefRow(type, variant) {
   var $spdDiv = $("<div>").attr('class', 'cell stat distance').append(variant.move ? variant.move : 0);
   var $armDiv = $("<div>").attr('class', 'cell stat roll').append(variant.save ? variant.save : '-');
   var $cafDiv = $("<div>").attr('class', 'cell stat').append(caf > 0 ? '+'+variant.CAF : caf);
+  var $moraleDiv = $("<div>").attr('class', 'cell stat').append(variant.morale ? variant.morale+'+' : '-');
   var $woundDiv = $("<div>").attr('class', 'cell stat').append(variant.wounds ? variant.wounds : 1);
   
   $unitDiv.append($nameDiv);
@@ -457,6 +459,7 @@ function buildRefRow(type, variant) {
   $statsDiv.append($spdDiv);
   $statsDiv.append($armDiv);
   $statsDiv.append($cafDiv);
+  $statsDiv.append($moraleDiv);
   $statsDiv.append($woundDiv);
   
   var $weaponsDiv = $("<div>").attr('class', 'weapons');
