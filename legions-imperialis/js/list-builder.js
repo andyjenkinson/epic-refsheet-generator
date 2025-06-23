@@ -171,6 +171,12 @@ function changeArmy(sourceName, listName) {
 
         $.each(units, function(i, unit) {
 
+          if (unit.parent) {
+            var parent = getUnit(unit.parent);
+            var merged = $.extend( {}, parent, unit ); // New object overriding the parent
+            $.extend( unit, merged ); // Merge the properties into this object instance
+          }
+
           var div = $('<div/>').attr('id','unit-'+unit.id);
           var button = $('<button>'+unit.name+'</button>');
           button.button();
