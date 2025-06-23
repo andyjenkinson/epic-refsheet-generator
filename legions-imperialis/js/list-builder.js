@@ -419,7 +419,7 @@ function buildUnitHeadingDiv() {
   $statsDiv.append($("<div class='cell stat'>Mor</div>"));
   $statsDiv.append($("<div class='cell stat'>Wnd</div>"));
   
-  var $weaponsDiv = $("<div class='weapons'><div class='cell'>Weapons</div></div>");
+  var $weaponsDiv = $("<div class='weapons'><div class='cell weapon-name'>Weapons</div><div class='cell range'>Rng</div><div class='cell dice'>D</div><div class='cell hit'>H</div><div class='cell ap'>AP</div><div class='cell weapon-notes'>Notes</div></div>");
 //  var $weaponDiv = $("<div class='weapon'>");
 //  $weaponsDiv.append($weaponDiv);
 //  $weaponDiv.append($("<div class='cell weapon-name'>Weapons</div>"));
@@ -498,20 +498,24 @@ function buildRefRow(type, variant) {
           $weaponLine.append($("<div>").attr('class', 'cell range').append(r));
           var ap = profile.AP ? profile.AP : 0;
           if (profile.hit) {
-            //var r = profile.range;
             var d = profile.dice ? profile.dice : 1;
             var h = profile.hit;
             if ((/^\d+$/).test(h)) {
               h = h + '+';
             }
-            //var stat = r+'" '+[d,h].join('x')+'+ AP '+ap;
-            var stat = [d,h].join('x')+' AP '+ap;
-            $weaponLine.append($("<div>").attr('class', 'cell weapon-shots').append(stat));
+            //var stat = [d,h].join('x')+' AP '+ap;
+            //$weaponLine.append($("<div>").attr('class', 'cell weapon-shots').append(stat));
+            $weaponLine.append($("<div>").attr('class', 'cell dice').append(d));
+            $weaponLine.append($("<div>").attr('class', 'cell hit').append(h));
+            $weaponLine.append($("<div>").attr('class', 'cell AP').append(ap));
           }
           // Profiles without a to-hit are engagement-only
           else {
-            var stat = profile.AP ? 'AP '+profile.AP : 'N/A';
-            $weaponLine.append($("<div>").attr('class', 'cell weapon-shots').append(stat));
+            //var stat = profile.AP ? 'AP '+profile.AP : 'N/A';
+            //$weaponLine.append($("<div>").attr('class', 'cell weapon-shots').append(stat));
+            $weaponLine.append($("<div>").attr('class', 'cell dice').append('-'));
+            $weaponLine.append($("<div>").attr('class', 'cell hit').append('-'));
+            $weaponLine.append($("<div>").attr('class', 'cell AP').append(ap));
           }
 
           var n = Array();

@@ -66,10 +66,12 @@
   width: 40px;
 }
 
-.weapon-shots {
-  text-align: right;
-  width: 64px;
-}
+/*
+ * .weapon-shots {
+ *   text-align: right;
+ *   width: 64px;
+ * }
+*/
 
 .roll:after {
   content: '+'
