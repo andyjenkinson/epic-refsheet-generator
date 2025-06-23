@@ -414,10 +414,10 @@ function buildUnitHeadingDiv() {
   var $statsDiv = $("<div class='stats' />");
   $statsDiv.append($("<div class='cell stat type'>Type</div>"));
   $statsDiv.append($("<div class='cell stat'>Move</div>"));
-  $statsDiv.append($("<div class='cell stat'>Sav</div>"));
+  $statsDiv.append($("<div class='cell stat'>Save</div>"));
   $statsDiv.append($("<div class='cell stat'>CAF</div>"));
-  $statsDiv.append($("<div class='cell stat'>M</div>"));
-  $statsDiv.append($("<div class='cell stat'>W</div>"));
+  $statsDiv.append($("<div class='cell stat'>Mor</div>"));
+  $statsDiv.append($("<div class='cell stat'>Wnd</div>"));
   
   var $weaponsDiv = $("<div class='weapons'><div class='cell'>Weapons</div></div>");
 //  var $weaponDiv = $("<div class='weapon'>");
