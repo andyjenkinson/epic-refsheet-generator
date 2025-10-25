@@ -23,14 +23,16 @@ units:
         morale: 3
         weapons:
           - id: bolters
-      - id: la-tactical-missile
+      - id: la-tactical-apothecary
+        name: Legion Tactical Apothecary
         move: 5
         save: 5
         CAF: 2
         morale: 3
-        name: Legion Tactical Missile Support
         weapons:
-          - id: missile-launchers
+          - id: bolters
+        notes:
+          - Medicae
       - id: la-support-missile
         name: Legion Missile Support
         move: 5
@@ -39,14 +41,6 @@ units:
         morale: 3
         weapons:
           - id: missile-launchers
-      - id: la-tactical-plasma
-        name: Legion Tactical Plasma Support
-        move: 5
-        save: 5
-        CAF: +2
-        morale: 3
-        weapons:
-          - id: plasma-guns
       - id: la-support-plasma
         name: Legion Plasma Support
         move: 5
@@ -76,6 +70,7 @@ units:
           - Bulky
           - Deep Strike
           - Implacable
+          - Armoured
           - Invulnerable Save (6+)
           - Steadfast
         weapons:
@@ -164,7 +159,7 @@ units:
         morale: 3
         notes:
           - Armoured
-          - Invulnerable Save (6+)
+          - Invulnerable Save (5+)
         weapons:
           - id: twin-bolter
           - options:
@@ -284,6 +279,7 @@ units:
         CAF: -8
         notes:
           - Drop Pod
+          - Orbital Assault
         weapons:
           - id: deathstorm-missile
       - id: termite
@@ -310,15 +306,18 @@ units:
               - id: kratos-melta
           - id: coaxial-autocannon
           - options:
-              - id: kratos-hull-autocannon
-                number: 2
-              - id: kratos-hull-lascannon
-                number: 2
+              - id: hull-autocannon
+                number: 1
+              - id: hull-lascannon
+                number: 1
               - id: hull-heavy-bolter
-                number: 2
+                number: 1
           - options:
               - id: heavy-bolter-sponsons
               - id: lascannon-sponsons
+          - id: pintle-heavy-bolter
+            min: 0
+            max: 1
       - id: kratos-commander
         parent: kratos
         name: Kratos Commander
@@ -342,6 +341,9 @@ units:
           - options:
               - id: lascannon-sponsons
               - id: heavy-bolter-sponsons
+          - id: pintle-heavy-bolter
+            min: 0
+            max: 1
       - id: predator-commander
         parent: predator
         name: Predator Commander
@@ -366,6 +368,9 @@ units:
           - options:
               - id: heavy-bolter-sponsons
               - id: lascannon-sponsons
+          - id: pintle-heavy-bolter
+            min: 0
+            max: 1
       - id: sicaran-punisher
         name: Sicaran Punisher
         move: 10
@@ -375,7 +380,12 @@ units:
         weapons:
           - id: punisher-cannon
           - id: hull-heavy-bolter
-          - id: heavy-bolter-sponsons
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
+          - id: pintle-heavy-bolter
+            min: 0
+            max: 1
       - id: sicaran-arcus
         name: Sicaran Arcus
         move: 10
@@ -405,6 +415,9 @@ units:
           - options:
               - id: heavy-bolter-sponsons
               - id: lascannon-sponsons
+          - id: pintle-heavy-bolter
+            min: 0
+            max: 1
       - id: sabre
         name: Sabre
         move: 11
@@ -485,14 +498,14 @@ units:
       - id: questoris-errant
         name: Questoris Knight Errant
         move: 8
-        save: 3
+        save: 2
         CAF: 8
         morale: 2
         wounds: 3
         notes:
           - Nimble
           - Independent
-          - Ion Shields (4+)
+          - Ion Shields (3+)
         weapons:
           - id: thermal-cannon
           - id: heavy-stubber
@@ -509,14 +522,14 @@ units:
       - id: questoris-paladin
         name: Questoris Knight Paladin
         move: 8
-        save: 3
+        save: 2
         CAF: 8
         morale: 2
         wounds: 3
         notes:
           - Nimble
           - Independent
-          - Ion Shields (4+)
+          - Ion Shields (3+)
         weapons:
           - id: rapid-fire-battlecannon
           - id: heavy-stubber
@@ -531,14 +544,14 @@ units:
       - id: questoris-warden
         name: Questoris Knight Warden
         move: 8
-        save: 3
+        save: 2
         CAF: 8
         morale: 2
         wounds: 3
         notes:
           - Nimble
           - Independent
-          - Ion Shields (4+)
+          - Ion Shields (3+)
         weapons:
           - id: questoris-avenger-gatling-cannon
           - id: meltagun
@@ -553,14 +566,14 @@ units:
       - id: questoris-gallant
         name: Questoris Knight Gallant
         move: 8
-        save: 3
+        save: 2
         CAF: 8
         morale: 2
         wounds: 3
         notes:
           - Nimble
           - Independent
-          - Ion Shields (4+)
+          - Ion Shields (3+)
         weapons:
           - id: thunderstrike-gauntlet
           - id: meltagun
@@ -575,14 +588,14 @@ units:
       - id: questoris-crusader
         name: Questoris Knight Crusader
         move: 8
-        save: 3
+        save: 2
         CAF: 8
         morale: 2
         wounds: 3
         notes:
           - Nimble
           - Independent
-          - Ion Shields (4+)
+          - Ion Shields (3+)
         weapons:
           - options:
               - id: rapid-fire-battlecannon
@@ -596,14 +609,14 @@ units:
       - id: questoris-styrix
         name: Questoris Knight Styrix
         move: 8
-        save: 3
+        save: 2
         CAF: 8
         morale: 2
         wounds: 3
         notes:
           - Nimble
           - Independent
-          - Ion Shields (4+)
+          - Ion Shields (3+)
           - Ionic Flare Shield
           - Blessed Auto-simulacra
         weapons:
@@ -613,14 +626,14 @@ units:
       - id: questoris-magaera
         name: Questoris Knight Magaera
         move: 8
-        save: 3
+        save: 2
         CAF: 8
         morale: 2
         wounds: 3
         notes:
           - Nimble
           - Independent
-          - Ion Shields (4+)
+          - Ion Shields (3+)
           - Ionic Flare Shield
           - Blessed Auto-simulacra
         weapons:
@@ -630,7 +643,22 @@ units:
       - id: cerastus-lancer
         name: Cerastus Knight Lancer
         move: 9
-        save: 3
+        save: 2
+        CAF: 11
+        morale: 2
+        wounds: 3
+        notes:
+          - Nimble
+          - Independent
+          - Furious Charge
+          - Ion Shields (2+)
+        weapons:
+          - id: shock-lance
+          - id: ion-gauntlet-shield
+      - id: cerastus-acheron
+        name: Cerastus Knight Acheron
+        move: 9
+        save: 2
         CAF: 11
         morale: 2
         wounds: 3
@@ -640,28 +668,13 @@ units:
           - Furious Charge
           - Ion Shields (3+)
         weapons:
-          - id: shock-lance
-          - id: ion-gauntlet-shield
-      - id: cerastus-acheron
-        name: Cerastus Knight Acheron
-        move: 9
-        save: 3
-        CAF: 11
-        morale: 2
-        wounds: 3
-        notes:
-          - Nimble
-          - Independent
-          - Furious Charge
-          - Ion Shields (4+)
-        weapons:
           - id: acheron-flame-cannon
           - id: reaper-chainfist
           - id: built-in-heavy-bolters
       - id: cerastus-castigator
         name: Cerastus Knight Castigator
         move: 9
-        save: 3
+        save: 2
         CAF: 11
         morale: 2
         wounds: 3
@@ -669,14 +682,14 @@ units:
           - Nimble
           - Independent
           - Furious Charge
-          - Ion Shields (4+)
+          - Ion Shields (3+)
         weapons:
           - id: castigator-bolt-cannon
           - id: tempest-warblade
       - id: cerastus-atropos
         name: Cerastus Knight Atropos
         move: 9
-        save: 3
+        save: 2
         CAF: 11
         morale: 2
         wounds: 3
@@ -695,7 +708,7 @@ units:
         move: 7
         save: 2
         CAF: +10
-        wounds: 4
+        wounds: 5
         notes:
           - Agile
           - Void Shields (2)
@@ -720,7 +733,7 @@ units:
         move: 6
         save: 2
         CAF: +12
-        wounds: 5
+        wounds: 6
         notes:
           - Void Shields (4)
         weapons:
@@ -748,9 +761,9 @@ units:
         move: 5
         save: 2
         CAF: +14
-        wounds: 6
+        wounds: 7
         notes:
-          - Void Shields (6)
+          - Void Shields (8)
         weapons:
           - min: 2
             max: 2
@@ -779,9 +792,9 @@ units:
         move: 5
         save: 2
         CAF: +14
-        wounds: 6
+        wounds: 7
         notes:
-          - Void Shields (6)
+          - Void Shields (8)
           - Dread Aura (8")
           - Loyalist
           - Necrotechica
@@ -816,7 +829,7 @@ units:
         move: 5
         save: 1
         CAF: +18
-        wounds: 7
+        wounds: 8
         notes:
           - Void Shields (12)
         weapons:
@@ -843,7 +856,7 @@ units:
         move: 6
         save: 1
         CAF: +18
-        wounds: 7
+        wounds: 8
         notes:
           - Void Shields (12)
         weapons:
@@ -901,18 +914,19 @@ weapons:
   - id: plasma-guns
     name: Plasma guns
     profiles:
-      - range: 10
+      - range: 8
         dice: 1
         hit: 4
         AP: -1
         notes:
           - Light AT
+          - Assault
   - id: missile-launchers
     name: Missile launchers
     profiles:
       - range: 20
         dice: 2
-        hit: 4
+        hit: 5
         notes:
           - Light
           - Ignores Cover
@@ -1014,7 +1028,7 @@ weapons:
     name: Kheres assault cannon
     profiles:
       - range: 10
-        dice: 1
+        dice: 2
         hit: 5
         AP: -1
         notes:
@@ -1127,6 +1141,15 @@ weapons:
           - Arc(F)
           - Light AT
           - Point Defence
+  - id: pintle-heavy-bolter
+    name: Pintle heavy bolter
+    profiles:
+      - range: 12
+        dice: 2
+        hit: 5 
+        notes:
+          - Light
+          - Point Defence
   - id: multi-melta
     name: Multi-melta
     profiles:
@@ -1201,7 +1224,7 @@ weapons:
         notes:
           - Light AT
           - Co-axial
-  - id: kratos-hull-autocannon
+  - id: hull-autocannon
     name: Hull-mounted autocannon
     profiles:
       - range: 16
@@ -1210,18 +1233,6 @@ weapons:
         AP: -1
         notes:
           - Light AT
-          - Accurate
-          - Arc(F)
-  - id: kratos-hull-lascannon
-    name: Hull-mounted lascannon
-    profiles:
-      - range: 22
-        dice: 1
-        hit: 4
-        AP: -1
-        notes:
-          - Anti-tank
-          - Accurate
           - Arc(F)
   - id: hull-lascannon
     name: Hull-mounted lascannon
@@ -1367,7 +1378,7 @@ weapons:
     name: Deathstorm missile launcher
     profiles:
       - range: 10
-        dice: D3+2
+        dice: 2
         hit: 6
         AP: -1
         notes:
@@ -1378,11 +1389,12 @@ weapons:
     name: Lascannon battery
     profiles:
       - range: 22
-        dice: 2
+        dice: 1
         hit: 5
         AP: -1
         notes:
           - Anti-tank
+          - Accurate
   - id: tarantula-hyperios
     name: Hyperios air-defence missiles
     profiles:
@@ -1749,7 +1761,7 @@ weapons:
     name: Plasma blastgun
     profiles:
       - range: 20
-        dice: 2
+        dice: 3
         hit: 3
         AP: -3
         notes:
@@ -1799,8 +1811,8 @@ weapons:
           - Anti-tank
           - Accurate
           - Demolisher
-      - range: 8
-        dice: 2
+      - range: 6
+        dice: 1
         hit: 3
         AP: -4
         notes:
