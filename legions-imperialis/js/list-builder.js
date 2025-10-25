@@ -4,8 +4,8 @@
 
 var lists = {
   'Games Workshop': [
-    { name: "Standard", filename: "gw-standard-1.0.0.json" },
-    { name: "Titandeath", filename: "gw-titandeath-1.0.0.json" }
+    { name: "v1.1 Liber Strategia", filename: "gw-standard-1.1.0.json" },
+    { name: "v1.0 Rulebook & expansions", filename: "gw-standard-1.0.0.json" },
   ],
   'Community': [
   ]
