@@ -194,7 +194,7 @@ function changeArmy(sourceName, listName) {
                 weapon.min = 1;
               }
               if (typeof weapon.max === 'undefined' || weapon.max < weapon.min || weapon.max < 1) {
-                weapon.max = 1;
+                weapon.max = weapon.min;
               }
 
               console.log('Adding options ('+weapon.min+' to '+weapon.max+')');
