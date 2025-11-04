@@ -210,7 +210,7 @@ units:
               - id: pintle-twin-bolters
               - id: pintle-havoc-launcher
                 points: 2
-              - id: multi-melta
+              - id: pintle-multi-melta
                 points: 4
       - id: spartan
         name: Spartan
@@ -231,7 +231,7 @@ units:
           - min: 0
             max: 1
             options:
-              - id: multi-melta
+              - id: pintle-multi-melta
                 points: 5
       - id: land-raider
         name: Land Raider
@@ -248,7 +248,7 @@ units:
           - min: 0
             max: 1
             options:
-              - id: multi-melta
+              - id: pintle-multi-melta
                 points: 5
       - id: drop-pod
         name: Drop pod
@@ -315,7 +315,8 @@ units:
           - options:
               - id: heavy-bolter-sponsons
               - id: lascannon-sponsons
-          - id: pintle-heavy-bolter
+          - options:
+              - id: pintle-heavy-bolter
             min: 0
             max: 1
       - id: kratos-commander
@@ -341,7 +342,8 @@ units:
           - options:
               - id: lascannon-sponsons
               - id: heavy-bolter-sponsons
-          - id: pintle-heavy-bolter
+          - options:
+              - id: pintle-heavy-bolter
             min: 0
             max: 1
       - id: predator-commander
@@ -368,7 +370,8 @@ units:
           - options:
               - id: heavy-bolter-sponsons
               - id: lascannon-sponsons
-          - id: pintle-heavy-bolter
+          - options:
+              - id: pintle-heavy-bolter
             min: 0
             max: 1
       - id: sicaran-punisher
@@ -383,7 +386,8 @@ units:
           - options:
               - id: heavy-bolter-sponsons
               - id: lascannon-sponsons
-          - id: pintle-heavy-bolter
+          - options:
+              - id: pintle-heavy-bolter
             min: 0
             max: 1
       - id: sicaran-arcus
@@ -415,7 +419,8 @@ units:
           - options:
               - id: heavy-bolter-sponsons
               - id: lascannon-sponsons
-          - id: pintle-heavy-bolter
+          - options:
+              - id: pintle-heavy-bolter
             min: 0
             max: 1
       - id: sabre
@@ -1150,6 +1155,9 @@ weapons:
         notes:
           - Light
           - Point Defence
+  - id: pintle-multi-melta
+    name: Pintle multi-melta
+    parent: multi-melta
   - id: multi-melta
     name: Multi-melta
     profiles:

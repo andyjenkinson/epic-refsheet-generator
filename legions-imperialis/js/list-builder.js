@@ -337,6 +337,13 @@ function getWeapon(id) {
     console.log("cannot find weapon "+id+" in "+$('body').data('armyDef').weapons.length+" weapons");
     return null;
   }
+
+  if (w.parent) {
+    var parent = getWeapon(w.parent);
+    var merged = $.extend( {}, parent, w ); // New object overriding the parent
+    $.extend( w, merged ); // Merge the properties into this object instance
+  }
+
   return w;
 }
 

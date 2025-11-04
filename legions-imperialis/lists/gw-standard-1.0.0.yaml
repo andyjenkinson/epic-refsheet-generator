@@ -215,7 +215,7 @@ units:
               - id: pintle-twin-bolters
               - id: pintle-havoc-launcher
                 points: 2
-              - id: multi-melta
+              - id: pintle-multi-melta
                 points: 4
       - id: spartan
         name: Spartan
@@ -236,7 +236,7 @@ units:
           - min: 0
             max: 1
             options:
-              - id: multi-melta
+              - id: pintle-multi-melta
                 points: 5
       - id: land-raider
         name: Land Raider
@@ -253,7 +253,7 @@ units:
           - min: 0
             max: 1
             options:
-              - id: multi-melta
+              - id: pintle-multi-melta
                 points: 5
       - id: drop-pod
         name: Drop pod
@@ -1127,6 +1127,9 @@ weapons:
           - Arc(F)
           - Light AT
           - Point Defence
+  - id: pintle-multi-melta
+    name: Pintle multi-melta
+    parent: multi-melta
   - id: multi-melta
     name: Multi-melta
     profiles:
