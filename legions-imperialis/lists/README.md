@@ -156,7 +156,6 @@ v1.1 Liber Strategia
 
 v1.0 Original rulebook + expansion books:
 
- * Add Dire wolf titan
  * Add Warbringer Nemesis titan
  * Add Knight Acastus Porphyrion
  * Add Knight Asterius
