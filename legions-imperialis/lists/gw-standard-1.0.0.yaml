@@ -759,6 +759,29 @@ units:
               - id: reaver-volkite-eradicator
               - id: reaver-graviton-eradicator
               - id: reaver-conversion-beam-dissolutor
+      - id: warbringer-nemesis
+        name: Warbringer Nemesis Titan
+        move: 5
+        save: 2
+        CAF: +12
+        wounds: 5
+        notes:
+          - Void Shields (6)
+        weapons:
+          - min: 2
+            max: 2
+            options:
+              - id: reaver-laser-blaster
+              - id: reaver-gatling-blaster
+              - id: reaver-volcano-cannon
+              - id: reaver-melta-cannon
+          - min: 1
+            max: 1
+            options:
+              - id: belicosa-volcano-cannon
+              - id: mori-quake-cannon
+          - id: anvilus-defence-batteries
+          - id: ardex-defensor-mauler
       - id: warlord
         name: Warlord Titan
         move: 5
