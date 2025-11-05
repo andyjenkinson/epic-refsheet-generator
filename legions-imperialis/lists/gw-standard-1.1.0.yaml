@@ -12,9 +12,10 @@ units:
           - Inspire (8")
           - Invulnerable Save (6+)
           - Master Tactician (6")
-          - Medicae
+          - Medicae (4")
         weapons:
-          - id: combi-bolters
+          - id: bolters
+          - id: volkite-chargers
       - id: la-tactical
         name: Legion Tactical
         move: 5
@@ -32,7 +33,7 @@ units:
         weapons:
           - id: bolters
         notes:
-          - Medicae
+          - Medicae (4")
       - id: la-support-missile
         name: Legion Missile Support
         move: 5
@@ -733,6 +734,22 @@ units:
               - id: natrix-shock-lance
               - id: graviton-eradicator
               - id: conversion-beam-dissolutor
+      - id: dire-wolf
+        name: Dire Wolf Titan
+        move: 7
+        save: 2
+        CAF: +10
+        wounds: 5
+        notes:
+          - Agile
+          - Void Shields (2)
+          - Infiltrate
+        weapons:
+          - id: ardex-mega-bolters
+          - options:
+              - id: neutron-laser
+              - id: volcano-cannon
+              - id: conversion-beam-dissipator
       - id: reaver
         name: Reaver Titan
         move: 6
@@ -916,6 +933,15 @@ weapons:
           - Light
           - Assault
           - Accurate
+  - id: volkite-chargers
+    name: Volkite chargers
+    profiles:
+      - range: 8
+        dice: 1
+        hit: 5
+        notes:
+          - Light
+          - Deflagrate
   - id: plasma-guns
     name: Plasma guns
     profiles:
@@ -1917,6 +1943,64 @@ weapons:
         notes:
           - Arc(F)
           - Demolisher
+  - id: ardex-mega-bolters
+    name: Ardex mega-bolters
+    profiles:
+      - range: 12
+        dice: 9
+        hit: 5
+        AP: -1
+        notes:
+          - Light AT
+          - Point Defence
+          - Rapid Fire
+          - Shieldbane
+  - id: neutron-laser
+    name: Neutron laser
+    profiles:
+      - range: 38
+        dice: 1
+        hit: 4
+        AP: -3
+        notes:
+          - Arc(F)
+          - Shock Pulse
+  - id: volcano-cannon
+    name: Volcano cannon
+    profiles:
+      - range: 70
+        dice: 1
+        hit: 3
+        AP: -4
+        notes:
+          - Arc(F)
+          - Engine Killer(2)
+  - id: conversion-beam-dissipator
+    name: Conversion beam dissipator
+    profiles:
+      - range: 6
+        dice: 2
+        hit: 4
+        AP: -2
+        notes:
+          - Arc(F)
+          - Accurate
+      - range: 6-18
+        dice: 3
+        hit: 3
+        AP: -3
+        notes:
+          - Arc(F)
+          - Demolisher
+          - Accurate
+      - range: 18-35
+        dice: 3
+        hit: 3
+        AP: -4
+        notes:
+          - Arc(F)
+          - Demolisher
+          - Accurate
   - id: reaver-laser-blaster
     name: Reaver laser blaster
     profiles:
