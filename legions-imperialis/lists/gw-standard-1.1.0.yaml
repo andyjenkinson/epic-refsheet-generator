@@ -330,6 +330,57 @@ units:
           - Inspire (8")
           - Invulnerable Save (6+)
           - Master Tactician (6")
+      - id: cerberus
+        name: Cerberus
+        move: 8
+        save: 2
+        CAF: 3
+        morale: 3
+        wounds: 2
+        weapons:
+          - id: hull-neutron-laser
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+              - id: pintle-multi-melta
+            min: 0
+            max: 1
+      - id: typhon
+        name: Typhon
+        move: 8
+        save: 2
+        CAF: 3
+        morale: 2
+        wounds: 2
+        weapons:
+          - id: hull-dreadhammer
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+              - id: pintle-multi-melta
+            min: 0
+            max: 1
+      - id: mastodon
+        name: Mastodon
+        move: 8
+        save: 2
+        CAF: 4
+        morale: 3
+        wounds: 3
+        notes:
+          - Large Assault Transport (8)
+          - Void Shields (2)
+        weapons:
+          - id: siege-melta-array
+          - id: skyreaper-battery
+          - id: heavy-flamer-sponsons
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
       - id: predator
         name: Predator
         move: 9
@@ -357,6 +408,15 @@ units:
           - Inspire (8")
           - Invulnerable Save (6+)
           - Master Tactician (6")
+      - id: vindicator
+        name: Vindicator
+        move: 8
+        save: 3
+        CAF: 0
+        morale: 3
+        weapons:
+          - id: hull-demolisher-cannon
+          - id: pintle-twin-bolters
       - id: sicaran
         name: Sicaran
         move: 10
@@ -424,6 +484,24 @@ units:
               - id: pintle-heavy-bolter
             min: 0
             max: 1
+      - id: scorpius
+        name: Scorpius
+        move: 8
+        save: 3
+        CAF: 0
+        morale: 3
+        weapons:
+          - id: scorpius-missiles
+          - id: pintle-twin-bolters
+      - id: whirlwind
+        name: Whirlwind
+        move: 8
+        save: 3
+        CAF: 0
+        morale: 3
+        weapons:
+          - id: whirlwind-missiles
+          - id: pintle-twin-bolters
       - id: sabre
         name: Sabre
         move: 11
@@ -1326,6 +1404,17 @@ weapons:
         AP: -1
         notes:
           - Light AT
+  - id: hull-demolisher-cannon
+    name: Hull-mounted demolisher cannon
+    profiles:
+      - range: 12
+        dice: 1
+        hit: 4
+        AP: -3
+        notes:
+          - Arc(F)
+          - Demolisher
+          - Ignores Cover
   - id: lascannon-sponsons
     name: Sponson lascannon
     profiles:
@@ -1401,6 +1490,50 @@ weapons:
           - Light
           - Point Defence
           - Arc(F)
+  - id: hull-neutron-laser
+    name: Neutron laser battery
+    profiles:
+      - range: 24
+        dice: 3
+        hit: 4
+        AP: -3
+        notes:
+          - Shock Pulse
+          - Arc(F)
+  - id: hull-dreadhammer
+    name: Dreadhammer siege cannon
+    profiles:
+      - range: 16
+        dice: 2
+        hit: 3
+        AP: -4
+        notes:
+          - Arc(F)
+          - Demolisher
+          - Ignores Cover
+  - id: siege-melta-array
+    name: Siege melta array
+    profiles:
+      - range: 6
+        dice: 1
+        hit: 3
+        AP: -4
+        notes:
+          - Arc(F)
+          - Anti-tank
+          - Demolisher
+          - Engine Killer (2)
+  - id: skyreaper-battery
+    name: Skyreaper battery
+    profiles:
+      - range: 20
+        dice: 3
+        hit: 5
+        AP: -1
+        notes:
+          - Light AT
+          - Skyfire
+          - Tracking
   - id: heavy-bolter-sponsons
     name: Sponson heavy bolters
     profiles:
@@ -1410,6 +1543,18 @@ weapons:
         notes:
           - Light
           - Point Defence
+          - Arc(F)
+  - id: heavy-flamer-sponsons
+    name: Sponson heavy flamers
+    profiles:
+      - range: 6
+        dice: 2
+        hit: 4
+        AP: 0
+        notes:
+          - Light
+          - Point Defence
+          - Ignores Cover
           - Arc(F)
   - id: quad-lascannon-sponsons
     name: Sponson quad lascannon
@@ -1490,6 +1635,27 @@ weapons:
           - Anti-tank
           - Skyfire
           - Tracking
+  - id: scorpius-missiles
+    name: Scorpius missile launcher
+    profiles:
+      - range: 18
+        dice: 2
+        hit: 4
+        AP: -2
+        notes:
+          - Light AT
+          - Barrage
+  - id: whirlwind-missiles
+    name: Whirlwind missile launcher
+    profiles:
+      - range: 30
+        dice: 2
+        hit: 4
+        AP: 0
+        notes:
+          - Barrage
+          - Ignores Cover
+          - Rapid Fire
   - id: hull-neutron-blaster
     name: Neutron blaster
     profiles:

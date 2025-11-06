@@ -149,18 +149,6 @@ Currently does not support formation and detachment structures - units are added
 
 The initial priority has been to complete Legiones Astartes, Titans and Knights. The following armies/units are missing:
 
-v1.1 Liber Strategia
-
- * All additions for v1.0
- * Add Vindicator
- * Add Whirlwind
- * Add Scorpius
- * Add Cerberus
- * Add Typhon
- * Add Mastodon
-
-v1.0 Original rulebook + expansion books:
-
  * Add Solar Auxilia
  * Add Mechanicum
  * Add Dark Mechanicum
