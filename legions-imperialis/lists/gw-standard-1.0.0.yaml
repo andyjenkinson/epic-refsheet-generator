@@ -1657,6 +1657,7 @@ weapons:
         AP: -3
         notes:
           - Arc(F)
+          - Anti-tank
           - Demolisher
       - range: 6
         dice: 1
@@ -1664,6 +1665,7 @@ weapons:
         AP: -4
         notes:
           - Arc(F)
+          - Anti-tank
           - Demolisher
           - Engine Killer(1)
   - id: rapid-fire-battlecannon

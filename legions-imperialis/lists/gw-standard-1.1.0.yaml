@@ -704,6 +704,7 @@ units:
           - Independent
           - Furious Charge
           - Ion Shields (3+)
+          - Ionic Flare Shield
           - Macro-extinction Targeting Protocols
         weapons:
           - id: graviton-singularity-cannon
@@ -1699,6 +1700,7 @@ weapons:
         AP: -3
         notes:
           - Arc(F)
+          - Anti-tank
           - Demolisher
       - range: 6
         dice: 1
@@ -1706,6 +1708,7 @@ weapons:
         AP: -4
         notes:
           - Arc(F)
+          - Anti-tank
           - Demolisher
           - Engine Killer(1)
   - id: rapid-fire-battlecannon
@@ -1813,7 +1816,6 @@ weapons:
         AP: -2
         notes:
           - Arc(F)
-          - Blast(3")
   - id: phased-plasma-fusil
     name: Phased plasma-fusil
     profiles:

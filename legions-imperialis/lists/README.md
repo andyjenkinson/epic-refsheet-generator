@@ -147,6 +147,8 @@ Example 2: define a new weapon, changing only the name:
 
 Currently does not support formation and detachment structures - units are added manually. May never implement this as Legion Builder does a good job. Rather implement a mechanism to generate a ref sheet from a Legion Builder list.
 
+The initial priority has been to complete Legiones Astartes, Titans and Knights. The following armies/units are missing:
+
 v1.1 Liber Strategia
 
  * All additions for v1.0
@@ -156,7 +158,6 @@ v1.1 Liber Strategia
  * Add Cerberus
  * Add Typhon
  * Add Mastodon
- * Check Knight weapons for changes
 
 v1.0 Original rulebook + expansion books:
 
