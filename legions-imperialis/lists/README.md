@@ -112,6 +112,10 @@ weapons:
 
 *Note:* The default option for a given choice is the first weapon in the list.
 
+#### Limitations
+
+ - It is not possible to chain choice logic in multiple steps. For example, "choose *either* weapon A *and* weapon B, or  weapon C *and* weapon D". These must be split into multiple unit profiles, which works fine as these options are really creating multiple multually exclusive option sets. Most of the Legionms Imperialis units actually do this already (e.g. Warmaster and Warmaster Iconoclast) or have separate unit names anyway (e.g. Knight Armiger Warglaive vs Helverin) but a small number need to be separated out from their original combined profile (e.g. Knight Moirax).
+
 ### Parent-child inheritance
 
 Both units and weapons can be defined by overriding properties of a parent unit/weapon. Note that if a property is defined for the child it *replaces* the equivalent property in the parent. This means for example you must define all of a unit's weapons if you want to modify one.
@@ -156,9 +160,6 @@ v1.1 Liber Strategia
 
 v1.0 Original rulebook + expansion books:
 
- * Add Knight Acastus Porphyrion
- * Add Knight Asterius
- * Add Knight Armiger
  * Add Solar Auxilia
  * Add Mechanicum
  * Add Dark Mechanicum

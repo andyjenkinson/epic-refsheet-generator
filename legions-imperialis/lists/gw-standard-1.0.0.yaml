@@ -689,6 +689,94 @@ units:
         weapons:
           - id: graviton-singularity-cannon
           - id: atropos-lascutter
+      - id: acastus-porphyrion
+        name: Acastus Knight Porphyrion
+        move: 6
+        save: 2
+        CAF: 7
+        morale: 2
+        wounds: 3
+        notes:
+          - Blessed Auto-simulacra
+          - Independent
+          - Ion Shields (4+)
+        weapons:
+          - id: twin-magna-lascannon
+            number: 2
+          - options:
+            - id: acastus-lascannon
+            - id: acastus-autocannon
+          - options:
+            - id: ironstorm-missile-pod
+            - id: helios-defence-missiles
+      - id: acastus-asterius
+        name: Acastus Knight Asterius
+        move: 6
+        save: 2
+        CAF: 7
+        morale: 2
+        wounds: 3
+        notes:
+          - Blessed Auto-simulacra
+          - Independent
+          - Ion Shields (4+)
+        weapons:
+          - id: conversion-beam-cannon
+            number: 2
+          - id: volkite-culverin
+          - id: karacnos-mortar-battery
+      - id: armiger-warglaive
+        name: Knight Armiger Warglaive
+        move: 8
+        save: 3
+        CAF: 6
+        morale: 2
+        wounds: 2
+        notes:
+          - Nimble
+          - Ion Shields (5+)
+        weapons:
+          - id: thermal-spear
+          - id: reaper-chain-cleaver
+      - id: armiger-helverin
+        name: Knight Armiger Helverin
+        move: 8
+        save: 3
+        CAF: 6
+        morale: 2
+        wounds: 2
+        notes:
+          - Nimble
+          - Ion Shields (5+)
+        weapons:
+          - id: armiger-autocannon
+      - id: moirax-lightning
+        name: Knight Moirax w/Lightning Locks
+        move: 8
+        save: 3
+        CAF: 6
+        morale: 2
+        wounds: 2
+        notes:
+          - Nimble
+          - Ion Shields (5+)
+          - Ionic Flare Shield
+        weapons:
+          - id: armiger-lightning-locks
+      - id: moirax-volkite
+        name: Knight Moirax w/Volkite
+        move: 8
+        save: 3
+        CAF: 6
+        morale: 2
+        wounds: 2
+        notes:
+          - Nimble
+          - Ion Shields (5+)
+          - Ionic Flare Shield
+        weapons:
+          - id: volkite-veuglaire
+          - id: gyges-siege-claw
     Titan:
       - id: warhound
         name: Warhound Titan
@@ -1267,24 +1355,10 @@ weapons:
           - Arc(F)
   - id: hull-lascannon
     name: Hull-mounted lascannon
-    profiles:
-      - range: 22
-        dice: 1
-        hit: 4
-        AP: -1
-        notes:
-          - Anti-tank
-          - Arc(F)
+    parent: lascannon-sponsons
   - id: hull-heavy-bolter
     name: Hull-mounted heavy bolter
-    profiles:
-      - range: 12
-        dice: 2
-        hit: 5
-        notes:
-          - Light
-          - Point Defence
-          - Arc(F)
+    parent: heavy-bolter-sponsons 
   - id: heavy-bolter-sponsons
     name: Sponson heavy bolters
     profiles:
@@ -1639,6 +1713,9 @@ weapons:
     profiles:
       - notes:
         - Rend
+  - id: reaper-chain-cleaver
+    name: Reaper chain cleaver
+    parent: reaper-chainsword
   - id: thunderstrike-gauntlet
     name: Thunderstrike gauntlet
     profiles:
@@ -1787,6 +1864,145 @@ weapons:
           - Engine Killer(1)
           - Rend
           - Wrecker(3)
+  - id: twin-magna-lascannon
+    name: Twin magna lascannon
+    profiles:
+      - range: 25
+        dice: 2
+        hit: 4
+        AP: -3
+        notes:
+          - Arc(F)
+          - Anti-tank
+          - Accurate
+  - id: acastus-lascannon
+    name: Acastus lascannon
+    parent: lascannon-sponsons
+  - id: acastus-autocannon
+    name: Acastus autocannon
+    profiles:
+      - range: 16
+        dice: 3
+        hit: 5
+        AP: -1
+        notes:
+          - Light AT
+          - Arc(F)
+  - id: ironstorm-missile-pod
+    name: Ironstorm missile pod
+    profiles:
+      - range: 25
+        dice: 3
+        hit: 4
+        AP: -1
+        notes:
+          - Arc(F)
+          - Light AT
+  - id: helios-defence-missiles
+    name: Helios defence missiles
+    profiles:
+      - range: 25
+        dice: 2
+        hit: 4
+        AP: -2
+        notes:
+          - Arc(F)
+          - Anti-tank
+          - Skyfire
+          - Tracking
+  - id: conversion-beam-cannon 
+    name: Conversion beam cannon
+    profiles:
+      - range: 6
+        dice: 1
+        hit: 4
+        AP: -2
+        notes:
+          - Arc(F)
+      - range: 6-18
+        dice: 1
+        hit: 3
+        AP: -3
+        notes:
+          - Arc(F)
+          - Demolisher
+      - range: 18-35
+        dice: 2
+        hit: 3
+        AP: -4
+        notes:
+          - Arc(F)
+          - Demolisher
+  - id: volkite-culverin
+    name: Volkite culverin
+    profiles:
+      - range: 14
+        dice: 2
+        hit: 4
+        AP: 0
+        notes:
+          - Arc(F)
+          - Deflagrate
+          - Light
+  - id: karacnos-mortar-battery
+    name: Karacnos mortar battery
+    profiles:
+      - range: 30
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Arc(F)
+          - Barrage
+          - Ignores Cover
+  - id: thermal-spear
+    name: Thermal spear
+    profiles:
+      - range: 8
+        dice: 1
+        hit: 3
+        AP: -3
+        notes:
+          - Arc(F)
+          - Demolisher
+          - Engine Killer(1)
+  - id: armiger-autocannon
+    name: Armiger autocannon
+    profiles:
+      - range: 16
+        dice: 2
+        hit: 5
+        AP: -1
+        notes:
+          - Arc(F)
+          - Light AT
+  - id: armiger-lightning-locks
+    name: Armiger lightning locks
+    profiles:
+      - range: 12
+        dice: 2
+        hit: 5
+        AP: -2
+        notes:
+          - Arc(F)
+  - id: volkite-veuglaire
+    name: Volkite veuglaire
+    profiles:
+      - range: 14
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Arc(F)
+          - Light AT
+          - Deflagrate
+  - id: gyges-siege-claw
+    name: Gyges siege claw
+    profiles:
+      - AP: -4
+        notes:
+          - Rend
+          - Wrecker(2)
   - id: plasma-blastgun
     name: Plasma blastgun
     profiles:
