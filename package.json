@@ -4,7 +4,7 @@
   "description": "Web application for generating reference sheets for Epic-scale wargaming",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/andyjenkinson/epic-refsheet-generator/issues"
   },
-  "homepage": "https://github.com/andyjenkinson/epic-refsheet-generator/"
+  "homepage": "https://github.com/andyjenkinson/epic-refsheet-generator/",
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.5",
+    "babel-jest": "^30.2.0",
+    "jest": "^30.2.0"
+  }
 }
