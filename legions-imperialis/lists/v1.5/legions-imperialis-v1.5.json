@@ -957,7 +957,7 @@
                   "id": "hull-neutron-blaster"
                 },
                 {
-                  "id": "sabre-anvilus"
+                  "id": "sabre-autocannon"
                 }
               ]
             },
@@ -1081,6 +1081,729 @@
             {
               "id": "hellstrike-missiles"
             }
+          ]
+        }
+      ]
+    },
+    "Solar Auxilia": {
+      "Infantry": [
+        {
+          "id": "auxilia-commander",
+          "name": "Auxilia Commander",
+          "save": 6,
+          "morale": 2,
+          "wounds": 1,
+          "notes": [
+            "Commander",
+            "Inspire (8\")",
+            "Invulnerable Save (6+)",
+            "Master Tactician",
+            "Solar Auxilia HQ (10\")"
+          ],
+          "weapons": [
+            "archeotech-pistol",
+            "volkite-chargers"
+          ]
+        },
+        {
+          "id": "tactical-command",
+          "name": "Tactical Command",
+          "save": 6,
+          "morale": 3,
+          "wounds": 1,
+          "notes": [
+            "Commander",
+            "Inspire (8\")",
+            "Solar Auxilia HQ (6\")"
+          ],
+          "weapons": [
+            "volkite-chargers"
+          ]
+        },
+        {
+          "id": "auxiliaries",
+          "name": "Auxiliaries",
+          "save": 6,
+          "morale": 4,
+          "wounds": 1,
+          "notes": [
+            "Chain of Command",
+            "Line"
+          ],
+          "weapons": [
+            "auxilia-lasrifles"
+          ]
+        },
+        {
+          "id": "veletarii",
+          "name": "Veletarii",
+          "save": 6,
+          "morale": 4,
+          "wounds": 1,
+          "notes": [
+            "Steadfast"
+          ],
+          "weapons": [
+            "auxilia-laspistols",
+            "power-axes"
+          ]
+        },
+        {
+          "id": "charonite-ogryns",
+          "name": "Charonite Ogryns",
+          "save": 6,
+          "morale": 4,
+          "wounds": 2,
+          "notes": [
+            "Bulky",
+            "Furious Charge"
+          ],
+          "weapons": [
+            "charonite-claws"
+          ]
+        },
+        {
+          "id": "auxilia-rapier",
+          "name": "Auxilia Rapier",
+          "save": 6,
+          "morale": 4,
+          "wounds": 1,
+          "notes": [
+            "Bulky",
+            "Chain of Command"
+          ],
+          "weapons": [
+            {
+              "options": [
+                "laser-destroyer-array",
+                "quad-launcher",
+                "mole-mortar"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "auxilia-tarantula",
+          "name": "Auxilia Tarantula",
+          "save": 5,
+          "wounds": 1,
+          "notes": [
+            "Automated Sentry"
+          ],
+          "weapons": [
+            {
+              "options": [
+                {
+                  "id": "tarantula-hyperios"
+                },
+                {
+                  "id": "tarantula-lascannon"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Walker": [
+        {
+          "id": "aethon-heavy-sentinel",
+          "name": "Aethon Heavy Sentinel",
+          "save": 4,
+          "morale": 4,
+          "wounds": 1,
+          "notes": [
+            "Forward Deployment"
+          ],
+          "weapons": [
+            "multi-laser",
+            "sentinel-missile-launcher"
+          ]
+        }
+      ],
+      "Vehicle": [
+        {
+          "id": "leman-russ-tank",
+          "name": "Leman Russ Tank",
+          "save": 2,
+          "morale": 4,
+          "wounds": 1,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "leman-russ-battlecannon",
+            {
+              "options": [
+                "hull-heavy-bolter",
+                "hull-lascannon"
+              ]
+            },
+            {
+              "id": "pintle-mounted-heavy-stubber",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "id": "malcador-tank",
+          "name": "Malcador Tank",
+          "save": 2,
+          "morale": 4,
+          "wounds": 2,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "malcador-battlecannon",
+            {
+              "options": [
+                {
+                  "id": "malcador-heavy-bolter-sponsons"
+                },
+                {
+                  "id": "malcador-lascannon-sponsons"
+                },
+                {
+                  "id": "malcador-autocannon-sponsons"
+                }
+              ]
+            },
+            {
+              "options": [
+                "hull-heavy-bolter",
+                "hull-mounted-lascannon",
+                "hull-autocannon",
+                "hull-demolisher-cannon"
+              ]
+            },
+            {
+              "id": "pintle-mounted-heavy-stubber",
+              "max": 1,
+              "min": 0
+            }
+          ]
+        },
+        {
+          "id": "auxilia-baneblade",
+          "name": "Auxilia Baneblade",
+          "save": 2,
+          "morale": 4,
+          "wounds": 3,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "baneblade-cannon",
+            "co-axial-autocannon",
+            "hull-demolisher-cannon",
+            "hull-heavy-bolter-turret",
+            "lascannon-sponson-turrets",
+            {
+              "options": [
+                "super-heavy-heavy-bolter-sponsons",
+                "super-heavy-autocannon-sponsons",
+                "super-heavy-heavy-flamer-sponsons"
+              ]
+            },
+            {
+              "id": "pintle-mounted-heavy-stubber",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "id": "dracosan-lascannon",
+          "name": "Dracosan (Lascannon)",
+          "save": 2,
+          "morale": 4,
+          "wounds": 2,
+          "notes": [
+            "Explorator Adaptation",
+            "Large Transport (4)"
+          ],
+          "weapons": [
+            {
+              "id": "hull-twin-lascannon"
+            },
+            {
+              "id": "pintle-mounted-multi-laser",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "id": "dracosan-demolisher",
+          "name": "Dracosan (Demolisher)",
+          "save": 2,
+          "morale": 4,
+          "wounds": 2,
+          "notes": [
+            "Explorator Adaptation",
+            "Large Transport (2)"
+          ],
+          "weapons": [
+            {
+              "id": "hull-demolisher-cannon"
+            },
+            {
+              "id": "pintle-mounted-multi-laser",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "id": "cyclops",
+          "name": "Cyclops",
+          "save": 5,
+          "wounds": 1,
+          "notes": [
+            "Compact",
+            "Remote Detonation"
+          ],
+          "weapons": [
+            {
+              "options": [
+                "demolition-charge",
+                "incineration-charge"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "malcador-infernus",
+          "name": "Malcador Infernus",
+          "save": 2,
+          "morale": 4,
+          "wounds": 2,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "malcador-inferno-gun",
+            {
+              "options": [
+                "malcador-lascannon-sponsons",
+                "malcador-autocannon-sponsons"
+              ]
+            },
+            {
+              "id": "pintle-mounted-heavy-stubber",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "id": "valdor",
+          "name": "Valdor",
+          "save": 2,
+          "morale": 4,
+          "wounds": 2,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "neutron-beam-laser",
+            "malcador-lascannon-sponsons",
+            "malcador-autocannon-sponsons",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "stormhammer",
+          "name": "Stormhammer",
+          "save": 2,
+          "morale": 4,
+          "wounds": 3,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "stormhammer-cannon",
+            "dual-battlecannon",
+            "co-axial-multi-laser",
+            "hull-mounted-lascannon",
+            "stormhammer-multi-laser-sponsons",
+            "stormhammer-lascannon-sponsons",
+            "pintle-mounted-multi-laser"
+          ]
+        },
+        {
+          "id": "medusa",
+          "name": "Medusa",
+          "save": 3,
+          "morale": 4,
+          "wounds": 1,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "medusa-siege-gun"
+          ]
+        },
+        {
+          "id": "basilisk",
+          "name": "Basilisk",
+          "save": 3,
+          "morale": 4,
+          "wounds": 1,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "earthshaker-cannon"
+          ]
+        },
+        {
+          "id": "leman-russ-exterminator",
+          "name": "Leman Russ Exterminator",
+          "save": 2,
+          "morale": 4,
+          "wounds": 1,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "exterminator-autocannon",
+            "hull-heavy-bolter",
+            "hull-mounted-lascannon",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "leman-russ-executioner",
+          "name": "Leman Russ Executioner",
+          "save": 2,
+          "morale": 4,
+          "wounds": 1,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "executioner-plasma-cannon",
+            "hull-heavy-bolter",
+            "hull-mounted-lascannon",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "leman-russ-demolisher",
+          "name": "Leman Russ Demolisher",
+          "save": 2,
+          "morale": 4,
+          "wounds": 1,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "demolisher-cannon",
+            "hull-heavy-bolter",
+            "hull-mounted-lascannon",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "leman-russ-annihilator",
+          "name": "Leman Russ Annihilator",
+          "save": 2,
+          "morale": 4,
+          "wounds": 1,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "twin-lascannon",
+            "hull-heavy-bolter",
+            "hull-mounted-lascannon",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "shadowsword",
+          "name": "Shadowsword",
+          "save": 2,
+          "morale": 4,
+          "wounds": 3,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "volcano-cannon",
+            "hull-heavy-bolter-turret",
+            "super-heavy-heavy-bolter-sponsons",
+            "lascannon-sponson-turrets",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "stormsword",
+          "name": "Stormsword",
+          "save": 2,
+          "morale": 4,
+          "wounds": 3,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "stormsword-siege-cannon",
+            "hull-heavy-bolter-turret",
+            "super-heavy-heavy-bolter-sponsons",
+            "lascannon-sponson-turrets",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "stormblade",
+          "name": "Stormblade",
+          "save": 2,
+          "morale": 4,
+          "wounds": 3,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "plasma-blastgun",
+            "hull-heavy-bolter-turret",
+            "super-heavy-heavy-bolter-sponsons",
+            "lascannon-sponson-turrets",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "leman-russ-vanquisher",
+          "name": "Leman Russ Vanquisher",
+          "save": 2,
+          "morale": 4,
+          "wounds": 1,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "vanquisher-battlecannon",
+            "hull-heavy-bolter",
+            "hull-mounted-lascannon",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "malcador-vanquisher",
+          "name": "Malcador Vanquisher",
+          "save": 2,
+          "morale": 4,
+          "wounds": 2,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "malcador-vanquisher-battlecannon",
+            "malcador-heavy-bolter-sponsons",
+            "malcador-lascannon-sponsons",
+            "malcador-autocannon-sponsons",
+            "hull-heavy-bolter",
+            "hull-mounted-lascannon",
+            "hull-autocannon",
+            "hull-demolisher-cannon",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "malcador-annihilator",
+          "name": "Malcador Annihilator",
+          "save": 2,
+          "morale": 4,
+          "wounds": 2,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "malcador-lascannon-turret",
+            "malcador-heavy-bolter-sponsons",
+            "malcador-lascannon-sponsons",
+            "malcador-autocannon-sponsons",
+            "hull-heavy-bolter",
+            "hull-mounted-lascannon",
+            "hull-autocannon",
+            "hull-demolisher-cannon",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "auxilia-hellhamer",
+          "name": "Auxilia Hellhamer",
+          "save": 2,
+          "morale": 4,
+          "wounds": 3,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "hellhammer-cannon",
+            "co-axial-autocannon",
+            "hull-demolisher-cannon",
+            "hull-heavy-bolter-turret",
+            "lascannon-sponson-turrets",
+            "super-heavy-heavy-bolter-sponsons",
+            "super-heavy-autocannon-sponsons",
+            "super-heavy-heavy-flamer-sponsons",
+            "pintle-mounted-heavy-stubber"
+          ]
+        }
+      ],
+      "Aircraft": [
+        {
+          "id": "thunderbolt-fighter",
+          "name": "Thunderbolt Fighter",
+          "save": 4,
+          "wounds": 1,
+          "notes": [
+            "Flyer",
+            "Interceptor",
+            "Jink (5+)"
+          ],
+          "weapons": [
+            "quad-autocannons",
+            "thunderbolt-twin-linked-lascannon",
+            "avenger-bolt-cannon",
+            "hellstrike-missiles",
+            "skystrike-missiles",
+            "wing-bombs"
+          ]
+        },
+        {
+          "id": "avenger-strike-fighter",
+          "name": "Avenger Strike Fighter",
+          "save": 4,
+          "wounds": 1,
+          "notes": [
+            "Flyer",
+            "Interceptor",
+            "Jink (5+)"
+          ],
+          "weapons": [
+            "avenger-bolt-cannon",
+            "avenger-autocannon",
+            "avenger-lascannon",
+            "heavy-stubber-tail-gun",
+            "hellstrike-missiles",
+            "skystrike-missiles",
+            "wing-bombs"
+          ]
+        },
+        {
+          "id": "lightning-fighter",
+          "name": "Lightning Fighter",
+          "save": 4,
+          "wounds": 1,
+          "notes": [
+            "Flyer",
+            "Interceptor",
+            "Jink (5+)"
+          ],
+          "weapons": [
+            "lightning-twin-lascannon",
+            "lightning-twin-multi-laser",
+            "hellstrike-missiles",
+            "skystrike-missiles",
+            "phosphex-bomb-clusters"
+          ]
+        },
+        {
+          "id": "marauder-bomber",
+          "name": "Marauder Bomber",
+          "save": 3,
+          "wounds": 2,
+          "notes": [
+            "Flyer",
+            "Jink (5+)"
+          ],
+          "weapons": [
+            "nose-mounted-lascannon",
+            "marauder-heavy-bolter-turrets",
+            "marauder-bomb-bay",
+            "hellstrike-missiles",
+            "skystrike-missiles",
+            "wing-bombs"
+          ]
+        },
+        {
+          "id": "marauder-pathfinder",
+          "name": "Marauder Pathfinder",
+          "save": 3,
+          "wounds": 2,
+          "notes": [
+            "Auger Array",
+            "Flyer",
+            "Jink (5+)"
+          ],
+          "weapons": [
+            "nose-mounted-heavy-bolter",
+            "rear-mounted-heavy-bolter"
+          ]
+        },
+        {
+          "id": "marauder-colossus",
+          "name": "Marauder Colossus",
+          "save": 3,
+          "wounds": 2,
+          "notes": [
+            "Flyer",
+            "Jink (5+)"
+          ],
+          "weapons": [
+            "nose-mounted-heavy-bolter",
+            "rear-mounted-heavy-bolter",
+            "colossus-bomb"
+          ]
+        },
+        {
+          "id": "marauder-destroyer",
+          "name": "Marauder Destroyer",
+          "save": 3,
+          "wounds": 2,
+          "notes": [
+            "Flyer",
+            "Jink (5+)"
+          ],
+          "weapons": [
+            "nose-mounted-autocannon-array",
+            "marauder-heavy-bolter-turrets",
+            "marauder-assault-cannons",
+            "destroyer-bomb-bay"
+          ]
+        },
+        {
+          "id": "arvus-lighter",
+          "name": "Arvus Lighter",
+          "save": 4,
+          "wounds": 1,
+          "notes": [
+            "Flyer",
+            "Hover",
+            "Jink (6+)",
+            "Transport (2)"
           ]
         }
       ]
@@ -2402,7 +3125,7 @@
         {
           "range": 10,
           "dice": 2,
-          "hit": 5,
+          "hit": 4,
           "AP": -1,
           "notes": [
             "Light AT",
@@ -2509,17 +3232,7 @@
     {
       "id": "pintle-heavy-bolter",
       "name": "Pintle heavy bolter",
-      "profiles": [
-        {
-          "range": 12,
-          "dice": 2,
-          "hit": 5,
-          "notes": [
-            "Light",
-            "Point Defence"
-          ]
-        }
-      ]
+      "parent": "heavy-bolter"
     },
     {
       "id": "pintle-multi-melta",
@@ -2545,18 +3258,7 @@
     {
       "id": "predator-lascannon",
       "name": "Predator lascannon",
-      "profiles": [
-        {
-          "range": 22,
-          "dice": 1,
-          "hit": 4,
-          "AP": -1,
-          "notes": [
-            "Anti-tank",
-            "Accurate"
-          ]
-        }
-      ]
+      "parent": "twin-lascannon"
     },
     {
       "id": "predator-cannon",
@@ -2593,18 +3295,7 @@
     {
       "id": "lascannon-sponsons",
       "name": "Sponson lascannon",
-      "profiles": [
-        {
-          "range": 22,
-          "dice": 1,
-          "hit": 4,
-          "AP": -1,
-          "notes": [
-            "Anti-tank",
-            "Arc(F)"
-          ]
-        }
-      ]
+      "parent": "hull-lascannon"
     },
     {
       "id": "kratos-melta",
@@ -2755,7 +3446,7 @@
             "Arc(F)",
             "Anti-tank",
             "Demolisher",
-            "Engine Killer (2)"
+            "Engine Killer(2)"
           ]
         }
       ]
@@ -2780,18 +3471,7 @@
     {
       "id": "heavy-bolter-sponsons",
       "name": "Sponson heavy bolters",
-      "profiles": [
-        {
-          "range": 12,
-          "dice": 2,
-          "hit": 5,
-          "notes": [
-            "Light",
-            "Point Defence",
-            "Arc(F)"
-          ]
-        }
-      ]
+      "parent": "hull-heavy-bolter"
     },
     {
       "id": "heavy-flamer-sponsons",
@@ -2986,7 +3666,7 @@
       ]
     },
     {
-      "id": "sabre-anvilus",
+      "id": "sabre-autocannon",
       "name": "Anvilus autocannon",
       "profiles": [
         {
@@ -3236,36 +3916,12 @@
     {
       "id": "thunderhawk-heavy-bolters",
       "name": "Thunderhawk heavy bolters",
-      "profiles": [
-        {
-          "range": 12,
-          "dice": 3,
-          "hit": 5,
-          "notes": [
-            "Light",
-            "Point Defence",
-            "Skyfire",
-            "Arc(F)"
-          ]
-        }
-      ]
+      "parent": "storm-eagle-heavy-bolter"
     },
     {
       "id": "thunderhawk-lascannon",
       "name": "Thunderhawk lascannon",
-      "profiles": [
-        {
-          "range": 22,
-          "dice": 2,
-          "hit": 4,
-          "AP": -1,
-          "notes": [
-            "Anti-tank",
-            "Skyfire",
-            "Arc(F)"
-          ]
-        }
-      ]
+      "parent": "wing-lascannon"
     },
     {
       "id": "hellstrike-missiles",
@@ -3548,30 +4204,12 @@
     {
       "id": "reaper-chainfist",
       "name": "Reaper chainfist",
-      "profiles": [
-        {
-          "notes": [
-            "Rend"
-          ]
-        }
-      ]
+      "parent": "reaper-chainsword"
     },
     {
       "id": "built-in-heavy-bolters",
       "name": "In-built twin-linked heavy bolters",
-      "profiles": [
-        {
-          "range": 12,
-          "dice": 2,
-          "hit": 5,
-          "AP": 0,
-          "notes": [
-            "Arc(F)",
-            "Light",
-            "Point Defence"
-          ]
-        }
-      ]
+      "parent": "hull-heavy-bolter"
     },
     {
       "id": "castigator-bolt-cannon",
@@ -3594,13 +4232,7 @@
     {
       "id": "tempest-warblade",
       "name": "Tempest warblade",
-      "profiles": [
-        {
-          "notes": [
-            "Rend"
-          ]
-        }
-      ]
+      "parent": "reaper-chainsword"
     },
     {
       "id": "graviton-singularity-cannon",
@@ -3657,23 +4289,12 @@
     {
       "id": "acastus-lascannon",
       "name": "Acastus lascannon",
-      "parent": "lascannon-sponsons"
+      "parent": "hull-lascannon"
     },
     {
       "id": "acastus-autocannon",
       "name": "Acastus autocannon",
-      "profiles": [
-        {
-          "range": 16,
-          "dice": 3,
-          "hit": 5,
-          "AP": -1,
-          "notes": [
-            "Light AT",
-            "Arc(F)"
-          ]
-        }
-      ]
+      "parent": "sabre-autocannon"
     },
     {
       "id": "ironstorm-missile-pod",
@@ -3846,15 +4467,7 @@
     {
       "id": "gyges-siege-claw",
       "name": "Gyges siege claw",
-      "profiles": [
-        {
-          "AP": -4,
-          "notes": [
-            "Rend",
-            "Wrecker(2)"
-          ]
-        }
-      ]
+      "parent": "siege-claw"
     },
     {
       "id": "plasma-blastgun",
@@ -4917,6 +5530,840 @@
             "Light AT",
             "Shieldbane",
             "Shred"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "archeotech-pistol",
+      "name": "Archeotech pistol",
+      "profiles": [
+        {
+          "range": 6,
+          "dice": 1,
+          "hit": 5,
+          "AP": -1,
+          "notes": [
+            "Accurate",
+            "Light"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "auxilia-lasrifles",
+      "name": "Auxilia lasrifles",
+      "profiles": [
+        {
+          "range": 10,
+          "dice": 1,
+          "hit": 5,
+          "AP": 0,
+          "notes": [
+            "Light",
+            "Ripple Fire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flamers",
+      "name": "Flamers",
+      "profiles": [
+        {
+          "range": 6,
+          "dice": 1,
+          "hit": 4,
+          "AP": 0,
+          "notes": [
+            "Ignores Cover",
+            "Light"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "auxilia-laspistols",
+      "name": "Auxilia laspistols",
+      "parent": "bolt-pistols"
+    },
+    {
+      "id": "power-axes",
+      "name": "Power axes",
+      "parent": "reaper-chainsword"
+    },
+    {
+      "id": "charonite-claws",
+      "name": "Charonite claws",
+      "parent": "reaper-chainsword"
+    },
+    {
+      "id": "mole-mortar",
+      "name": "Mole mortar",
+      "profiles": [
+        {
+          "range": 20,
+          "dice": 1,
+          "hit": 4,
+          "AP": -1,
+          "notes": [
+            "Burrowing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multi-laser",
+      "name": "Multi-laser",
+      "profiles": [
+        {
+          "range": 12,
+          "dice": 2,
+          "hit": 5,
+          "AP": 0,
+          "notes": [
+            "Light AT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sentinel-missile-launcher",
+      "name": "Sentinel missile launcher",
+      "parent": "missile-launchers"
+    },
+    {
+      "id": "leman-russ-battlecannon",
+      "name": "Leman Russ battlecannon",
+      "profiles": [
+        {
+          "range": 25,
+          "dice": 1,
+          "hit": 4,
+          "AP": -1
+        }
+      ]
+    },
+    {
+      "id": "vanquisher-battlecannon",
+      "name": "Vanquisher battlecannon",
+      "profiles": [
+        {
+          "range": 32,
+          "dice": 1,
+          "hit": 4,
+          "AP": -2,
+          "notes": [
+            "Anti-tank",
+            "Armourbane"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hull-mounted-lascannon",
+      "name": "Hull Mounted lascannon",
+      "profiles": [
+        {
+          "range": "22\"",
+          "dice": 1,
+          "hit": 4,
+          "AP": -1,
+          "notes": [
+            "Anti-tank",
+            "Arc(F)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malcador-battlecannon",
+      "name": "Malcador battlecannon",
+      "profiles": [
+        {
+          "range": 25,
+          "dice": 1,
+          "hit": 4,
+          "AP": -1,
+          "notes": [
+            "Arc(F)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malcador-vanquisher-battlecannon",
+      "name": "Malcador Vanquisher battlecannon",
+      "profiles": [
+        {
+          "range": 32,
+          "dice": 1,
+          "hit": 4,
+          "AP": -2,
+          "notes": [
+            "Arc(F)",
+            "Anti-tank",
+            "Armourbane"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malcador-lascannon-turret",
+      "name": "Malcador lascannon turret",
+      "profiles": [
+        {
+          "range": 22,
+          "dice": 2,
+          "hit": 4,
+          "AP": -1,
+          "notes": [
+            "Arc(F)",
+            "Anti-tank"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malcador-heavy-bolter-sponsons",
+      "name": "Malcador heavy bolter sponsons",
+      "parent": "heavy-bolter"
+    },
+    {
+      "id": "malcador-lascannon-sponsons",
+      "name": "Malcador lascannon sponsons",
+      "profiles": [
+        {
+          "range": 22,
+          "dice": 1,
+          "hit": 4,
+          "AP": -1,
+          "notes": [
+            "Anti-tank"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malcador-autocannon-sponsons",
+      "name": "Malcador autocannon sponsons",
+      "profiles": [
+        {
+          "range": 16,
+          "dice": 2,
+          "hit": 5,
+          "AP": -1,
+          "notes": [
+            "Light AT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "baneblade-cannon",
+      "name": "Baneblade cannon",
+      "profiles": [
+        {
+          "range": 25,
+          "dice": 1,
+          "hit": 4,
+          "AP": -3
+        }
+      ]
+    },
+    {
+      "id": "hellhammer-cannon",
+      "name": "Hellhammer cannon",
+      "profiles": [
+        {
+          "range": 14,
+          "dice": 1,
+          "hit": 4,
+          "AP": -3,
+          "notes": [
+            "Demolisher",
+            "Ignores Cover"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lascannon-sponson-turrets",
+      "name": "Lascannon sponson turrets",
+      "profiles": [
+        {
+          "range": 22,
+          "dice": 2,
+          "hit": 4,
+          "AP": -1,
+          "notes": [
+            "Anti-tank"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quad-autocannons",
+      "name": "Quad autocannons",
+      "parent": "avenger-autocannon"
+    },
+    {
+      "id": "thunderbolt-twin-linked-lascannon",
+      "name": "Thunderbolt twin-linked lascannon",
+      "parent": "wing-lascannon"
+    },
+    {
+      "id": "skystrike-missiles",
+      "name": "Skystrike missiles",
+      "profiles": [
+        {
+          "range": 30,
+          "dice": 2,
+          "hit": 4,
+          "AP": -1,
+          "notes": [
+            "Anti-tank",
+            "Arc(F)",
+            "Skyfire",
+            "Tracking"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wing-bombs",
+      "name": "Wing bombs",
+      "profiles": [
+        {
+          "dice": 2,
+          "hit": 4,
+          "AP": -2,
+          "notes": [
+            "Arc(R)",
+            "Bombing Run"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "avenger-autocannon",
+      "name": "Avenger autocannon",
+      "profiles": [
+        {
+          "range": 16,
+          "dice": 4,
+          "hit": 5,
+          "AP": -1,
+          "notes": [
+            "Arc(F)",
+            "Light AT",
+            "Skyfire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "avenger-lascannon",
+      "name": "Avenger lascannon",
+      "parent": "wing-lascannon"
+    },
+    {
+      "id": "heavy-stubber-tail-gun",
+      "name": "Heavy stubber tail gun",
+      "profiles": [
+        {
+          "range": 14,
+          "dice": 2,
+          "hit": 6,
+          "AP": 0,
+          "notes": [
+            "Arc(R)",
+            "Light AT",
+            "Point Defence",
+            "Skyfire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lightning-twin-lascannon",
+      "name": "Lightning twin lascannon",
+      "parent": "wing-lascannon"
+    },
+    {
+      "id": "lightning-twin-multi-laser",
+      "name": "Lightning twin multi-laser",
+      "profiles": [
+        {
+          "range": 12,
+          "dice": 4,
+          "hit": 5,
+          "AP": 0,
+          "notes": [
+            "Arc(F)",
+            "Light AT",
+            "Skyfire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "phosphex-bomb-clusters",
+      "name": "Phosphex bomb clusters",
+      "profiles": [
+        {
+          "dice": 2,
+          "hit": 4,
+          "AP": -1,
+          "notes": [
+            "Arc(R)",
+            "Bombing Run",
+            "Light AT",
+            "Ignores Cover"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nose-mounted-lascannon",
+      "name": "Nose Mounted lascannon",
+      "parent": "wing-lascannon"
+    },
+    {
+      "id": "marauder-heavy-bolter-turrets",
+      "name": "Marauder heavy bolter turrets",
+      "parent": "rear-mounted-heavy-bolter"
+    },
+    {
+      "id": "marauder-bomb-bay",
+      "name": "Marauder bomb bay",
+      "profiles": [
+        {
+          "dice": 3,
+          "hit": 4,
+          "AP": -2,
+          "notes": [
+            "Arc(R)",
+            "Bombing Run"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nose-mounted-heavy-bolter",
+      "name": "Nose Mounted heavy bolter",
+      "profiles": [
+        {
+          "range": 12,
+          "dice": 3,
+          "hit": 6,
+          "AP": 0,
+          "notes": [
+            "Arc(F)",
+            "Light AT",
+            "Point Defence",
+            "Skyfire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rear-mounted-heavy-bolter",
+      "name": "Rear Mounted heavy bolter",
+      "profiles": [
+        {
+          "range": 12,
+          "dice": 3,
+          "hit": 6,
+          "AP": 0,
+          "notes": [
+            "Arc(R)",
+            "Light AT",
+            "Point Defence",
+            "Skyfire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colossus-bomb",
+      "name": "Colossus bomb",
+      "profiles": [
+        {
+          "dice": 6,
+          "hit": 3,
+          "AP": -4,
+          "notes": [
+            "Arc(R)",
+            "Bombing Run",
+            "Bunker Buster",
+            "Limited(1)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nose-mounted-autocannon-array",
+      "name": "Nose Mounted autocannon array",
+      "profiles": [
+        {
+          "range": 16,
+          "dice": 6,
+          "hit": 5,
+          "AP": -1,
+          "notes": [
+            "Arc(F)",
+            "Light AT",
+            "Skyfire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "marauder-assault-cannons",
+      "name": "Marauder assault cannons",
+      "profiles": [
+        {
+          "range": 12,
+          "dice": 3,
+          "hit": 5,
+          "AP": -1,
+          "notes": [
+            "Arc(R)",
+            "Light AT",
+            "Rapid Fire",
+            "Skyfire"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "destroyer-bomb-bay",
+      "name": "Destroyer bomb bay",
+      "parent": "wing-bombs"
+    },
+    {
+      "id": "hull-twin-lascannon",
+      "name": "Hull Mounted twin lascannon",
+      "parent": "twin-lascannon-sponsons"
+    },
+    {
+      "id": "demolition-charge",
+      "name": "Demolition Charge",
+      "profiles": [
+        {
+          "dice": 1,
+          "hit": 3,
+          "AP": -1,
+          "notes": [
+            "Blast(3\")",
+            "Demolisher"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "incineration-charge",
+      "name": "Incineration Charge",
+      "profiles": [
+        {
+          "dice": 1,
+          "hit": 3,
+          "AP": -1,
+          "notes": [
+            "Blast(3\")",
+            "Ignores Cover",
+            "Weapon Traits.light AT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malcador-inferno-gun",
+      "name": "Malcador inferno gun",
+      "profiles": [
+        {
+          "range": "T",
+          "hit": 4,
+          "AP": -1,
+          "notes": [
+            "Arc(F)",
+            "Firestorm",
+            "Light AT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "neutron-beam-laser",
+      "name": "Neutron beam laser",
+      "profiles": [
+        {
+          "range": 22,
+          "dice": 1,
+          "hit": 4,
+          "AP": -3,
+          "notes": [
+            "Arc(F)",
+            "Shock Pulse"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stormhammer-cannon",
+      "name": "Stormhammer cannon",
+      "profiles": [
+        {
+          "range": 28,
+          "dice": 2,
+          "hit": 4,
+          "AP": -2,
+          "notes": [
+            "Shred"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dual-battlecannon",
+      "name": "Dual battlecannon",
+      "profiles": [
+        {
+          "range": 25,
+          "dice": 2,
+          "hit": 4,
+          "AP": -1,
+          "notes": [
+            "Arc(F)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "co-axial-multi-laser",
+      "name": "Co-axial multi-laser",
+      "profiles": [
+        {
+          "range": 12,
+          "dice": 2,
+          "hit": 4,
+          "AP": 0,
+          "notes": [
+            "Coaxial",
+            "Light AT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stormhammer-multi-laser-sponsons",
+      "name": "Stormhammer multi-laser sponsons",
+      "profiles": [
+        {
+          "range": 12,
+          "dice": 5,
+          "hit": 4,
+          "AP": 0,
+          "notes": [
+            "Light AT",
+            "Point Defence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "stormhammer-lascannon-sponsons",
+      "name": "Stormhammer lascannon sponsons",
+      "profiles": [
+        {
+          "range": 22,
+          "dice": 4,
+          "hit": 4,
+          "AP": -1,
+          "notes": [
+            "Anti-tank"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "medusa-siege-gun",
+      "name": "Medusa siege gun",
+      "profiles": [
+        {
+          "range": 12,
+          "dice": 1,
+          "hit": 4,
+          "AP": -3,
+          "notes": [
+            "Arc(F)",
+            "Heavy Barrage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "earthshaker-cannon",
+      "name": "Earthshaker cannon",
+      "profiles": [
+        {
+          "range": "8-90",
+          "dice": 1,
+          "hit": 4,
+          "AP": -2,
+          "notes": [
+            "Arc(F)",
+            "Barrage"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exterminator-autocannon",
+      "name": "Exterminator autocannon",
+      "profiles": [
+        {
+          "range": 16,
+          "dice": 3,
+          "hit": 5,
+          "AP": -1,
+          "notes": [
+            "Light AT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "executioner-plasma-cannon",
+      "name": "Executioner plasma cannon",
+      "profiles": [
+        {
+          "range": 12,
+          "dice": 2,
+          "hit": 4,
+          "AP": -1,
+          "notes": [
+            "Light AT"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "demolisher-cannon",
+      "name": "Demolisher cannon",
+      "profiles": [
+        {
+          "range": 12,
+          "dice": 1,
+          "hit": 4,
+          "AP": -3,
+          "notes": [
+            "Demolisher",
+            "Ignores Cover"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hull-heavy-bolter-turret",
+      "name": "Hull Mounted heavy bolter turret",
+      "parent": "hull-heavy-bolter"
+    },
+    {
+      "id": "stormsword-siege-cannon",
+      "name": "Stormsword siege cannon",
+      "profiles": [
+        {
+          "range": 30,
+          "dice": 1,
+          "hit": 3,
+          "AP": -2,
+          "notes": [
+            "Arc(F)",
+            "Demolisher",
+            "Ignores Cover"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pintle-mounted-heavy-stubber",
+      "name": "Pintle Mounted heavy stubber",
+      "profiles": [
+        {
+          "range": 14,
+          "dice": 2,
+          "hit": 6,
+          "AP": 0,
+          "notes": [
+            "Light",
+            "Point Defence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super-heavy-heavy-bolter-sponsons",
+      "name": "Super-heavy heavy bolter sponsons",
+      "profiles": [
+        {
+          "range": 12,
+          "dice": 4,
+          "hit": 5,
+          "AP": 0,
+          "notes": [
+            "Light",
+            "Point Defence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super-heavy-autocannon-sponsons",
+      "name": "Super-heavy autocannon sponsons",
+      "profiles": [
+        {
+          "range": 16,
+          "dice": 2,
+          "hit": 5,
+          "AP": -1,
+          "notes": [
+            "Light AT",
+            "Point Defence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "super-heavy-heavy-flamer-sponsons",
+      "name": "Super-heavy heavy flamer sponsons",
+      "profiles": [
+        {
+          "range": 6,
+          "dice": 2,
+          "hit": 4,
+          "AP": 0,
+          "notes": [
+            "Light",
+            "Ignores Cover",
+            "Point Defence"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pintle-mounted-multi-laser",
+      "name": "Pintle Mounted multi-laser",
+      "profiles": [
+        {
+          "range": 12,
+          "dice": 2,
+          "hit": 5,
+          "AP": 0,
+          "notes": [
+            "Light AT",
+            "Point Defence"
           ]
         }
       ]
