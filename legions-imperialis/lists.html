@@ -26,17 +26,12 @@
   
   <div id="sections">
     <div id="army-section" class="noprint">
-    <h2>Select Army</h2>
+    <h2>Select List Source</h2>
 
     <div id="army" class="noprint">
       <form id="army-form">
-      <label for="el-source">List Source</label>
-      <select name="source" id="el-source">
-        <option>-- Select --</option>
-        <option>GW Legions Imperialis</option>
-      </select>
   
-      <label for="el-army">Army</label>
+      <label for="el-army">List Version</label>
       <select name="army" id="el-army">
         <!-- start empty -->
       </select>
@@ -100,7 +95,17 @@
         </div>
 
         <div class="tabs">
-          <div>Add Units:</div>
+          <p>Add Units:</p>
+
+          <p>
+            <form id="faction-filter-form">
+              <label for="faction-filter">Filter by Faction:</label>
+              <select name="faction-filter" id="faction-filter">
+                <option value="All">All</option>
+              </select>
+            </form>
+          </p>
+
           <ul>
             <li><a class="tab-link" href="#units-infantry">Infantry, Cavalry & Walkers</a></li>
             <li><a class="tab-link" href="#units-vehicles">Vehicles & Super-heavy Vehicles</a></li>

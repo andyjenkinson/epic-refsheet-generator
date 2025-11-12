@@ -2,12 +2,10 @@
  * Copyright 2013-2024 Andrew Jenkinson
  **/
 
-var lists = {
-  'GW Legions Imperialis': [
-    { version: 'v1.5', name: "Liber Strategia", filename: "v1.5/legions-imperialis-v1.5.json" },
-    { version: 'v1.0', name: "Rulebook & expansions", filename: "v1.0/legions-imperialis-v1.0.json" },
-  ]
-};
+var lists = [
+  { version: 'v1.5', name: "Liber Strategia", filename: "v1.5/legions-imperialis-v1.5.json" },
+  { version: 'v1.0', name: "Rulebook & expansions", filename: "v1.0/legions-imperialis-v1.0.json" },
+];
 
 var session = {
   'formations': [],
@@ -16,28 +14,11 @@ var cache = {
   'variants': {}
 };
 
-function changeSource(sourceName) {
-  $('select[name="army"]').empty();
-  $('select[name="army"]').append("<option>-- Select --</option>");
-  var sourceLists = lists[sourceName];
-  for (var i=0; i<sourceLists.length; i++) {
-    var list = sourceLists[i];
-    $('select[name="army"]').append('<option value="' + list.version + '">' + list.name + '</option>');
-  }
-}
-
-function changeArmy(sourceName, listVersion) {
-  var sourceLists = lists[sourceName];
-
-  // Not a valid source
-  if (!sourceLists) {
-    console.log("ERR: Not a valid source: "+sourceName);
-    return;
-  }
-
+function changeArmy(listVersion) {
+  console.log("Changing army to "+listVersion);
   var list;
-  for (var i=0; i<sourceLists.length; i++) {
-    var tmp = sourceLists[i];
+  for (var i=0; i<lists.length; i++) {
+    var tmp = lists[i];
     if (tmp.version == listVersion) {
       list = tmp;
       break;
@@ -70,10 +51,16 @@ function changeArmy(sourceName, listVersion) {
     var unitTypeTabs = detachmentEditForm.find('.tabs');
     unitTypeTabs.find('.tab').empty(); // remove all the existing buttons
     var unitTypeTabLinks = unitTypeTabs.find('li');
-    unitTypeTabLinks.hide();
+    unitTypeTabLinks.hide(); 
+    var factionFilter = detachmentEditForm.find('select#faction-filter');
+    factionFilter.find('option').not(':first').remove(); // remove all existing options except 'All'
 
     // A button for each unit is added within a tab based on that detachment's type
     $.each($('body').data('armyDef').units, function(faction, val) {
+
+      // Add faction to filter dropdown
+      factionFilter.append('<option value="'+faction+'">'+faction+'</option>');
+
       $.each(val, function(type, units) {
 
         var tab;
@@ -116,6 +103,7 @@ function changeArmy(sourceName, listVersion) {
           }
 
           var div = $('<div/>').attr('id','unit-'+unit.id);
+          div.attr('data-faction', faction);
           var button = $('<button>'+unit.name+'</button>');
           button.button();
           div.append(button);
@@ -637,6 +625,31 @@ function closeDetachmentEditForm() {
   form.find('.tabs').tabs('option','active',0);
 }
 
+function filterUnitsByFaction(selectedFaction) {
+  if (selectedFaction == 'All') {
+    $('div#detachment-edit .tabs').tabs('enable');
+    $('div#detachment-edit .tabs .tab div').show();
+  } else {
+    $('div#detachment-edit .tabs').tabs('disable'); // disable all tabs to start with
+    $('div#detachment-edit .tabs .tab div').hide(); // hide all the units to start with
+    var enabledTabs = [];
+    $('div#detachment-edit .tabs .tab').each(function(tabIndex) {
+      var units = $(this).find('div[data-faction="'+selectedFaction+'"]');
+      // Show the units of the selected faction
+      units.show();
+      // Enable the tab if there are any units visible
+      if (units.length > 0) {
+        $('div#detachment-edit .tabs').tabs('enable', tabIndex);
+        enabledTabs.push(tabIndex);
+      }
+    });
+    // If the currently active tab is no longer enabled, switch to the first enabled tab
+    if (enabledTabs.length > 0 && $.inArray($('div#detachment-edit .tabs').tabs('option','active'), enabledTabs) === -1) {
+      $('div#detachment-edit .tabs').tabs('option','active',enabledTabs[0]);
+    }
+  }
+}
+
 function renderFormation(formationData, formationDiv) {
   
   if (!formationData) {
@@ -807,44 +820,47 @@ function importList() {
 
 $(document).ready(function(){
 
-$('select[name="source"]').change(function() {
-  var sourceName = $('select[name="source"] option:selected').val();
-  changeSource(sourceName);
-});
-$('select[name="army"]').change(function() {
-  var sourceName = $('select[name="source"] option:selected').val();
-  var listName = $('select[name="army"] option:selected').val();
-  changeArmy(sourceName, listName);
-});
+  $('select[name="army"]').change(function() {
+    var listVersion = $('select[name="army"] option:selected').val();
+    changeArmy(listVersion);
+  });
 
-// Setup UI event handlers
-$('#add-detachment').button({ icons: { primary: "ui-icon-plusthick" }, label: "Add Detachment" });
-$('#add-detachment').click(function() {editDetachment(null)});
-$('#save-roster').button({ icons: { primary: "ui-icon-arrowthickstop-1-s" }, label: "Store Roster in Session" });
-$('#save-roster').click(saveList);
-$('#import-roster').button({ icons: { primary: "ui-icon-arrowthickstop-1-n" }, label: "Import Roster from Session" });
-$('#import-roster').click(importList);
-$('#clear-roster').button({ icons: { primary: "ui-icon-trash" }, label: "Clear Roster" });
-$('#clear-roster').click(deleteAllDetachments);
+  // Setup UI event handlers
+  $('#add-detachment').button({ icons: { primary: "ui-icon-plusthick" }, label: "Add Detachment" });
+  $('#add-detachment').click(function() {editDetachment(null)});
+  $('#save-roster').button({ icons: { primary: "ui-icon-arrowthickstop-1-s" }, label: "Store Roster in Session" });
+  $('#save-roster').click(saveList);
+  $('#import-roster').button({ icons: { primary: "ui-icon-arrowthickstop-1-n" }, label: "Import Roster from Session" });
+  $('#import-roster').click(importList);
+  $('#clear-roster').button({ icons: { primary: "ui-icon-trash" }, label: "Clear Roster" });
+  $('#clear-roster').click(deleteAllDetachments);
 
-$('div#detachment-edit').dialog({autoOpen: false, modal: true, width: '50%', close: closeDetachmentEditForm, closeOnEscape: true});
-$('div#detachment-edit .save-button').button({ icons: { primary: "ui-icon-check" }, label: "Save" }).click(function() {
-  saveDetachment();
-//  $('#sections').accordion('refresh');
-});
+  $('div#detachment-edit').dialog({autoOpen: false, modal: true, width: '50%', close: closeDetachmentEditForm, closeOnEscape: true});
+  $('div#detachment-edit #faction-filter').change(function() {
+    var selectedFaction = $(this).val();
+    filterUnitsByFaction(selectedFaction);
+  });
+  $('div#detachment-edit .save-button').button({ icons: { primary: "ui-icon-check" }, label: "Save" }).click(function() {
+    saveDetachment();
+  //  $('#sections').accordion('refresh');
+  });
 
-$('#detachment-template .edit-button').button({ icons: { primary: "ui-icon-pencil" }, label: "Edit" }).click(function() {
-  var detachmentDiv = $(this).closest('.detachment');
-  editDetachment(detachmentDiv);
-//  $('#sections').accordion('refresh');
-});
+  $('#detachment-template .edit-button').button({ icons: { primary: "ui-icon-pencil" }, label: "Edit" }).click(function() {
+    var detachmentDiv = $(this).closest('.detachment');
+    editDetachment(detachmentDiv);
+  //  $('#sections').accordion('refresh');
+  });
 
-$('#detachment-template .delete-button').button({ icons: { primary: "ui-icon-trash" }, label: "Delete" }).click(function() {
-  var detachmentDiv = $(this).closest('.detachment');
-  deleteDetachment(detachmentDiv);
-});
+  $('#detachment-template .delete-button').button({ icons: { primary: "ui-icon-trash" }, label: "Delete" }).click(function() {
+    var detachmentDiv = $(this).closest('.detachment');
+    deleteDetachment(detachmentDiv);
+  });
 
-changeSource("GW - Legions Imperialis");
-changeArmy("GW - Legions Imperialis", "v1.5");
+  for (var i=0; i<lists.length; i++) {
+    var list = lists[i];
+    $('select[name="army"]').append('<option value="' + list.version + '">' + list.name + '</option>');
+  }
+  // Default to most recent
+  changeArmy( lists[0].version );
 
 });
