@@ -1,0 +1,1767 @@
+{
+    "UNIT_DATASHEET": [
+    ],
+    "WEAPON_DATASHEET": [
+        {
+            "id": 1000,
+            "name": "Legion combi-bolters",
+            "profiles": [
+                {
+                    "range": "8\"",
+                    "dice": 1,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "accurate"
+                        },
+                        {
+                            "name": "assault"
+                        },
+                        {
+                            "name": "light"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1001,
+            "name": "Pintle Mounted twin-linked bolter",
+            "profiles": [
+                {
+                    "range": "8\"",
+                    "dice": 1,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "assault"
+                        },
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1002,
+            "name": "Pintle Mounted multi-melta",
+            "profiles": [
+                {
+                    "range": "6\"",
+                    "dice": 1,
+                    "to_hit": 5,
+                    "ap": 3,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1003,
+            "name": "Pintle Mounted havoc launcher",
+            "profiles": [
+                {
+                    "range": "15\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "lightAT"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1004,
+            "name": "Legion bolter",
+            "profiles": [
+                {
+                    "range": "8\"",
+                    "dice": 1,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "assault"
+                        },
+                        {
+                            "name": "light"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1005,
+            "name": "Plasma gun",
+            "profiles": [
+                {
+                    "range": "8\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "assault"
+                        },
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1006,
+            "name": "Missile launcher",
+            "profiles": [
+                {
+                    "range": "20\"",
+                    "dice": 2,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "ignoresCover"
+                        },
+                        {
+                            "name": "light"
+                        }
+                    ]
+                },
+                {
+                    "range": "20\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1007,
+            "name": "Legion bolt pistols",
+            "profiles": [
+                {
+                    "range": "6\"",
+                    "dice": 1,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "light"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1008,
+            "name": "Laser destroyer array",
+            "profiles": [
+                {
+                    "range": "15\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 2,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1009,
+            "name": "Quad-launcher",
+            "profiles": [
+                {
+                    "range": "6\"-30\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "barrage"
+                        },
+                        {
+                            "name": "light"
+                        }
+                    ]
+                },
+                {
+                    "range": "16\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "demolisher"
+                        },
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1010,
+            "name": "Leviathan storm cannon",
+            "profiles": [
+                {
+                    "range": "10\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "lightAT"
+                        },
+                        {
+                            "name": "rapidFire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1011,
+            "name": "Cyclone melta lance",
+            "profiles": [
+                {
+                    "range": "6\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 3,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "demolisher"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1012,
+            "name": "Twin-linked volkite caliver",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "accurate"
+                        },
+                        {
+                            "name": "deflagrate"
+                        },
+                        {
+                            "name": "light"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1013,
+            "name": "Leviathan siege claw",
+            "profiles": [
+                {
+                    "range": "-",
+                    "dice": null,
+                    "to_hit": null,
+                    "ap": 4,
+                    "traits": [
+                        {
+                            "name": "rend"
+                        },
+                        {
+                            "name": "wrecker",
+                            "value": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1014,
+            "name": "Kheres assault cannon",
+            "profiles": [
+                {
+                    "range": "10\"",
+                    "dice": 2,
+                    "to_hit": 5,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "lightAT"
+                        },
+                        {
+                            "name": "rapidFire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1015,
+            "name": "Twin-linked lascannon",
+            "profiles": [
+                {
+                    "range": "22\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "accurate"
+                        },
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1016,
+            "name": "In-built twin-linked bolter",
+            "profiles": [
+                {
+                    "range": "8\"",
+                    "dice": 1,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "assault"
+                        },
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1017,
+            "name": "Tarantula lascannon battery",
+            "profiles": [
+                {
+                    "range": "22\"",
+                    "dice": 1,
+                    "to_hit": 5,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "accurate"
+                        },
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1018,
+            "name": "Hyperios air-defence missile launcher",
+            "profiles": [
+                {
+                    "range": "25\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "skyfire"
+                        },
+                        {
+                            "name": "tracking"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1019,
+            "name": "Sarcophagus Mounted weapons",
+            "profiles": [
+                {
+                    "range": "8\"",
+                    "dice": 1,
+                    "to_hit": 6,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1020,
+            "name": "Aiolus missile launcher",
+            "profiles": [
+                {
+                    "range": "25\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 2,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "skyfire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1021,
+            "name": "Hellfire plasma canonnade",
+            "profiles": [
+                {
+                    "range": "14\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 2,
+                    "traits": [
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1022,
+            "name": "Anvilus autocannon battery",
+            "profiles": [
+                {
+                    "range": "16\"",
+                    "dice": 2,
+                    "to_hit": 5,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "accurate"
+                        },
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1023,
+            "name": "Predator cannon",
+            "profiles": [
+                {
+                    "range": "18\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1024,
+            "name": "Sponson Mounted heavy bolter",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 2,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1025,
+            "name": "Predator lascannon",
+            "profiles": [
+                {
+                    "range": "22\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "accurate"
+                        },
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1026,
+            "name": "Sponson Mounted lascannon",
+            "profiles": [
+                {
+                    "range": "22\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1027,
+            "name": "Hull Mounted heavy bolter",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 2,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1028,
+            "name": "Twin-linked accelerator autocannon",
+            "profiles": [
+                {
+                    "range": "16\"",
+                    "dice": 3,
+                    "to_hit": 5,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "tracking"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1029,
+            "name": "Omega plasma array",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 2,
+                    "traits": [
+                        {
+                            "name": "accurate"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1030,
+            "name": "Kratos battlecannon",
+            "profiles": [
+                {
+                    "range": "20\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": []
+                },
+                {
+                    "range": "10\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 2,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "armourbane"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 10301,
+            "name": "Kratos battlecannon (commander)",
+            "profiles": [
+                {
+                    "range": "20\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": []
+                },
+                {
+                    "range": "10\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 4,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "armourbane"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1031,
+            "name": "Co-axial autocannon",
+            "profiles": [
+                {
+                    "range": "16\"",
+                    "dice": 2,
+                    "to_hit": 5,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "coaxial"
+                        },
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1032,
+            "name": "Melta blastgun",
+            "profiles": [
+                {
+                    "range": "8\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 4,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "armourbane"
+                        },
+                        {
+                            "name": "bunkerBuster"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1033,
+            "name": "Kratos autocannon",
+            "profiles": [
+                {
+                    "range": "16\"",
+                    "dice": 2,
+                    "to_hit": 5,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1034,
+            "name": "Kratos lascannon",
+            "profiles": [
+                {
+                    "range": "22\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1035,
+            "name": "Xiphon lascannon array",
+            "profiles": [
+                {
+                    "range": "22\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "accurate"
+                        },
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "skyfire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1036,
+            "name": "Xiphon rotary missile launcher",
+            "profiles": [
+                {
+                    "range": "24\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "skyfire"
+                        },
+                        {
+                            "name": "tracking"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1037,
+            "name": "Storm Eagle heavy bolter",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 3,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        },
+                        {
+                            "name": "skyfire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1038,
+            "name": "Vengeance launcher",
+            "profiles": [
+                {
+                    "range": "25\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1039,
+            "name": "Tempest rockets",
+            "profiles": [
+                {
+                    "range": "35\"",
+                    "dice": 1,
+                    "to_hit": 2,
+                    "ap": 2,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "skyfire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1040,
+            "name": "Wing Mounted lascannon",
+            "profiles": [
+                {
+                    "range": "22\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "skyfire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1041,
+            "name": "Avenger bolt cannon",
+            "profiles": [
+                {
+                    "range": "16\"",
+                    "dice": 5,
+                    "to_hit": 5,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "lightAT"
+                        },
+                        {
+                            "name": "rapidFire"
+                        },
+                        {
+                            "name": "skyfire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1042,
+            "name": "Quad heavy bolter batteries",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 4,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        },
+                        {
+                            "name": "skyfire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1043,
+            "name": "Gravis autocannon batteries",
+            "profiles": [
+                {
+                    "range": "16\"",
+                    "dice": 3,
+                    "to_hit": 5,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "lightAT"
+                        },
+                        {
+                            "name": "skyfire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1044,
+            "name": "Lascannon batteries ",
+            "profiles": [
+                {
+                    "range": "22\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "skyfire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1045,
+            "name": "Turbo-laser destructor",
+            "profiles": [
+                {
+                    "range": "40\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 3,
+                    "traits": [
+                        {
+                            "name": "accurate"
+                        },
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1046,
+            "name": "Thunderhawk heavy bolters",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 3,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "lightAT"
+                        },
+                        {
+                            "name": "pointDefence"
+                        },
+                        {
+                            "name": "skyfire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1047,
+            "name": "Thunderhawk lascannon",
+            "profiles": [
+                {
+                    "range": "22\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "skyfire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1048,
+            "name": "Hellstrike missiles",
+            "profiles": [
+                {
+                    "range": "30\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "armourbane"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1049,
+            "name": "Twin-linked bolters",
+            "profiles": [
+                {
+                    "range": "8\"",
+                    "dice": 1,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "assault"
+                        },
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1050,
+            "name": "Twin plasma guns",
+            "profiles": [
+                {
+                    "range": "8\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "assault"
+                        },
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1051,
+            "name": "Scimitar heavy bolter",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 2,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1052,
+            "name": "Multi-melta",
+            "profiles": [
+                {
+                    "range": "6\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 3,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1053,
+            "name": "Plasma cannon",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1054,
+            "name": "Heavy bolter",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 2,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1055,
+            "name": "Nose Mounted heavy flamer",
+            "profiles": [
+                {
+                    "range": "6\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "ignoresCover"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1056,
+            "name": "Cyclone missile launcher",
+            "profiles": [
+                {
+                    "range": "20\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "ignoresCover"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1057,
+            "name": "Sponson Mounted quad lascannon",
+            "profiles": [
+                {
+                    "range": "22\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "accurate"
+                        },
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1058,
+            "name": "Sponson Mounted laser destroyers",
+            "profiles": [
+                {
+                    "range": "15\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 2,
+                    "traits": [
+                        {
+                            "name": "accurate"
+                        },
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1059,
+            "name": "Sponson Mounted twin-linked lascannon",
+            "profiles": [
+                {
+                    "range": "22\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "accurate"
+                        },
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1060,
+            "name": "Turret Mounted twin bolter",
+            "profiles": [
+                {
+                    "range": "8\"",
+                    "dice": 1,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "assault"
+                        },
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1061,
+            "name": "Deathstorm missile launcher",
+            "profiles": [
+                {
+                    "range": "10\"",
+                    "dice": "2",
+                    "to_hit": 5,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "lightAT"
+                        },
+                        {
+                            "name": "limited",
+                            "value": 1
+                        },
+                        {
+                            "name": "saturationFire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1062,
+            "name": "Punisher rotary cannon",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 4,
+                    "to_hit": 4,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "lightAT"
+                        },
+                        {
+                            "name": "rapidFire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1063,
+            "name": "Arcus missile launcher",
+            "profiles": [
+                {
+                    "range": "16\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 2,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "rippleFire"
+                        }
+                    ]
+                },
+                {
+                    "range": "20\"",
+                    "dice": 2,
+                    "to_hit": 5,
+                    "ap": 2,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "skyfire"
+                        },
+                        {
+                            "name": "tracking"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1064,
+            "name": "Hull Mounted Anvilus autocannon",
+            "profiles": [
+                {
+                    "range": "16\"",
+                    "dice": 3,
+                    "to_hit": 5,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1065,
+            "name": "Hull Mounted neutron blaster",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 1,
+                    "to_hit": 4,
+                    "ap": 3,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "shockPulse"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1066,
+            "name": "Sabre missiles",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 1,
+                    "to_hit": 5,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1067,
+            "name": "Hull Mounted multi-melta",
+            "profiles": [
+                {
+                    "range": "6\"",
+                    "dice": 1,
+                    "to_hit": 5,
+                    "ap": 3,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "antitank"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1068,
+            "name": "Termite twin-linked bolters",
+            "profiles": [
+                {
+                    "range": "8\"",
+                    "dice": 2,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "assault"
+                        },
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1069,
+            "name": "Scorpius missile launcher",
+            "profiles": [
+                {
+                    "range": "18\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 2,
+                    "traits": [
+                        {
+                            "name": "barrage"
+                        },
+                        {
+                            "name": "lightAT"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1070,
+            "name": "Whirlwind missile launcher",
+            "profiles": [
+                {
+                    "range": "30\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "barrage"
+                        },
+                        {
+                            "name": "ignoresCover"
+                        },
+                        {
+                            "name": "rapidFire"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1071,
+            "name": "Siege melta array",
+            "profiles": [
+                {
+                    "range": "6\"",
+                    "dice": 1,
+                    "to_hit": 3,
+                    "ap": 4,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "demolisher"
+                        },
+                        {
+                            "name": "engineKiller",
+                            "value": 2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1072,
+            "name": "Skyreaper battery",
+            "profiles": [
+                {
+                    "range": "20\"",
+                    "dice": 3,
+                    "to_hit": 5,
+                    "ap": 1,
+                    "traits": [
+                        {
+                            "name": "lightAT"
+                        },
+                        {
+                            "name": "skyfire"
+                        },
+                        {
+                            "name": "tracking"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1073,
+            "name": "Sponson Mounted heavy flamers",
+            "profiles": [
+                {
+                    "range": "6\"",
+                    "dice": 2,
+                    "to_hit": 4,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "ignoresCover"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1074,
+            "name": "Hull Mounted dreadhammer siege cannon",
+            "profiles": [
+                {
+                    "range": "16\"",
+                    "dice": 2,
+                    "to_hit": 3,
+                    "ap": 4,
+                    "traits": [
+                        {
+                            "name": "arc",
+                            "value": "Front"
+                        },
+                        {
+                            "name": "demolisher"
+                        },
+                        {
+                            "name": "ignoresCover"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1075,
+            "name": "Pintle Mounted heavy bolter",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 2,
+                    "to_hit": 5,
+                    "ap": 0,
+                    "traits": [
+                        {
+                            "name": "light"
+                        },
+                        {
+                            "name": "pointDefence"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1076,
+            "name": "Hull Mounted neutron laser battery",
+            "profiles": [
+                {
+                    "range": "24\"",
+                    "dice": 3,
+                    "to_hit": 4,
+                    "ap": 3,
+                    "traits": [
+                        {
+                            "name": "arc"
+                        },
+                        {
+                            "name": "shockPulse"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 1077,
+            "name": "Hunter-killer missile",
+            "profiles": [
+                {
+                    "range": "12\"",
+                    "dice": 1,
+                    "to_hit": 5,
+                    "ap": 2,
+                    "traits": [
+                        {
+                            "name": "antitank"
+                        },
+                        {
+                            "name": "limited",
+                            "value": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,1340 @@
+units:
+  FACTION.solar:
+    Infantry:
+      - id: auxilia-commander
+        name: Auxilia Commander
+        save: 6
+        morale: 2
+        wounds: 1
+        notes:
+          - Commander
+          - Inspire (8")
+          - Invulnerable Save (6+)
+          - Master Tactician
+          - Solar Auxilia HQ (10")
+        weapons:
+          - archeotech-pistol
+          - volkite-chargers
+      - id: tactical-command
+        name: Tactical Command
+        save: 6
+        morale: 3
+        wounds: 1
+        notes:
+          - Commander
+          - Inspire (8")
+          - Solar Auxilia HQ (6")
+        weapons:
+          - volkite-chargers
+      - id: auxiliaries
+        name: Auxiliaries
+        save: 6
+        morale: 4
+        wounds: 1
+        notes:
+          - Chain of Command
+          - Line
+        weapons:
+          - auxilia-lasrifles
+      - id: veletarii
+        name: Veletarii
+        save: 6
+        morale: 4
+        wounds: 1
+        notes:
+          - Steadfast
+        weapons:
+          - auxilia-laspistols
+          - power-axes
+      - id: charonite-ogryns
+        name: Charonite Ogryns
+        save: 6
+        morale: 4
+        wounds: 2
+        notes:
+          - Bulky
+          - Furious Charge
+        weapons:
+          - charonite-claws
+      - id: auxilia-rapier
+        name: Auxilia Rapier
+        save: 6
+        morale: 4
+        wounds: 1
+        notes:
+          - Bulky
+          - Chain of Command
+        weapons:
+          - laser-destroyer-array
+          - quad-launcher
+          - mole-mortar
+      - id: auxilia-tarantula
+        name: Auxilia Tarantula
+        save: 5
+        wounds: 1
+        notes:
+          - Automated Sentry
+        weapons:
+          - tarantula-lascannon-battery
+          - hyperios-air-defence-missile-launcher
+    Walker:
+      - id: aethon-heavy-sentinel
+        name: Aethon Heavy Sentinel
+        save: 4
+        morale: 4
+        wounds: 1
+        notes:
+          - Forward Deployment
+        weapons:
+          - multi-laser
+          - sentinel-missile-launcher
+    Vehicle:
+      - id: leman-russ-tank
+        name: Leman Russ Tank
+        save: 2
+        morale: 4
+        wounds: 1
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - leman-russ-battlecannon
+          - hull-mounted-heavy-bolter
+          - hull-mounted-lascannon
+          - pintle-mounted-heavy-stubber
+      - id: malcador-tank
+        name: Malcador Tank
+        save: 2
+        morale: 4
+        wounds: 2
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - malcador-battlecannon
+          - malcador-heavy-bolter-sponsons
+          - malcador-lascannon-sponsons
+          - malcador-autocannon-sponsons
+          - hull-mounted-heavy-bolter
+          - hull-mounted-lascannon
+          - hull-mounted-autocannon
+          - hull-mounted-demolisher-cannon
+          - pintle-mounted-heavy-stubber
+      - id: auxilia-baneblade
+        name: Auxilia Baneblade
+        save: 2
+        morale: 4
+        wounds: 3
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - baneblade-cannon
+          - co-axial-autocannon
+          - hull-mounted-demolisher-cannon
+          - hull-mounted-heavy-bolter-turret
+          - lascannon-sponson-turrets
+          - super-heavy-heavy-bolter-sponsons
+          - super-heavy-autocannon-sponsons
+          - super-heavy-heavy-flamer-sponsons
+          - pintle-mounted-heavy-stubber
+      - id: dracosan
+        name: Dracosan
+        save: 2
+        morale: 4
+        wounds: 2
+        notes:
+          - Explorator Adaptation
+          - Large Transport (4)
+        weapons:
+          - hull-mounted-twin-lascannon
+          - hull-mounted-demolisher-cannon
+          - pintle-mounted-multi-laser
+      - id: cyclops
+        name: Cyclops
+        save: 5
+        wounds: 1
+        notes:
+          - Compact
+          - Remote Detonation
+        weapons:
+          - demolition-charge
+          - incineration-charge
+      - id: malcador-infernus
+        name: Malcador Infernus
+        save: 2
+        morale: 4
+        wounds: 2
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - malcador-inferno-gun
+          - malcador-lascannon-sponsons
+          - malcador-autocannon-sponsons
+          - pintle-mounted-heavy-stubber
+      - id: valdor
+        name: Valdor
+        save: 2
+        morale: 4
+        wounds: 2
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - neutron-beam-laser
+          - malcador-lascannon-sponsons
+          - malcador-autocannon-sponsons
+          - pintle-mounted-heavy-stubber
+      - id: stormhammer
+        name: Stormhammer
+        save: 2
+        morale: 4
+        wounds: 3
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - stormhammer-cannon
+          - dual-battlecannon
+          - co-axial-multi-laser
+          - hull-mounted-lascannon
+          - stormhammer-multi-laser-sponsons
+          - stormhammer-lascannon-sponsons
+          - pintle-mounted-multi-laser
+      - id: medusa
+        name: Medusa
+        save: 3
+        morale: 4
+        wounds: 1
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - medusa-siege-gun
+      - id: basilisk
+        name: Basilisk
+        save: 3
+        morale: 4
+        wounds: 1
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - earthshaker-cannon
+      - id: leman-russ-exterminator
+        name: Leman Russ Exterminator
+        save: 2
+        morale: 4
+        wounds: 1
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - exterminator-autocannon
+          - hull-mounted-heavy-bolter
+          - hull-mounted-lascannon
+          - pintle-mounted-heavy-stubber
+      - id: leman-russ-executioner
+        name: Leman Russ Executioner
+        save: 2
+        morale: 4
+        wounds: 1
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - executioner-plasma-cannon
+          - hull-mounted-heavy-bolter
+          - hull-mounted-lascannon
+          - pintle-mounted-heavy-stubber
+      - id: leman-russ-demolisher
+        name: Leman Russ Demolisher
+        save: 2
+        morale: 4
+        wounds: 1
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - demolisher-cannon
+          - hull-mounted-heavy-bolter
+          - hull-mounted-lascannon
+          - pintle-mounted-heavy-stubber
+      - id: leman-russ-annihilator
+        name: Leman Russ Annihilator
+        save: 2
+        morale: 4
+        wounds: 1
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - annihilator-twin-lascannon
+          - hull-mounted-heavy-bolter
+          - hull-mounted-lascannon
+          - pintle-mounted-heavy-stubber
+      - id: shadowsword
+        name: Shadowsword
+        save: 2
+        morale: 4
+        wounds: 3
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - volcano-cannon
+          - hull-mounted-heavy-bolter-turret
+          - shadowsword-heavy-bolter-sponsons
+          - lascannon-sponson-turrets
+          - pintle-mounted-heavy-stubber
+      - id: stormsword
+        name: Stormsword
+        save: 2
+        morale: 4
+        wounds: 3
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - stormsword-siege-cannon
+          - hull-mounted-heavy-bolter-turret
+          - stormsword-heavy-bolter-sponsons
+          - lascannon-sponson-turrets
+          - pintle-mounted-heavy-stubber
+      - id: stormblade
+        name: Stormblade
+        save: 2
+        morale: 4
+        wounds: 3
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - plasma-blastgun
+          - hull-mounted-heavy-bolter-turret
+          - stormblade-heavy-bolter-sponsons
+          - lascannon-sponson-turrets
+          - pintle-mounted-heavy-stubber
+      - id: leman-russ-vanquisher
+        name: Leman Russ Vanquisher
+        save: 2
+        morale: 4
+        wounds: 1
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - vanquisher-battlecannon
+          - hull-mounted-heavy-bolter
+          - hull-mounted-lascannon
+          - pintle-mounted-heavy-stubber
+      - id: malcador-vanquisher
+        name: Malcador Vanquisher
+        save: 2
+        morale: 4
+        wounds: 2
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - malcador-vanquisher-battlecannon
+          - malcador-heavy-bolter-sponsons
+          - malcador-lascannon-sponsons
+          - malcador-autocannon-sponsons
+          - hull-mounted-heavy-bolter
+          - hull-mounted-lascannon
+          - hull-mounted-autocannon
+          - hull-mounted-demolisher-cannon
+          - pintle-mounted-heavy-stubber
+      - id: malcador-annihilator
+        name: Malcador Annihilator
+        save: 2
+        morale: 4
+        wounds: 2
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - malcador-lascannon-turret
+          - malcador-heavy-bolter-sponsons
+          - malcador-lascannon-sponsons
+          - malcador-autocannon-sponsons
+          - hull-mounted-heavy-bolter
+          - hull-mounted-lascannon
+          - hull-mounted-autocannon
+          - hull-mounted-demolisher-cannon
+          - pintle-mounted-heavy-stubber
+      - id: auxilia-hellhamer
+        name: Auxilia Hellhamer
+        save: 2
+        morale: 4
+        wounds: 3
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - hellhammer-cannon
+          - co-axial-autocannon
+          - hull-mounted-demolisher-cannon
+          - hull-mounted-heavy-bolter-turret
+          - lascannon-sponson-turrets
+          - super-heavy-heavy-bolter-sponsons
+          - super-heavy-autocannon-sponsons
+          - super-heavy-heavy-flamer-sponsons
+          - pintle-mounted-heavy-stubber
+    Aircraft:
+      - id: thunderbolt-fighter
+        name: Thunderbolt Fighter
+        save: 4
+        wounds: 1
+        notes:
+          - Flyer
+          - Interceptor
+          - Jink (5+)
+        weapons:
+          - quad-autocannons
+          - thunderbolt-twin-linked-lascannon
+          - avenger-bolt-cannon
+          - hellstrike-missiles
+          - skystrike-missiles
+          - wing-bombs
+      - id: avenger-strike-fighter
+        name: Avenger Strike Fighter
+        save: 4
+        wounds: 1
+        notes:
+          - Flyer
+          - Interceptor
+          - Jink (5+)
+        weapons:
+          - avenger-bolt-cannon
+          - avenger-autocannon
+          - avenger-lascannon
+          - heavy-stubber-tail-gun
+          - hellstrike-missiles
+          - skystrike-missiles
+          - wing-bombs
+      - id: lightning-fighter
+        name: Lightning Fighter
+        save: 4
+        wounds: 1
+        notes:
+          - Flyer
+          - Interceptor
+          - Jink (5+)
+        weapons:
+          - lightning-twin-lascannon
+          - lightning-twin-multi-laser
+          - hellstrike-missiles
+          - skystrike-missiles
+          - phosphex-bomb-clusters
+      - id: marauder-bomber
+        name: Marauder Bomber
+        save: 3
+        wounds: 2
+        notes:
+          - Flyer
+          - Jink (5+)
+        weapons:
+          - nose-mounted-lascannon
+          - marauder-heavy-bolter-turrets
+          - marauder-bomb-bay
+          - hellstrike-missiles
+          - skystrike-missiles
+          - wing-bombs
+      - id: marauder-pathfinder
+        name: Marauder Pathfinder
+        save: 3
+        wounds: 2
+        notes:
+          - Auger Array
+          - Flyer
+          - Jink (5+)
+        weapons:
+          - nose-mounted-heavy-bolter
+          - rear-mounted-heavy-bolter
+      - id: marauder-colossus
+        name: Marauder Colossus
+        save: 3
+        wounds: 2
+        notes:
+          - Flyer
+          - Jink (5+)
+        weapons:
+          - nose-mounted-heavy-bolter
+          - rear-mounted-heavy-bolter
+          - colossus-bomb
+      - id: marauder-destroyer
+        name: Marauder Destroyer
+        save: 3
+        wounds: 2
+        notes:
+          - Flyer
+          - Jink (5+)
+        weapons:
+          - nose-mounted-autocannon-array
+          - marauder-heavy-bolter-turrets
+          - marauder-assault-cannons
+          - destroyer-bomb-bay
+      - id: arvus-lighter
+        name: Arvus Lighter
+        save: 4
+        wounds: 1
+        notes:
+          - Flyer
+          - Hover
+          - Jink (6+)
+          - Transport (2)
+weapons:
+  - id: laser-destroyer-array
+    name: Laser destroyer array
+    profiles:
+      - range: 15"
+        dice: 2
+        hit: 4
+        AP: -2
+        notes:
+          - Anti-tank
+  - id: quad-launcher
+    name: Quad-launcher
+    profiles:
+      - range: 6"-30"
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Barrage
+          - Light
+      - range: 16"
+        dice: 1
+        hit: 4
+        AP: -1
+        notes:
+          - Demolisher
+          - Light AT
+  - id: tarantula-lascannon-battery
+    name: Tarantula lascannon battery
+    profiles:
+      - range: 22"
+        dice: 1
+        hit: 5
+        AP: -1
+        notes:
+          - Accurate
+          - Anti-tank
+  - id: hyperios-air-defence-missile-launcher
+    name: Hyperios air-defence missile launcher
+    profiles:
+      - range: 25"
+        dice: 1
+        hit: 4
+        AP: -1
+        notes:
+          - Skyfire
+          - Tracking
+  - id: hull-mounted-heavy-bolter
+    name: Hull Mounted heavy bolter
+    profiles:
+      - range: 12"
+        dice: 2
+        hit: 5
+        AP: 0
+        notes:
+          - Arc (front)
+          - Light
+          - Point Defence
+  - id: co-axial-autocannon
+    name: Co-axial autocannon
+    profiles:
+      - range: 16"
+        dice: 2
+        hit: 5
+        AP: -1
+        notes:
+          - Coaxial
+          - Light AT
+  - id: avenger-bolt-cannon
+    name: Avenger bolt cannon
+    profiles:
+      - range: 16"
+        dice: 5
+        hit: 5
+        AP: -1
+        notes:
+          - Arc (front)
+          - Light AT
+          - Rapid Fire
+          - Skyfire
+  - id: hellstrike-missiles
+    name: Hellstrike missiles
+    profiles:
+      - range: 30"
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Arc (front)
+          - Armourbane
+  - id: archeotech-pistol
+    name: Archeotech pistol
+    profiles:
+      - range: 6"
+        dice: 1
+        hit: 5
+        AP: -1
+        notes:
+          - Accurate
+          - Light
+  - id: volkite-chargers
+    name: Volkite chargers
+    profiles:
+      - range: 8"
+        dice: 1
+        hit: 5
+        AP: 0
+        notes:
+          - Deflagrate
+          - Light
+  - id: auxilia-lasrifles
+    name: Auxilia lasrifles
+    profiles:
+      - range: 10"
+        dice: 1
+        hit: 5
+        AP: 0
+        notes:
+          - Light
+          - Ripple Fire
+  - id: flamers
+    name: Flamers
+    profiles:
+      - range: 6"
+        dice: 1
+        hit: 4
+        AP: 0
+        notes:
+          - Ignores Cover
+          - Light
+  - id: auxilia-laspistols
+    name: Auxilia laspistols
+    profiles:
+      - range: 6"
+        dice: 1
+        hit: 5
+        AP: 0
+        notes:
+          - Light
+  - id: power-axes
+    name: Power axes
+    profiles:
+      - range: '-'
+        AP: ''
+        notes:
+          - Rend
+  - id: charonite-claws
+    name: Charonite claws
+    profiles:
+      - range: '-'
+        AP: ''
+        notes:
+          - Rend
+  - id: mole-mortar
+    name: Mole mortar
+    profiles:
+      - range: 20"
+        dice: 1
+        hit: 4
+        AP: -1
+        notes:
+          - Burrowing
+  - id: multi-laser
+    name: Multi-laser
+    profiles:
+      - range: 12"
+        dice: 2
+        hit: 5
+        AP: 0
+        notes:
+          - Light AT
+  - id: sentinel-missile-launcher
+    name: Sentinel missile launcher
+    profiles:
+      - range: 20"
+        dice: 2
+        hit: 5
+        AP: 0
+        notes:
+          - Light
+          - Ignores Cover
+      - range: 20"
+        dice: 1
+        hit: 4
+        AP: -1
+        notes:
+          - Anti-tank
+  - id: leman-russ-battlecannon
+    name: Leman Russ battlecannon
+    profiles:
+      - range: 25"
+        dice: 1
+        hit: 4
+        AP: -1
+  - id: vanquisher-battlecannon
+    name: Vanquisher battlecannon
+    profiles:
+      - range: 32"
+        dice: 1
+        hit: 4
+        AP: -2
+        notes:
+          - Anti-tank
+          - Armourbane
+  - id: hull-mounted-lascannon
+    name: Hull Mounted lascannon
+    profiles:
+      - range: 22"
+        dice: 1
+        hit: 4
+        AP: -1
+        notes:
+          - Anti-tank
+          - Arc (front)
+  - id: malcador-battlecannon
+    name: Malcador battlecannon
+    profiles:
+      - range: 25"
+        dice: 1
+        hit: 4
+        AP: -1
+        notes:
+          - Arc (front)
+  - id: malcador-vanquisher-battlecannon
+    name: Malcador Vanquisher battlecannon
+    profiles:
+      - range: 32"
+        dice: 1
+        hit: 4
+        AP: -2
+        notes:
+          - Arc (front)
+          - Anti-tank
+          - Armourbane
+  - id: malcador-lascannon-turret
+    name: Malcador lascannon turret
+    profiles:
+      - range: 22"
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Arc (front)
+          - Anti-tank
+  - id: malcador-heavy-bolter-sponsons
+    name: Malcador heavy bolter sponsons
+    profiles:
+      - range: 12"
+        dice: 2
+        hit: 5
+        AP: 0
+        notes:
+          - Light
+          - Point Defence
+  - id: malcador-lascannon-sponsons
+    name: Malcador lascannon sponsons
+    profiles:
+      - range: 22"
+        dice: 1
+        hit: 4
+        AP: -1
+        notes:
+          - Anti-tank
+  - id: malcador-autocannon-sponsons
+    name: Malcador autocannon sponsons
+    profiles:
+      - range: 16"
+        dice: 2
+        hit: 5
+        AP: -1
+        notes:
+          - Light AT
+  - id: hull-mounted-autocannon
+    name: Hull Mounted autocannon
+    profiles:
+      - range: 16"
+        dice: 2
+        hit: 5
+        AP: -1
+        notes:
+          - Arc (front)
+          - Light AT
+  - id: hull-mounted-demolisher-cannon
+    name: Hull Mounted demolisher cannon
+    profiles:
+      - range: 12"
+        dice: 1
+        hit: 4
+        AP: -3
+        notes:
+          - Arc (front)
+          - Demolisher
+          - Ignores Cover
+  - id: baneblade-cannon
+    name: Baneblade cannon
+    profiles:
+      - range: 25"
+        dice: 1
+        hit: 4
+        AP: -3
+  - id: hellhammer-cannon
+    name: Hellhammer cannon
+    profiles:
+      - range: 14"
+        dice: 1
+        hit: 4
+        AP: -3
+        notes:
+          - Demolisher
+          - Ignores Cover
+  - id: lascannon-sponson-turrets
+    name: Lascannon sponson turrets
+    profiles:
+      - range: 22"
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Anti-tank
+  - id: baneblade-heavy-bolter-sponsons
+    name: Baneblade heavy bolter sponsons
+    profiles:
+      - range: 12"
+        dice: 4
+        hit: 5
+        AP: 0
+        notes:
+          - Light
+          - Point Defence
+  - id: baneblade-autocannon-sponsons
+    name: Baneblade autocannon sponsons
+    profiles:
+      - range: 16"
+        dice: 2
+        hit: 5
+        AP: -1
+        notes:
+          - Light AT
+          - Point Defence
+  - id: baneblade-heavy-flamer-sponsons
+    name: Baneblade heavy flamer sponsons
+    profiles:
+      - range: 6"
+        dice: 2
+        hit: 4
+        AP: 0
+        notes:
+          - Light
+          - Ignores Cover
+          - Point Defence
+  - id: quad-autocannons
+    name: Quad autocannons
+    profiles:
+      - range: 16"
+        dice: 4
+        hit: 5
+        AP: -1
+        notes:
+          - Arc (front)
+          - Light AT
+          - Skyfire
+  - id: thunderbolt-twin-linked-lascannon
+    name: Thunderbolt twin-linked lascannon
+    profiles:
+      - range: 22"
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Anti-tank
+          - Arc (front)
+          - Skyfire
+  - id: skystrike-missiles
+    name: Skystrike missiles
+    profiles:
+      - range: 30"
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Anti-tank
+          - Arc (front)
+          - Skyfire
+          - Tracking
+  - id: wing-bombs
+    name: Wing bombs
+    profiles:
+      - range: '-'
+        dice: 2
+        hit: 4
+        AP: -2
+        notes:
+          - Arc (rear)
+          - Bombing Run
+  - id: avenger-autocannon
+    name: Avenger autocannon
+    profiles:
+      - range: 16"
+        dice: 4
+        hit: 5
+        AP: -1
+        notes:
+          - Arc (front)
+          - Light AT
+          - Skyfire
+  - id: avenger-lascannon
+    name: Avenger lascannon
+    profiles:
+      - range: 22"
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Anti-tank
+          - Arc (front)
+          - Skyfire
+  - id: heavy-stubber-tail-gun
+    name: Heavy stubber tail gun
+    profiles:
+      - range: 14"
+        dice: 2
+        hit: 6
+        AP: 0
+        notes:
+          - Arc (rear)
+          - Light AT
+          - Point Defence
+          - Skyfire
+  - id: lightning-twin-lascannon
+    name: Lightning twin lascannon
+    profiles:
+      - range: 22"
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Anti-tank
+          - Arc (front)
+          - Skyfire
+  - id: lightning-twin-multi-laser
+    name: Lightning twin multi-laser
+    profiles:
+      - range: 12"
+        dice: 4
+        hit: 5
+        AP: 0
+        notes:
+          - Arc (front)
+          - Light AT
+          - Skyfire
+  - id: phosphex-bomb-clusters
+    name: Phosphex bomb clusters
+    profiles:
+      - range: '-'
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Arc (rear)
+          - Bombing Run
+          - Light AT
+          - Ignores Cover
+  - id: nose-mounted-lascannon
+    name: Nose Mounted lascannon
+    profiles:
+      - range: 22"
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Anti-tank
+          - Arc (front)
+          - Skyfire
+  - id: marauder-heavy-bolter-turrets
+    name: Marauder heavy bolter turrets
+    profiles:
+      - range: 12"
+        dice: 3
+        hit: 6
+        AP: 0
+        notes:
+          - Arc (rear)
+          - Light AT
+          - Point Defence
+          - Skyfire
+  - id: marauder-bomb-bay
+    name: Marauder bomb bay
+    profiles:
+      - range: '-'
+        dice: 3
+        hit: 4
+        AP: -2
+        notes:
+          - Arc (rear)
+          - Bombing Run
+  - id: nose-mounted-heavy-bolter
+    name: Nose Mounted heavy bolter
+    profiles:
+      - range: 12"
+        dice: 3
+        hit: 6
+        AP: 0
+        notes:
+          - Arc (front)
+          - Light AT
+          - Point Defence
+          - Skyfire
+  - id: rear-mounted-heavy-bolter
+    name: Rear Mounted heavy bolter
+    profiles:
+      - range: 12"
+        dice: 3
+        hit: 6
+        AP: 0
+        notes:
+          - Arc (rear)
+          - Light AT
+          - Point Defence
+          - Skyfire
+  - id: colossus-bomb
+    name: Colossus bomb
+    profiles:
+      - range: '-'
+        dice: 6
+        hit: 3
+        AP: -4
+        notes:
+          - Arc (rear)
+          - Bombing Run
+          - Bunker Buster
+          - Limited (1)
+  - id: nose-mounted-autocannon-array
+    name: Nose Mounted autocannon array
+    profiles:
+      - range: 16"
+        dice: 6
+        hit: 5
+        AP: -1
+        notes:
+          - Arc (front)
+          - Light AT
+          - Skyfire
+  - id: marauder-assault-cannons
+    name: Marauder assault cannons
+    profiles:
+      - range: 12"
+        dice: 3
+        hit: 5
+        AP: -1
+        notes:
+          - Arc (rear)
+          - Light AT
+          - Rapid Fire
+          - Skyfire
+  - id: destroyer-bomb-bay
+    name: Destroyer bomb bay
+    profiles:
+      - range: '-'
+        dice: 2
+        hit: 4
+        AP: -2
+        notes:
+          - Arc (rear)
+          - Bombing Run
+  - id: hull-mounted-twin-lascannon
+    name: Hull Mounted twin lascannon
+    profiles:
+      - range: 22"
+        dice: 1
+        hit: 4
+        AP: -1
+        notes:
+          - Accurate
+          - Arc (front)
+          - Anti-tank
+  - id: demolition-charge
+    name: Demolition Charge
+    profiles:
+      - range: '-'
+        dice: 1
+        hit: 3
+        AP: -1
+        notes:
+          - Blast (3")
+          - Demolisher
+  - id: incineration-charge
+    name: Incineration Charge
+    profiles:
+      - range: '-'
+        dice: 1
+        hit: 3
+        AP: -1
+        notes:
+          - Blast (3")
+          - Ignores Cover
+          - Weapon Traits.light AT
+  - id: malcador-inferno-gun
+    name: Malcador inferno gun
+    profiles:
+      - range: T
+        hit: 4
+        AP: -1
+        notes:
+          - Arc (front)
+          - Firestorm
+          - Light AT
+  - id: neutron-beam-laser
+    name: Neutron beam laser
+    profiles:
+      - range: 22"
+        dice: 1
+        hit: 4
+        AP: -3
+        notes:
+          - Arc (front)
+          - Shock Pulse
+  - id: stormhammer-cannon
+    name: Stormhammer cannon
+    profiles:
+      - range: 28"
+        dice: 2
+        hit: 4
+        AP: -2
+        notes:
+          - Shred
+  - id: dual-battlecannon
+    name: Dual battlecannon
+    profiles:
+      - range: 25"
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Arc (front)
+  - id: co-axial-multi-laser
+    name: Co-axial multi-laser
+    profiles:
+      - range: 12"
+        dice: 2
+        hit: 4
+        AP: 0
+        notes:
+          - Coaxial
+          - Light AT
+  - id: stormhammer-multi-laser-sponsons
+    name: Stormhammer multi-laser sponsons
+    profiles:
+      - range: 12"
+        dice: 5
+        hit: 4
+        AP: 0
+        notes:
+          - Light AT
+          - Point Defence
+  - id: stormhammer-lascannon-sponsons
+    name: Stormhammer lascannon sponsons
+    profiles:
+      - range: 22"
+        dice: 4
+        hit: 4
+        AP: -1
+        notes:
+          - Anti-tank
+  - id: medusa-siege-gun
+    name: Medusa siege gun
+    profiles:
+      - range: 12"
+        dice: 1
+        hit: 4
+        AP: -3
+        notes:
+          - Arc (front)
+          - Heavy Barrage
+  - id: earthshaker-cannon
+    name: Earthshaker cannon
+    profiles:
+      - range: 8"-90"
+        dice: 1
+        hit: 4
+        AP: -2
+        notes:
+          - Arc (front)
+          - Barrage
+  - id: exterminator-autocannon
+    name: Exterminator autocannon
+    profiles:
+      - range: 16"
+        dice: 3
+        hit: 5
+        AP: -1
+        notes:
+          - Light AT
+  - id: executioner-plasma-cannon
+    name: Executioner plasma cannon
+    profiles:
+      - range: 12"
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Light AT
+  - id: demolisher-cannon
+    name: Demolisher cannon
+    profiles:
+      - range: 12"
+        dice: 1
+        hit: 4
+        AP: -3
+        notes:
+          - Demolisher
+          - Ignores Cover
+  - id: annihilator-twin-lascannon
+    name: Annihilator twin lascannon
+    profiles:
+      - range: 22"
+        dice: 1
+        hit: 4
+        AP: -1
+        notes:
+          - Accurate
+          - Anti-tank
+  - id: hull-mounted-heavy-bolter-turret
+    name: Hull Mounted heavy bolter turret
+    profiles:
+      - range: 12"
+        dice: 2
+        hit: 5
+        AP: 0
+        notes:
+          - Arc (front)
+          - Light
+          - Point Defence
+  - id: shadowsword-heavy-bolter-sponsons
+    name: Shadowsword heavy bolter sponsons
+    profiles:
+      - range: 12"
+        dice: 4
+        hit: 5
+        AP: 0
+        notes:
+          - Light
+          - Point Defence
+  - id: stormsword-heavy-bolter-sponsons
+    name: Stormsword heavy bolter sponsons
+    profiles:
+      - range: 12"
+        dice: 4
+        hit: 5
+        AP: 0
+        notes:
+          - Light
+          - Point Defence
+  - id: stormsword-siege-cannon
+    name: Stormsword siege cannon
+    profiles:
+      - range: 30"
+        dice: 1
+        hit: 3
+        AP: -2
+        notes:
+          - Arc (front)
+          - Demolisher
+          - Ignores Cover
+  - id: stormblade-heavy-bolter-sponsons
+    name: Stormblade heavy bolter sponsons
+    profiles:
+      - range: 12"
+        dice: 4
+        hit: 5
+        AP: 0
+        notes:
+          - Light
+          - Point Defence
+  - id: lascannon-sponson-turrets
+    name: Lascannon sponson turrets
+    profiles:
+      - range: 22"
+        dice: 1
+        hit: 4
+        AP: -1
+        notes:
+          - Anti-tank
+  - id: pintle-mounted-heavy-stubber
+    name: Pintle Mounted heavy stubber
+    profiles:
+      - range: 14"
+        dice: 2
+        hit: 6
+        AP: 0
+        notes:
+          - Light
+          - Point Defence
+  - id: super-heavy-heavy-bolter-sponsons
+    name: Super-heavy heavy bolter sponsons
+    profiles:
+      - range: 12"
+        dice: 4
+        hit: 5
+        AP: 0
+        notes:
+          - Light
+          - Point Defence
+  - id: super-heavy-autocannon-sponsons
+    name: Super-heavy autocannon sponsons
+    profiles:
+      - range: 16"
+        dice: 2
+        hit: 5
+        AP: -1
+        notes:
+          - Light AT
+          - Point Defence
+  - id: super-heavy-heavy-flamer-sponsons
+    name: Super-heavy heavy flamer sponsons
+    profiles:
+      - range: 6"
+        dice: 2
+        hit: 4
+        AP: 0
+        notes:
+          - Light
+          - Ignores Cover
+          - Point Defence
+  - id: pintle-mounted-multi-laser
+    name: Pintle Mounted multi-laser
+    profiles:
+      - range: 12"
+        dice: 2
+        hit: 5
+        AP: 0
+        notes:
+          - Light AT
+          - Point Defence
+  - id: plasma-blastgun
+    name: Plasma blastgun
+    profiles:
+      - range: 20"
+        dice: 3
+        hit: 3
+        AP: -3
+        notes:
+          - Arc (front)
+  - id: volcano-cannon
+    name: Volcano cannon
+    profiles:
+      - range: 70"
+        dice: 1
+        hit: 3
+        AP: -4
+        notes:
+          - Arc (front)
+          - Engine Killer (2)
