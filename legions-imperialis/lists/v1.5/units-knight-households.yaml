@@ -1,0 +1,300 @@
+units:
+  Knight Households:
+    Knight:
+      - id: questoris-errant
+        name: Questoris Knight Errant
+        move: 8
+        save: 2
+        CAF: 8
+        morale: 2
+        wounds: 3
+        notes:
+          - Nimble
+          - Independent
+          - Ion Shields (3+)
+        weapons:
+          - id: thermal-cannon
+          - id: heavy-stubber
+          - min: 1
+            max: 1
+            options:
+              - id: reaper-chainsword
+              - id: thunderstrike-gauntlet
+                points: 2
+          - min: 0
+            max: 1
+            options:
+              - rocket-pods
+      - id: questoris-paladin
+        name: Questoris Knight Paladin
+        move: 8
+        save: 2
+        CAF: 8
+        morale: 2
+        wounds: 3
+        notes:
+          - Nimble
+          - Independent
+          - Ion Shields (3+)
+        weapons:
+          - id: rapid-fire-battlecannon
+          - id: heavy-stubber
+          - options:
+              - id: reaper-chainsword
+              - id: thunderstrike-gauntlet
+                points: 2
+          - min: 0
+            max: 1
+            options:
+              - rocket-pods
+      - id: questoris-warden
+        name: Questoris Knight Warden
+        move: 8
+        save: 2
+        CAF: 8
+        morale: 2
+        wounds: 3
+        notes:
+          - Nimble
+          - Independent
+          - Ion Shields (3+)
+        weapons:
+          - id: questoris-avenger-gatling-cannon
+          - id: meltagun
+          - options:
+              - id: reaper-chainsword
+              - id: thunderstrike-gauntlet
+                points: 2
+          - min: 0
+            max: 1
+            options:
+              - rocket-pods
+      - id: questoris-gallant
+        name: Questoris Knight Gallant
+        move: 8
+        save: 2
+        CAF: 8
+        morale: 2
+        wounds: 3
+        notes:
+          - Nimble
+          - Independent
+          - Ion Shields (3+)
+        weapons:
+          - id: thunderstrike-gauntlet
+          - id: meltagun
+          - options:
+              - id: reaper-chainsword
+              - id: thunderstrike-gauntlet
+                points: 2
+          - min: 0
+            max: 1
+            options:
+              - rocket-pods
+      - id: questoris-crusader
+        name: Questoris Knight Crusader
+        move: 8
+        save: 2
+        CAF: 8
+        morale: 2
+        wounds: 3
+        notes:
+          - Nimble
+          - Independent
+          - Ion Shields (3+)
+        weapons:
+          - options:
+              - id: rapid-fire-battlecannon
+              - id: questoris-avenger-gatling-cannon
+          - id: heavy-stubber
+          - id: thermal-cannon
+          - min: 0
+            max: 1
+            options:
+              - rocket-pods
+      - id: questoris-styrix
+        name: Questoris Knight Styrix
+        move: 8
+        save: 2
+        CAF: 8
+        morale: 2
+        wounds: 3
+        notes:
+          - Nimble
+          - Independent
+          - Ion Shields (3+)
+          - Ionic Flare Shield
+          - Blessed Auto-simulacra
+        weapons:
+          - id: volkite-chieorovile
+          - id: hekaton-siege-claw
+          - id: graviton-gun
+      - id: questoris-magaera
+        name: Questoris Knight Magaera
+        move: 8
+        save: 2
+        CAF: 8
+        morale: 2
+        wounds: 3
+        notes:
+          - Nimble
+          - Independent
+          - Ion Shields (3+)
+          - Ionic Flare Shield
+          - Blessed Auto-simulacra
+        weapons:
+          - id: lightning-cannon
+          - id: hekaton-siege-claw
+          - id: phased-plasma-fusil
+      - id: cerastus-lancer
+        name: Cerastus Knight Lancer
+        move: 9
+        save: 2
+        CAF: 11
+        morale: 2
+        wounds: 3
+        notes:
+          - Nimble
+          - Independent
+          - Furious Charge
+          - Ion Shields (2+)
+        weapons:
+          - id: shock-lance
+          - id: ion-gauntlet-shield
+      - id: cerastus-acheron
+        name: Cerastus Knight Acheron
+        move: 9
+        save: 2
+        CAF: 11
+        morale: 2
+        wounds: 3
+        notes:
+          - Nimble
+          - Independent
+          - Furious Charge
+          - Ion Shields (3+)
+        weapons:
+          - id: acheron-flame-cannon
+          - id: reaper-chainfist
+          - id: built-in-heavy-bolters
+      - id: cerastus-castigator
+        name: Cerastus Knight Castigator
+        move: 9
+        save: 2
+        CAF: 11
+        morale: 2
+        wounds: 3
+        notes:
+          - Nimble
+          - Independent
+          - Furious Charge
+          - Ion Shields (3+)
+        weapons:
+          - id: castigator-bolt-cannon
+          - id: tempest-warblade
+      - id: cerastus-atropos
+        name: Cerastus Knight Atropos
+        move: 9
+        save: 2
+        CAF: 11
+        morale: 2
+        wounds: 3
+        notes:
+          - Nimble
+          - Independent
+          - Furious Charge
+          - Ion Shields (3+)
+          - Ionic Flare Shield
+          - Macro-extinction Targeting Protocols
+        weapons:
+          - id: graviton-singularity-cannon
+          - id: atropos-lascutter
+      - id: acastus-porphyrion
+        name: Acastus Knight Porphyrion
+        move: 6
+        save: 2
+        CAF: 7
+        morale: 2
+        wounds: 4
+        notes:
+          - Blessed Auto-simulacra
+          - Independent
+          - Ion Shields (3+)
+        weapons:
+          - id: twin-magna-lascannon
+            number: 2
+          - options:
+            - id: acastus-lascannon
+            - id: acastus-autocannon
+          - options:
+            - id: ironstorm-missile-pod
+            - id: helios-defence-missiles
+      - id: acastus-asterius
+        name: Acastus Knight Asterius
+        move: 6
+        save: 2
+        CAF: 7
+        morale: 2
+        wounds: 4
+        notes:
+          - Blessed Auto-simulacra
+          - Independent
+          - Ion Shields (3+)
+          - Ionic Flare Shield
+        weapons:
+          - id: conversion-beam-cannon
+            number: 2
+          - id: volkite-culverin
+          - id: karacnos-mortar-battery
+      - id: armiger-warglaive
+        name: Knight Armiger Warglaive
+        move: 8
+        save: 3
+        CAF: 6
+        morale: 2
+        wounds: 2
+        notes:
+          - Nimble
+          - Ion Shields (5+)
+        weapons:
+          - id: thermal-lance
+          - id: reaper-chain-cleaver
+      - id: armiger-helverin
+        name: Knight Armiger Helverin
+        move: 8
+        save: 3
+        CAF: 6
+        morale: 2
+        wounds: 2
+        notes:
+          - Nimble
+          - Ion Shields (5+)
+        weapons:
+          - id: armiger-autocannon
+      - id: moirax-lightning
+        name: Knight Moirax w/Lightning Locks
+        move: 8
+        save: 3
+        CAF: 6
+        morale: 2
+        wounds: 2
+        notes:
+          - Nimble
+          - Ion Shields (5+)
+          - Ionic Flare Shield
+        weapons:
+          - id: armiger-lightning-locks
+      - id: moirax-volkite
+        name: Knight Moirax w/Volkite
+        move: 8
+        save: 3
+        CAF: 6
+        morale: 2
+        wounds: 2
+        notes:
+          - Nimble
+          - Ion Shields (5+)
+          - Ionic Flare Shield
+        weapons:
+          - id: volkite-veuglaire
+          - id: gyges-siege-claw

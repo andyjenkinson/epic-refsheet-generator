@@ -1,0 +1,579 @@
+units:
+  Legiones Astartes:
+    Infantry:
+      - id: la-command
+        name: Legion Command
+        move: 5
+        save: 4
+        CAF: 4
+        morale: 2
+        notes:
+          - Commander
+          - Inspire (8")
+          - Invulnerable Save (6+)
+          - Master Tactician (6")
+          - Medicae (4")
+        weapons:
+          - id: bolters
+          - id: volkite-chargers
+      - id: la-tactical
+        name: Legion Tactical
+        move: 5
+        save: 5
+        CAF: 2
+        morale: 3
+        weapons:
+          - id: bolters
+      - id: la-tactical-apothecary
+        name: Legion Tactical Apothecary
+        move: 5
+        save: 5
+        CAF: 2
+        morale: 3
+        weapons:
+          - id: bolters
+        notes:
+          - Medicae (4")
+      - id: la-support-missile
+        name: Legion Missile Support
+        move: 5
+        save: 5
+        CAF: 1
+        morale: 3
+        weapons:
+          - id: missile-launchers
+      - id: la-support-plasma
+        name: Legion Plasma Support
+        move: 5
+        save: 5
+        CAF: 2
+        morale: 3
+        weapons:
+          - id: plasma-guns
+      - id: la-assault
+        name: Legion Assault
+        move: 7
+        save: 5
+        CAF: 3
+        morale: 3
+        notes:
+          - Jump Packs
+          - Independent
+        weapons:
+          - id: bolt-pistols
+      - id: la-terminator
+        name: Legion Terminators
+        move: 5
+        save: 4
+        CAF: 4
+        morale: 3
+        notes:
+          - Bulky
+          - Deep Strike
+          - Implacable
+          - Armoured
+          - Invulnerable Save (6+)
+          - Steadfast
+        weapons:
+          - id: combi-bolters
+      - id: tarantula
+        name: Tarantula
+        save: 5
+        CAF: -3
+        notes:
+          - Automated Sentry
+        weapons:
+          - options:
+              - id: tarantula-hyperios
+              - id: tarantula-lascannon
+      - id: la-rapier
+        name: Legion Rapier
+        move: 4
+        save: 5
+        CAF: +1
+        morale: 3
+        notes:
+          - Bulky
+        weapons:
+          - options:
+              - id: laser-destroyer-array
+              - id: quad-launcher
+    Cavalry:
+      - id: la-outrider
+        name: Outrider
+        move: 10
+        save: 5
+        CAF: +2
+        morale: 3
+        notes:
+          - Jink(6+)
+        weapons:
+          - id: twin-bolter
+          - id: plasma-guns
+      - id: la-scimitar
+        name: Scimitar Jetbike
+        move: 10
+        save: 5
+        CAF: +2
+        morale: 3
+        notes:
+          - Jink(6+)
+          - Skimmer
+        weapons:
+          - id: heavy-bolter
+      - id: la-land-speeder
+        name: Land Speeder
+        move: 10
+        save: 4
+        CAF: +1
+        morale: 3
+        notes:
+          - Jink(6+)
+          - Skimmer
+        weapons:
+          - options:
+              - id: heavy-bolter
+              - id: heavy-flamer
+          - options:
+              - id: plasma-cannon
+              - id: multi-melta
+      - id: la-javelin
+        name: Javelin
+        move: 10
+        save: 4
+        CAF: +1
+        morale: 3
+        notes:
+          - Jink(6+)
+          - Skimmer
+        weapons:
+          - id: heavy-flamer
+          - options:
+              - id: lascannon-sponsons
+              - id: cyclone-missile-launcher
+    Walker:
+      - id: contemptor
+        name: Contemptor dreadnought
+        move: 5
+        save: 4
+        CAF: 5
+        morale: 3
+        notes:
+          - Armoured
+          - Invulnerable Save (5+)
+        weapons:
+          - id: twin-bolter
+          - options:
+              - id: kheres-assault-cannon
+              - id: twin-lascannon
+      - id: leviathan
+        name: Leviathan dreadnought
+        move: 5
+        save: 4
+        CAF: 5
+        morale: 3
+        notes:
+          - Armoured
+          - Invulnerable Save (5+)
+        weapons:
+          - id: twin-volkite
+          - id: siege-claw
+          - options:
+              - id: storm-cannon
+              - id: cyclonic-melta
+      - id: deredeo
+        name: Deredeo dreadnought
+        move: 5
+        save: 4
+        CAF: 2
+        morale: 3
+        notes:
+          - Armoured
+          - Invulnerable Save (5+)
+          - Tracking Array
+        weapons:
+          - id: sarcophagus-weapons
+          - id: aiolos-missiles
+          - options:
+              - id: anvilus-autocannon
+              - id: hellfire-plasma
+    Vehicle:
+      - id: rhino
+        name: Rhino
+        move: 9
+        save: 4
+        CAF: 0
+        morale: 3
+        notes:
+          - Transport(2)
+        weapons:
+          - options:
+              - id: pintle-twin-bolters
+              - id: pintle-havoc-launcher
+                points: 2
+              - id: pintle-multi-melta
+                points: 4
+      - id: spartan
+        name: Spartan
+        move: 8
+        save: 2
+        CAF: 2
+        morale: 3
+        wounds: 2
+        notes:
+          - Assault Transport(5)
+        weapons:
+          - options:
+              - id: hull-heavy-bolter
+              - id: hull-lascannon
+          - options:
+              - id: quad-lascannon-sponsons
+              - id: laser-destroyer-sponsons
+          - min: 0
+            max: 1
+            options:
+              - id: pintle-multi-melta
+                points: 5
+      - id: land-raider
+        name: Land Raider
+        move: 9
+        save: 2
+        CAF: 2
+        morale: 3
+        wounds: 1
+        notes:
+          - Forward Deployment
+          - Assault Transport(2)
+        weapons:
+          - id: twin-lascannon-sponsons
+          - min: 0
+            max: 1
+            options:
+              - id: pintle-multi-melta
+                points: 5
+      - id: drop-pod
+        name: Drop pod
+        save: 4
+        CAF: -3
+        notes:
+          - Drop Pod
+          - Transport(2)
+        weapons:
+          - id: twin-bolter
+      - id: drop-pod-dreadnought
+        name: Dreadnought Drop Pod
+        save: 4
+        CAF: -8
+        notes:
+          - Drop Pod
+          - Large Transport(2)
+      - id: drop-pod-palisade
+        name: Palisade Drop Pod
+        save: 4
+        CAF: -8
+        notes:
+          - Drop Pod
+          - Shield Generator (5+)
+      - id: drop-pod-deathstorm
+        name: Deathstorm Drop Pod
+        save: 4
+        CAF: -8
+        notes:
+          - Drop Pod
+          - Orbital Assault
+        weapons:
+          - id: deathstorm-missile
+      - id: termite
+        name: Termite
+        move: 5
+        save: 4
+        CAF: 1
+        morale: 3
+        notes:
+          - Deep Strike
+          - Transport(2)
+        weapons:
+          - id: twin-bolter
+      - id: kratos
+        name: Kratos
+        move: 8
+        save: 2
+        CAF: 3
+        morale: 3
+        wounds: 2
+        weapons:
+          - options:
+              - id: kratos-battlecannon
+              - id: kratos-melta
+          - id: coaxial-autocannon
+          - options:
+              - id: hull-autocannon
+                number: 1
+              - id: hull-lascannon
+                number: 1
+              - id: hull-heavy-bolter
+                number: 1
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+            min: 0
+            max: 1
+      - id: kratos-commander
+        parent: kratos
+        name: Kratos Commander
+        CAF: 4
+        morale: 2
+        notes:
+          - Commander
+          - Inspire (8")
+          - Invulnerable Save (6+)
+          - Master Tactician (6")
+      - id: cerberus
+        name: Cerberus
+        move: 8
+        save: 2
+        CAF: 3
+        morale: 3
+        wounds: 2
+        weapons:
+          - id: hull-neutron-laser
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+              - id: pintle-multi-melta
+            min: 0
+            max: 1
+      - id: typhon
+        name: Typhon
+        move: 8
+        save: 2
+        CAF: 3
+        morale: 2
+        wounds: 2
+        weapons:
+          - id: hull-dreadhammer
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+              - id: pintle-multi-melta
+            min: 0
+            max: 1
+      - id: mastodon
+        name: Mastodon
+        move: 8
+        save: 2
+        CAF: 4
+        morale: 3
+        wounds: 3
+        notes:
+          - Large Assault Transport (8)
+          - Void Shields (2)
+        weapons:
+          - id: siege-melta-array
+          - id: skyreaper-battery
+          - id: heavy-flamer-sponsons
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
+      - id: predator
+        name: Predator
+        move: 9
+        save: 3
+        CAF: 2
+        morale: 3
+        weapons:
+          - options:
+              - id: predator-lascannon
+              - id: predator-cannon
+          - options:
+              - id: lascannon-sponsons
+              - id: heavy-bolter-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+            min: 0
+            max: 1
+      - id: predator-commander
+        parent: predator
+        name: Predator Commander
+        CAF: 3
+        morale: 2
+        notes:
+          - Commander
+          - Inspire (8")
+          - Invulnerable Save (6+)
+          - Master Tactician (6")
+      - id: vindicator
+        name: Vindicator
+        move: 8
+        save: 3
+        CAF: 0
+        morale: 3
+        weapons:
+          - id: hull-demolisher-cannon
+          - id: pintle-twin-bolters
+      - id: sicaran
+        name: Sicaran
+        move: 10
+        save: 3
+        CAF: 2
+        morale: 3
+        weapons:
+          - id: hull-heavy-bolter
+          - options:
+              - accelerator-autocannon
+              - omega-plasma-array
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+            min: 0
+            max: 1
+      - id: sicaran-punisher
+        name: Sicaran Punisher
+        move: 10
+        save: 3
+        CAF: 2
+        morale: 3
+        weapons:
+          - id: punisher-cannon
+          - id: hull-heavy-bolter
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+            min: 0
+            max: 1
+      - id: sicaran-arcus
+        name: Sicaran Arcus
+        move: 10
+        save: 3
+        CAF: 2
+        morale: 3
+        weapons:
+          - id: arcus-missile
+          - id: hull-heavy-bolter
+          - id: lascannon-sponsons
+      - id: sicaran-commander
+        parent: sicaran
+        name: Sicaran Commander
+        CAF: 3
+        morale: 2
+        notes:
+          - Commander
+          - Inspire (8")
+          - Invulnerable Save (6+)
+          - Master Tactician (6")
+        weapons:
+          - id: hull-heavy-bolter
+          - options:
+              - id: accelerator-autocannon
+              - id: omega-plasma-array
+              - id: punisher-cannon
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+            min: 0
+            max: 1
+      - id: scorpius
+        name: Scorpius
+        move: 8
+        save: 3
+        CAF: 0
+        morale: 3
+        weapons:
+          - id: scorpius-missiles
+          - id: pintle-twin-bolters
+      - id: whirlwind
+        name: Whirlwind
+        move: 8
+        save: 3
+        CAF: 0
+        morale: 3
+        weapons:
+          - id: whirlwind-missiles
+          - id: pintle-twin-bolters
+      - id: sabre
+        name: Sabre
+        move: 11
+        save: 4
+        CAF: 2
+        morale: 3
+        notes:
+          - Nimble
+        weapons:
+          - options:
+              - id: hull-neutron-blaster
+              - id: sabre-anvilus
+          - options:
+              - id: multi-melta
+              - id: hull-heavy-bolter
+          - id: sabre-missiles
+    Aircraft:
+      - id: la-xiphon
+        name: Xiphon Interceptor
+        move: 30
+        save: 3
+        CAF: 0
+        notes:
+          - Flyer
+          - Interceptor
+          - Jink(5+)
+        weapons:
+          - id: xiphon-lascannon
+          - id: xiphon-missiles
+      - id: la-storm-eagle
+        name: Storm Eagle
+        move: 25
+        save: 3
+        CAF: 0
+        notes:
+          - Flyer
+          - Hover
+          - Jink(5+)
+          - Assault Transport(5)
+        weapons:
+          - id: storm-eagle-heavy-bolter
+          - id: vengeance-launcher
+          - id: wing-lascannon
+      - id: la-fire-raptor
+        name: Fire Raptor
+        move: 25
+        save: 3
+        CAF: 0
+        notes:
+          - Flyer
+          - Hover
+          - Jink(5+)
+        weapons:
+          - id: avenger-bolt-cannon
+          - id: tempest-rockets
+          - options:
+              - id: quad-heavy-bolter-batteries
+              - id: lascannon-batteries
+              - id: gravis-autocannon-batteries
+      - id: la-thunderhawk
+        name: Thunderhawk Gunship
+        move: 25
+        save: 2
+        CAF: 0
+        wounds: 2
+        notes:
+          - Flyer
+          - Hover
+          - Jink(5+)
+          - Large Assault Transport(8)
+        weapons:
+          - id: turbo-laser-destructor
+          - id: thunderhawk-heavy-bolters
+          - id: thunderhawk-lascannon
+          - id: hellstrike-missiles

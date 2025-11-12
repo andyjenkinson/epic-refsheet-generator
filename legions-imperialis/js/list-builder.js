@@ -3,11 +3,9 @@
  **/
 
 var lists = {
-  'Games Workshop': [
-    { name: "v1.1 Liber Strategia", filename: "gw-standard-1.1.0.json" },
-    { name: "v1.0 Rulebook & expansions", filename: "gw-standard-1.0.0.json" },
-  ],
-  'Community': [
+  'GW Legions Imperialis': [
+    { version: 'v1.5', name: "Liber Strategia", filename: "v1.5/legions-imperialis-v1.5.json" },
+    { version: 'v1.0', name: "Rulebook & expansions", filename: "v1.0/legions-imperialis-v1.0.json" },
   ]
 };
 
@@ -24,11 +22,11 @@ function changeSource(sourceName) {
   var sourceLists = lists[sourceName];
   for (var i=0; i<sourceLists.length; i++) {
     var list = sourceLists[i];
-    $('select[name="army"]').append("<option>" + list.name + '</option>');
+    $('select[name="army"]').append('<option value="' + list.version + '">' + list.name + '</option>');
   }
 }
 
-function changeArmy(sourceName, listName) {
+function changeArmy(sourceName, listVersion) {
   var sourceLists = lists[sourceName];
 
   // Not a valid source
@@ -40,7 +38,7 @@ function changeArmy(sourceName, listName) {
   var list;
   for (var i=0; i<sourceLists.length; i++) {
     var tmp = sourceLists[i];
-    if (tmp.name == listName) {
+    if (tmp.version == listVersion) {
       list = tmp;
       break;
     }
@@ -48,7 +46,7 @@ function changeArmy(sourceName, listName) {
 
   // Not a valid list for that source
   if (!list) {
-    console.log("ERR: Not a valid list: "+listName);
+    console.log("ERR: Not a valid list: "+listVersion);
     return;
   }
   
@@ -998,7 +996,7 @@ $('#detachment-template .delete-button').button({ icons: { primary: "ui-icon-tra
   deleteDetachment(detachmentDiv);
 });
 
-changeSource("Games Workshop");
-changeArmy("Games Workshop", "Standard");
+changeSource("GW - Legions Imperialis");
+changeArmy("GW - Legions Imperialis", "v1.5");
 
 });

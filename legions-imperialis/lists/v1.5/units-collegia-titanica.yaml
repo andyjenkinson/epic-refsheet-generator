@@ -1,0 +1,222 @@
+units:
+  Collegia Titanica:
+    Titan:
+      - id: warhound
+        name: Warhound Titan
+        move: 7
+        save: 2
+        CAF: +10
+        wounds: 5
+        notes:
+          - Agile
+          - Void Shields (2)
+        weapons:
+          - min: 2
+            max: 2
+            options:
+              - id: vulcan-mega-bolter
+              - id: turbo-laser-destructor
+              - id: plasma-blastgun
+              - id: inferno-gun
+              - id: incisor-melta-lance
+              - id: volkite-eradicator
+              - id: shudder-missiles
+              - id: swarmer-missiles
+              - id: ursus-claw
+              - id: natrix-shock-lance
+              - id: graviton-eradicator
+              - id: conversion-beam-dissolutor
+      - id: dire-wolf
+        name: Dire Wolf Titan
+        move: 7
+        save: 2
+        CAF: +10
+        wounds: 5
+        notes:
+          - Agile
+          - Void Shields (2)
+          - Infiltrate
+        weapons:
+          - id: ardex-mega-bolters
+          - options:
+              - id: neutron-laser
+              - id: volcano-cannon
+              - id: conversion-beam-dissipator
+      - id: reaver
+        name: Reaver Titan
+        move: 6
+        save: 2
+        CAF: +12
+        wounds: 6
+        notes:
+          - Void Shields (4)
+        weapons:
+          - min: 2
+            max: 2
+            options:
+              - id: reaver-laser-blaster
+              - id: reaver-gatling-blaster
+              - id: reaver-volcano-cannon
+              - id: reaver-melta-cannon
+              - id: reaver-power-fist
+              - id: reaver-chainfist
+          - min: 1
+            max: 1
+            options:
+              - id: reaver-apocalypse-missile-launcher
+              - id: reaver-vulcan-mega-bolter
+              - id: reaver-warp-missile
+              - id: reaver-turbo-laser-destructor
+              - id: reaver-volkite-eradicator
+              - id: reaver-graviton-eradicator
+              - id: reaver-conversion-beam-dissolutor
+      - id: warbringer-nemesis
+        name: Warbringer Nemesis Titan
+        move: 5
+        save: 2
+        CAF: +12
+        wounds: 6
+        notes:
+          - Void Shields (6)
+        weapons:
+          - min: 2
+            max: 2
+            options:
+              - id: reaver-laser-blaster
+              - id: reaver-gatling-blaster
+              - id: reaver-volcano-cannon
+              - id: reaver-melta-cannon
+          - min: 1
+            max: 1
+            options:
+              - id: belicosa-volcano-cannon
+              - id: mori-quake-cannon
+          - id: anvilus-defence-batteries
+          - id: ardex-defensor-mauler
+      - id: warlord
+        name: Warlord Titan
+        move: 5
+        save: 2
+        CAF: +14
+        wounds: 7
+        notes:
+          - Void Shields (8)
+        weapons:
+          - min: 2
+            max: 2
+            options:
+              - id: belicosa-volcano-cannon
+              - id: sunfury-plasma-annihilator
+              - id: macro-gatling-blaster
+              - id: mori-quake-cannon
+              - id: arioch-power-claw
+              - id: volkite-destructor
+              - id: warlord-graviton-ruinator
+              - id: conversion-beam-extripator
+          - min: 1
+            max: 1
+            options:
+              - id: apocalypse-missile-launchers
+              - id: paired-gatling-blasters
+              - id: paired-turbo-laser-destructors
+              - id: vulcan-mega-bolter-array
+              - id: paired-laser-blasters
+          - id: ardex-defensor-lascannon
+          - id: ardex-defensor-mauler
+
+      - id: warlord-sinister
+        name: Warlord-Sinister Titan
+        move: 5
+        save: 2
+        CAF: +14
+        wounds: 7
+        notes:
+          - Void Shields (8)
+          - Dread Aura (8")
+          - Loyalist
+          - Necrotechica
+        weapons:
+          - id: sinistramanus-tenebrae
+          - id: death-pulse
+          - id: antipathic-tempest
+          - min: 1
+            max: 1
+            options:
+              - id: arioch-power-claw
+              - id: belicosa-volcano-cannon
+              - id: sunfury-plasma-annihilator
+              - id: macro-gatling-blaster
+              - id: mori-quake-cannon
+              - id: volkite-destructor
+              - id: warlord-graviton-ruinator
+              - id: conversion-beam-extripator
+          - min: 1
+            max: 1
+            options:
+              - id: apocalypse-missile-launchers
+              - id: paired-gatling-blasters
+              - id: paired-turbo-laser-destructors
+              - id: vulcan-mega-bolter-array
+              - id: paired-laser-blasters
+          - id: ardex-defensor-lascannon
+          - id: ardex-defensor-mauler
+
+      - id: warmaster
+        name: Warmaster Titan
+        move: 5
+        save: 1
+        CAF: +18
+        wounds: 8
+        notes:
+          - Void Shields (12)
+        weapons:
+          - id: plasma-destructor
+            number: 2
+          - id: ardex-defensor-lascannon
+          - id: ardex-defensor-mauler
+          - min: 1
+            max: 1
+            options:
+              - id: ardex-defensor-bombard
+              - id: anvilus-defence-batteries
+          - min: 2
+            max: 2
+            options:
+              - id: apocalypse-missile-array
+              - id: melta-cannon
+              - id: inferno-gun
+              - id: vulcan-mega-bolter
+              - id: turbo-laser-destructor
+              - id: plasma-blastgun
+      - id: warmaster-iconoclast
+        name: Warmaster Iconoclast Titan
+        move: 6
+        save: 1
+        CAF: +18
+        wounds: 8
+        notes:
+          - Void Shields (12)
+        weapons:
+          - id: desolator-chainsword
+          - min: 1
+            max: 1
+            options:
+              - id: kirus-siege-drill
+              - id: kirus-grav-imploder
+          - id: ardex-defensor-lascannon
+          - id: ardex-defensor-mauler
+          - id: cruciator-gatling-array
+          - min: 1
+            max: 1
+            options:
+              - id: ardex-defensor-bombard
+              - id: anvilus-defence-batteries
+          - min: 2
+            max: 2
+            options:
+              - id: apocalypse-missile-array
+              - id: melta-cannon
+              - id: inferno-gun
+              - id: vulcan-mega-bolter
+              - id: turbo-laser-destructor
+              - id: plasma-blastgun
