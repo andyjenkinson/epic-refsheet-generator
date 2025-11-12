@@ -513,7 +513,7 @@ units:
         weapons:
           - options:
               - id: hull-neutron-blaster
-              - id: sabre-anvilus
+              - id: sabre-autocannon
           - options:
               - id: multi-melta
               - id: hull-heavy-bolter

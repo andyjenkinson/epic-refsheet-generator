@@ -201,7 +201,7 @@ weapons:
     profiles:
       - range: 10
         dice: 2
-        hit: 5
+        hit: 4
         AP: -1
         notes:
           - Light AT
@@ -267,13 +267,7 @@ weapons:
           - Point Defence
   - id: pintle-heavy-bolter
     name: Pintle heavy bolter
-    profiles:
-      - range: 12
-        dice: 2
-        hit: 5 
-        notes:
-          - Light
-          - Point Defence
+    parent: heavy-bolter
   - id: pintle-multi-melta
     name: Pintle multi-melta
     parent: multi-melta
@@ -289,14 +283,7 @@ weapons:
           - Arc(F)
   - id: predator-lascannon
     name: Predator lascannon
-    profiles:
-      - range: 22
-        dice: 1
-        hit: 4
-        AP: -1
-        notes:
-          - Anti-tank
-          - Accurate
+    parent: twin-lascannon
   - id: predator-cannon
     name: Predator cannon
     profiles:
@@ -319,14 +306,7 @@ weapons:
           - Ignores Cover
   - id: lascannon-sponsons
     name: Sponson lascannon
-    profiles:
-      - range: 22
-        dice: 1
-        hit: 4
-        AP: -1
-        notes:
-          - Anti-tank
-          - Arc(F)
+    parent: hull-lascannon
   - id: kratos-melta
     name: Melta blastgun
     profiles:
@@ -438,14 +418,7 @@ weapons:
           - Tracking
   - id: heavy-bolter-sponsons
     name: Sponson heavy bolters
-    profiles:
-      - range: 12
-        dice: 2
-        hit: 5
-        notes:
-          - Light
-          - Point Defence
-          - Arc(F)
+    parent: hull-heavy-bolter
   - id: heavy-flamer-sponsons
     name: Sponson heavy flamers
     profiles:
@@ -569,7 +542,7 @@ weapons:
           - Anti-tank
           - Shock Pulse
           - Arc(F)
-  - id: sabre-anvilus
+  - id: sabre-autocannon
     name: Anvilus autocannon
     profiles:
       - range: 16
@@ -729,26 +702,10 @@ weapons:
           - Skyfire
   - id: thunderhawk-heavy-bolters
     name: Thunderhawk heavy bolters
-    profiles:
-      - range: 12
-        dice: 3
-        hit: 5
-        notes:
-          - Light
-          - Point Defence
-          - Skyfire
-          - Arc(F)
+    parent: storm-eagle-heavy-bolter
   - id: thunderhawk-lascannon
     name: Thunderhawk lascannon
-    profiles:
-      - range: 22
-        dice: 2
-        hit: 4
-        AP: -1
-        notes:
-          - Anti-tank
-          - Skyfire
-          - Arc(F)
+    parent: wing-lascannon
   - id: hellstrike-missiles
     name: Hellstrike missiles
     profiles:
@@ -922,20 +879,10 @@ weapons:
           - Light AT
   - id: reaper-chainfist
     name: Reaper chainfist
-    profiles:
-      - notes:
-        - Rend
+    parent: reaper-chainsword
   - id: built-in-heavy-bolters
     name: In-built twin-linked heavy bolters
-    profiles:
-      - range: 12
-        dice: 2
-        hit: 5
-        AP: 0
-        notes:
-          - Arc(F)
-          - Light
-          - Point Defence
+    parent: hull-heavy-bolter
   - id: castigator-bolt-cannon
     name: Castigator pattern bolt cannon
     profiles:
@@ -950,9 +897,7 @@ weapons:
           - Shieldbane
   - id: tempest-warblade
     name: Tempest warblade
-    profiles:
-      - notes:
-        - Rend
+    parent: reaper-chainsword
   - id: graviton-singularity-cannon
     name: Graviton singularity cannon
     profiles:
@@ -989,17 +934,10 @@ weapons:
           - Accurate
   - id: acastus-lascannon
     name: Acastus lascannon
-    parent: lascannon-sponsons
+    parent: hull-lascannon
   - id: acastus-autocannon
     name: Acastus autocannon
-    profiles:
-      - range: 16
-        dice: 3
-        hit: 5
-        AP: -1
-        notes:
-          - Light AT
-          - Arc(F)
+    parent: sabre-autocannon
   - id: ironstorm-missile-pod
     name: Ironstorm missile pod
     profiles:
@@ -1110,11 +1048,7 @@ weapons:
           - Deflagrate
   - id: gyges-siege-claw
     name: Gyges siege claw
-    profiles:
-      - AP: -4
-        notes:
-          - Rend
-          - Wrecker(2)
+    parent: siege-claw
   - id: plasma-blastgun
     name: Plasma blastgun
     profiles:
