@@ -16,6 +16,24 @@ units:
         weapons:
           - id: bolters
           - id: volkite-chargers
+      - id: la-saturnine-command
+        name: Legion Saturnine Command
+        move: 4
+        save: 4
+        CAF: 4
+        morale: 2
+        wounds: 2
+        notes:
+          - Armoured
+          - Invulnerable Save (5+)
+          - Commander
+          - Inspire (8")
+          - Master Tactician (6")
+          - Implacable
+          - Very Bulky
+        weapons:
+          - id: particle-shredders
+          - id: power-weapons
       - id: la-tactical
         name: Legion Tactical
         move: 5
@@ -76,6 +94,41 @@ units:
           - Steadfast
         weapons:
           - id: combi-bolters
+      - id: la-saturnine-terminator
+        name: Saturnine Terminators
+        move: 4
+        save: 4
+        CAF: 3
+        morale: 3
+        wounds: 2
+        notes:
+          - Very Bulky
+          - Implacable
+          - Armoured
+          - Invulnerable Save (5+)
+          - Steadfast
+        weapons:
+          - options:
+              - id: paired-plasma-bombards
+              - id: paired-twin-heavy-disintegrators
+      - id: la-saturnine-terminator-fists
+        name: Saturnine Terminators (fists)
+        move: 4
+        save: 4
+        CAF: 3
+        morale: 3
+        wounds: 2
+        notes:
+          - Very Bulky
+          - Implacable
+          - Armoured
+          - Invulnerable Save (5+)
+          - Steadfast
+        weapons:
+          - id: disruption-fists
+          - options:
+              - id: plasma-bombards
+              - id: twin-heavy-disintegrators
       - id: tarantula
         name: Tarantula
         save: 5
@@ -197,6 +250,32 @@ units:
           - options:
               - id: anvilus-autocannon
               - id: hellfire-plasma
+      - id: saturnine-dreadnought-bombard
+        name: Saturnine dreadnought (bombard)
+        move: 5
+        save: 4
+        CAF: 2
+        morale: 3
+        wounds: 2
+        notes:
+          - Armoured
+          - Invulnerable Save (5+)
+        weapons:
+          - id: heavy-plasma-bombard
+          - id: disintegrator-cannon
+      - id: saturnine-dreadnought-graviton
+        name: Saturnine dreadnought (graviton)
+        move: 5
+        save: 4
+        CAF: 2
+        morale: 3
+        wounds: 2
+        notes:
+          - Armoured
+          - Invulnerable Save (5+)
+        weapons:
+          - id: graviton-pulveriser
+          - id: inversion-beamer
     Vehicle:
       - id: rhino
         name: Rhino
@@ -294,6 +373,17 @@ units:
           - Transport(2)
         weapons:
           - id: twin-bolter
+      - id: araknae
+        name: Araknae Weapons Platform
+        save: 4
+        CAF: -2
+        notes:
+          - Invulnerable Save (5+)
+        weapons:
+          - options:
+              - id: quad-accelerator-autocannon
+              - id: twin-punisher-cannon
+              - id: orias-heavy-frag-missiles
       - id: kratos
         name: Kratos
         move: 8
@@ -426,7 +516,7 @@ units:
         weapons:
           - id: hull-heavy-bolter
           - options:
-              - accelerator-autocannon
+              - twin-accelerator-autocannon
               - omega-plasma-array
           - options:
               - id: heavy-bolter-sponsons
@@ -474,7 +564,7 @@ units:
         weapons:
           - id: hull-heavy-bolter
           - options:
-              - id: accelerator-autocannon
+              - id: twin-accelerator-autocannon
               - id: omega-plasma-array
               - id: punisher-cannon
           - options:

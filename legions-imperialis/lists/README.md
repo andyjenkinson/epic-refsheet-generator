@@ -4,9 +4,12 @@
 
 Files are authored in YAML, then converted to JSON for ease of use in the Javascript list builder.
 
-Windows, Mac & Linux:
-
-> python yaml-to-json.py < foo.yaml > foo.json
+> python ..\yaml-to-json.py units-legiones-astartes.yaml \
+                            units-solar-auxilia.yaml \
+                            units-knight-households.yaml \
+                            units-collegia-titanica.yaml \
+                            weapons.yaml \
+                          > legions-imperialis-v1.5.1.json
 
 ## YAML structure
 
@@ -149,6 +152,6 @@ Currently does not support formation and detachment structures - units are added
 
 The initial priority has been to complete Legiones Astartes, Titans and Knights. The following armies/units are missing:
 
- * Add Solar Auxilia
+ * Add Legion super heavies from 'Ruin of the Salamanders'
  * Add Mechanicum
  * Add Dark Mechanicum

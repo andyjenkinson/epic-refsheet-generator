@@ -35,6 +35,19 @@ weapons:
         notes:
           - Light
           - Deflagrate
+  - id: power-weapons
+    name: Power weapons
+    parent: reaper-chainsword
+  - id: particle-shredders
+    name: Particle shredders
+    profiles:
+      - range: 4
+        dice: 1
+        hit: 4
+        AP: -1
+        notes:
+          - Light AT
+          - Ignores Cover
   - id: plasma-guns
     name: Plasma guns
     profiles:
@@ -70,6 +83,51 @@ weapons:
           - Light
           - Assault
           - Point Defence
+  - id: disruption-fists
+    name: Disruption fists
+    profiles:
+      - notes:
+          - Disruptive
+  - id: twin-heavy-disintegrators
+    name: Twin heavy disintegrators
+    profiles:
+      - range: 8
+        dice: 1
+        hit: 4
+        AP: -2
+        notes:
+          - Power Capacitor
+  - id: paired-twin-heavy-disintegrators
+    name: Paired twin heavy disintegrators
+    profiles:
+      - range: 8
+        dice: 1
+        hit: 4
+        AP: -2
+        notes:
+          - Power Capacitor
+          - Accurate
+  - id: plasma-bombards
+    name: Plasma bombards
+    profiles:
+      - range: 12
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Barrage
+          - Light AT
+  - id: paired-plasma-bombards
+    name: Paired plasma bombards
+    profiles:
+      - range: 12
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Barrage
+          - Light AT
+          - Accurate
   - id: termite-twin-bolter
     name: Termite twin-linked bolters
     profiles:
@@ -464,7 +522,16 @@ weapons:
           - Anti-tank
           - Accurate
           - Arc(F)
-  - id: accelerator-autocannon
+  - id: twin-accelerator-autocannon
+    name: Twin-linked accelerator autocannon
+    profiles:
+      - range: 16
+        dice: 3
+        hit: 5
+        AP: -1
+        notes:
+          - Tracking
+  - id: quad-accelerator-autocannon
     name: Twin-linked accelerator autocannon
     profiles:
       - range: 16
@@ -492,6 +559,30 @@ weapons:
         notes:
           - Light AT
           - Rapid Fire
+  - id: twin-punisher-cannon
+    name: Twin punisher cannon
+    profiles:
+      - range: 12
+        dice: 4
+        hit: 4
+        AP: -1
+        notes:
+          - Light AT
+          - Rapid Fire
+          - Accurate
+          - Skyfire
+  - id: orias-heavy-frag-missiles
+    name: Orias heavy frag missiles
+    profiles:
+      - range: 24
+        dice: 2
+        hit: 4
+        AP: 0
+        notes:
+          - Barrage
+          - Blast(3")
+          - Light
+          - Limited(2)
   - id: arcus-missile
     name: Arcus missile launcher
     profiles:
@@ -822,6 +913,45 @@ weapons:
         notes:
           - Rend
           - Wrecker(3)
+  - id: disintegrator-cannon
+    name: Disintegrator cannon
+    profiles:
+      - range: 10
+        dice: 1
+        hit: 4
+        AP: -3
+        notes:
+          - Power Capacitor
+  - id: heavy-plasma-bombard
+    name: Heavy plasma bombard
+    profiles:
+      - range: 16
+        dice: 2
+        hit: 4
+        AP: -1
+        notes:
+          - Barrage
+          - Light AT
+  - id: graviton-pulveriser
+    name: Graviton pulveriser
+    profiles:
+      - range: 8
+        dice: 1
+        hit: SV
+        AP: -2
+        notes:
+          - Graviton Pulse
+  - id: inversion-beamer
+    name: Inversion beamer
+    profiles:
+      - range: 8
+        dice: 1
+        hit: 3
+        AP: -2
+      - range: 16
+        dice: 1
+        hit: 4
+        AP: -1
   - id: graviton-gun
     name: Graviton gun
     profiles:
@@ -1173,6 +1303,7 @@ weapons:
     profiles:
       - range: 30
         dice: 2
+        hit: SV
         AP: -2
         notes:
           - Arc(F)
@@ -1381,6 +1512,7 @@ weapons:
     profiles:
       - range: 30
         dice: 2
+        hit: SV
         AP: -2
         notes:
           - Demolisher
@@ -1480,6 +1612,7 @@ weapons:
     profiles:
       - range: 30
         dice: 3
+        hit: SV
         AP: -3
         notes:
           - Arc(F)
