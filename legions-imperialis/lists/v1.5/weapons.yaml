@@ -451,6 +451,54 @@ weapons:
           - Arc(F)
           - Demolisher
           - Ignores Cover
+  - id: neutron-wave-cannon
+    name: Neutron wave cannon
+    profiles:
+      - range: 30
+        dice: 2
+        hit: 4
+        AP: -3
+        notes:
+          - Arc(F)
+          - Accurate
+          - Shock Pulse
+  - id: fellblade-accelerator-cannon
+    name: Fellblade accelerator cannon
+    profiles:
+      - range: 30
+        dice: 3
+        hit: 4
+        AP: -1
+        notes:
+          - Light AT
+      - range: 25
+        dice: 2
+        hit: 4
+        AP: -3
+        notes:
+          - Anti-tank
+          - Armourbane
+  - id: volkite-carronade
+    name: Volkite carronade
+    profiles:
+      - range: 18
+        dice: 3
+        hit: 4
+        AP: -2
+        notes:
+          - Light AT
+          - Beam
+          - Deflagrate
+  - id: ascalon-inferno-gun
+    name: Ascalon inferno gun
+    profiles:
+      - range: T
+        hit: 4
+        AP: -2
+        notes:
+          - Arc(F)
+          - Firestorm
+          - Light AT
   - id: siege-melta-array
     name: Siege melta array
     profiles:
@@ -477,6 +525,17 @@ weapons:
   - id: heavy-bolter-sponsons
     name: Sponson heavy bolters
     parent: hull-heavy-bolter
+  - id: quad-heavy-bolter-sponsons
+    name: Sponson quad heavy bolters
+    profiles:
+      - range: 12
+        dice: 4
+        hit: 5
+        AP: 0
+        notes:
+          - Light
+          - Point Defence
+          - Arc(F)
   - id: heavy-flamer-sponsons
     name: Sponson heavy flamers
     profiles:

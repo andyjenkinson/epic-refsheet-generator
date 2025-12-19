@@ -3,7 +3,7 @@
  **/
 
 var lists = [
-  { version: 'v1.5', name: "Liber Strategia", filename: "v1.5/legions-imperialis-v1.5.1.json" },
+  { version: 'v1.5', name: "Liber Strategia", filename: "v1.5/legions-imperialis-v1.5.2.json" },
   { version: 'v1.0', name: "Rulebook & expansions", filename: "v1.0/legions-imperialis-v1.0.json" },
 ];
 

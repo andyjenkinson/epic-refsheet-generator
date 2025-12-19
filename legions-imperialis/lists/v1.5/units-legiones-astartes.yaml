@@ -454,6 +454,76 @@ units:
               - id: pintle-multi-melta
             min: 0
             max: 1
+      - id: falchion
+        name: Falchion
+        move: 8
+        save: 2
+        CAF: 4
+        morale: 3
+        wounds: 3
+        weapons:
+          - id: neutron-wave-cannon
+          - options:
+              - id: quad-lascannon-sponsons
+              - id: laser-destroyer-sponsons
+              - id: quad-heavy-bolter-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+              - id: pintle-multi-melta
+            min: 0
+            max: 1
+      - id: fellblade
+        name: Fellblade
+        move: 8
+        save: 2
+        CAF: 4
+        morale: 3
+        wounds: 3
+        weapons:
+          - id: fellblade-accelerator-cannon
+          - id: hull-demolisher-cannon
+          - id: hull-heavy-bolter
+          - options:
+              - id: quad-lascannon-sponsons
+              - id: laser-destroyer-sponsons
+              - id: quad-heavy-bolter-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+              - id: pintle-multi-melta
+            min: 0
+            max: 1
+      - id: glaive
+        name: Glaive
+        move: 8
+        save: 2
+        CAF: 4
+        morale: 3
+        wounds: 3
+        weapons:
+          - id: volkite-carronade
+          - id: hull-heavy-bolter
+          - options:
+              - id: quad-lascannon-sponsons
+              - id: laser-destroyer-sponsons
+              - id: quad-heavy-bolter-sponsons
+      - id: ascalon
+        name: Ascalon
+        move: 8
+        save: 2
+        CAF: 4
+        morale: 3
+        wounds: 3
+        weapons:
+          - id: ascalon-inferno-gun
+          - options:
+              - id: quad-lascannon-sponsons
+              - id: laser-destroyer-sponsons
+              - id: quad-heavy-bolter-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+              - id: pintle-multi-melta
+            min: 0
+            max: 1
       - id: mastodon
         name: Mastodon
         move: 8
