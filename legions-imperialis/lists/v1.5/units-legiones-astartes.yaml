@@ -420,127 +420,6 @@ units:
           - Inspire (8")
           - Invulnerable Save (6+)
           - Master Tactician (6")
-      - id: cerberus
-        name: Cerberus
-        move: 8
-        save: 2
-        CAF: 3
-        morale: 3
-        wounds: 2
-        weapons:
-          - id: hull-neutron-laser
-          - options:
-              - id: heavy-bolter-sponsons
-              - id: lascannon-sponsons
-          - options:
-              - id: pintle-heavy-bolter
-              - id: pintle-multi-melta
-            min: 0
-            max: 1
-      - id: typhon
-        name: Typhon
-        move: 8
-        save: 2
-        CAF: 3
-        morale: 2
-        wounds: 2
-        weapons:
-          - id: hull-dreadhammer
-          - options:
-              - id: heavy-bolter-sponsons
-              - id: lascannon-sponsons
-          - options:
-              - id: pintle-heavy-bolter
-              - id: pintle-multi-melta
-            min: 0
-            max: 1
-      - id: falchion
-        name: Falchion
-        move: 8
-        save: 2
-        CAF: 4
-        morale: 3
-        wounds: 3
-        weapons:
-          - id: neutron-wave-cannon
-          - options:
-              - id: quad-lascannon-sponsons
-              - id: laser-destroyer-sponsons
-              - id: quad-heavy-bolter-sponsons
-          - options:
-              - id: pintle-heavy-bolter
-              - id: pintle-multi-melta
-            min: 0
-            max: 1
-      - id: fellblade
-        name: Fellblade
-        move: 8
-        save: 2
-        CAF: 4
-        morale: 3
-        wounds: 3
-        weapons:
-          - id: fellblade-accelerator-cannon
-          - id: hull-demolisher-cannon
-          - id: hull-heavy-bolter
-          - options:
-              - id: quad-lascannon-sponsons
-              - id: laser-destroyer-sponsons
-              - id: quad-heavy-bolter-sponsons
-          - options:
-              - id: pintle-heavy-bolter
-              - id: pintle-multi-melta
-            min: 0
-            max: 1
-      - id: glaive
-        name: Glaive
-        move: 8
-        save: 2
-        CAF: 4
-        morale: 3
-        wounds: 3
-        weapons:
-          - id: volkite-carronade
-          - id: hull-heavy-bolter
-          - options:
-              - id: quad-lascannon-sponsons
-              - id: laser-destroyer-sponsons
-              - id: quad-heavy-bolter-sponsons
-      - id: ascalon
-        name: Ascalon
-        move: 8
-        save: 2
-        CAF: 4
-        morale: 3
-        wounds: 3
-        weapons:
-          - id: ascalon-inferno-gun
-          - options:
-              - id: quad-lascannon-sponsons
-              - id: laser-destroyer-sponsons
-              - id: quad-heavy-bolter-sponsons
-          - options:
-              - id: pintle-heavy-bolter
-              - id: pintle-multi-melta
-            min: 0
-            max: 1
-      - id: mastodon
-        name: Mastodon
-        move: 8
-        save: 2
-        CAF: 4
-        morale: 3
-        wounds: 3
-        notes:
-          - Large Assault Transport (8)
-          - Void Shields (2)
-        weapons:
-          - id: siege-melta-array
-          - id: skyreaper-battery
-          - id: heavy-flamer-sponsons
-          - options:
-              - id: heavy-bolter-sponsons
-              - id: lascannon-sponsons
       - id: predator
         name: Predator
         move: 9
@@ -678,6 +557,128 @@ units:
               - id: multi-melta
               - id: hull-heavy-bolter
           - id: sabre-missiles
+    Super-heavy Vehicle:
+      - id: cerberus
+        name: Cerberus
+        move: 8
+        save: 2
+        CAF: 3
+        morale: 3
+        wounds: 2
+        weapons:
+          - id: hull-neutron-laser
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+              - id: pintle-multi-melta
+            min: 0
+            max: 1
+      - id: typhon
+        name: Typhon
+        move: 8
+        save: 2
+        CAF: 3
+        morale: 2
+        wounds: 2
+        weapons:
+          - id: hull-dreadhammer
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+              - id: pintle-multi-melta
+            min: 0
+            max: 1
+      - id: falchion
+        name: Falchion
+        move: 8
+        save: 2
+        CAF: 4
+        morale: 3
+        wounds: 3
+        weapons:
+          - id: neutron-wave-cannon
+          - options:
+              - id: quad-lascannon-sponsons
+              - id: laser-destroyer-sponsons
+              - id: quad-heavy-bolter-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+              - id: pintle-multi-melta
+            min: 0
+            max: 1
+      - id: fellblade
+        name: Fellblade
+        move: 8
+        save: 2
+        CAF: 4
+        morale: 3
+        wounds: 3
+        weapons:
+          - id: fellblade-accelerator-cannon
+          - id: hull-demolisher-cannon
+          - id: hull-heavy-bolter
+          - options:
+              - id: quad-lascannon-sponsons
+              - id: laser-destroyer-sponsons
+              - id: quad-heavy-bolter-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+              - id: pintle-multi-melta
+            min: 0
+            max: 1
+      - id: glaive
+        name: Glaive
+        move: 8
+        save: 2
+        CAF: 4
+        morale: 3
+        wounds: 3
+        weapons:
+          - id: volkite-carronade
+          - id: hull-heavy-bolter
+          - options:
+              - id: quad-lascannon-sponsons
+              - id: laser-destroyer-sponsons
+              - id: quad-heavy-bolter-sponsons
+      - id: ascalon
+        name: Ascalon
+        move: 8
+        save: 2
+        CAF: 4
+        morale: 3
+        wounds: 3
+        weapons:
+          - id: ascalon-inferno-gun
+          - options:
+              - id: quad-lascannon-sponsons
+              - id: laser-destroyer-sponsons
+              - id: quad-heavy-bolter-sponsons
+          - options:
+              - id: pintle-heavy-bolter
+              - id: pintle-multi-melta
+            min: 0
+            max: 1
+      - id: mastodon
+        name: Mastodon
+        move: 8
+        save: 2
+        CAF: 4
+        morale: 3
+        wounds: 3
+        notes:
+          - Large Assault Transport (8)
+          - Void Shields (2)
+        weapons:
+          - id: siege-melta-array
+          - id: skyreaper-battery
+          - id: heavy-flamer-sponsons
+          - options:
+              - id: heavy-bolter-sponsons
+              - id: lascannon-sponsons
     Aircraft:
       - id: la-xiphon
         name: Xiphon Interceptor

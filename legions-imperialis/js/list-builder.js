@@ -72,8 +72,11 @@ function changeArmy(listVersion) {
             unitTypeTabLinks.slice(0,1).show();
             break;
           case 'Vehicle':
-          case 'Super-heavy Vehicle':
             tab = unitTypeTabs.find('#units-vehicles');
+            unitTypeTabLinks.slice(1,2).show();
+            break;
+          case 'Super-heavy Vehicle':
+            tab = unitTypeTabs.find('#units-super-heavies');
             unitTypeTabLinks.slice(1,2).show();
             break;
           case 'Aircraft':

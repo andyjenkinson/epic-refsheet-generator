@@ -129,27 +129,6 @@ units:
           - id: pintle-mounted-heavy-stubber
             max: 1
             min: 0
-      - id: auxilia-baneblade
-        name: Auxilia Baneblade
-        save: 2
-        morale: 4
-        wounds: 3
-        notes:
-          - Chain of Command
-          - Explorator Adaptation
-        weapons:
-          - baneblade-cannon
-          - co-axial-autocannon
-          - hull-demolisher-cannon
-          - hull-heavy-bolter-turret
-          - lascannon-sponson-turrets
-          - options:
-            - super-heavy-heavy-bolter-sponsons
-            - super-heavy-autocannon-sponsons
-            - super-heavy-heavy-flamer-sponsons
-          - id: pintle-mounted-heavy-stubber
-            min: 0
-            max: 1
       - id: dracosan-lascannon
         name: Dracosan (Lascannon)
         save: 2
@@ -216,22 +195,6 @@ units:
           - malcador-lascannon-sponsons
           - malcador-autocannon-sponsons
           - pintle-mounted-heavy-stubber
-      - id: stormhammer
-        name: Stormhammer
-        save: 2
-        morale: 4
-        wounds: 3
-        notes:
-          - Chain of Command
-          - Explorator Adaptation
-        weapons:
-          - stormhammer-cannon
-          - dual-battlecannon
-          - co-axial-multi-laser
-          - hull-mounted-lascannon
-          - stormhammer-multi-laser-sponsons
-          - stormhammer-lascannon-sponsons
-          - pintle-mounted-multi-laser
       - id: medusa
         name: Medusa
         save: 3
@@ -304,48 +267,6 @@ units:
           - hull-heavy-bolter
           - hull-mounted-lascannon
           - pintle-mounted-heavy-stubber
-      - id: shadowsword
-        name: Shadowsword
-        save: 2
-        morale: 4
-        wounds: 3
-        notes:
-          - Chain of Command
-          - Explorator Adaptation
-        weapons:
-          - volcano-cannon
-          - hull-heavy-bolter-turret
-          - super-heavy-heavy-bolter-sponsons
-          - lascannon-sponson-turrets
-          - pintle-mounted-heavy-stubber
-      - id: stormsword
-        name: Stormsword
-        save: 2
-        morale: 4
-        wounds: 3
-        notes:
-          - Chain of Command
-          - Explorator Adaptation
-        weapons:
-          - stormsword-siege-cannon
-          - hull-heavy-bolter-turret
-          - super-heavy-heavy-bolter-sponsons
-          - lascannon-sponson-turrets
-          - pintle-mounted-heavy-stubber
-      - id: stormblade
-        name: Stormblade
-        save: 2
-        morale: 4
-        wounds: 3
-        notes:
-          - Chain of Command
-          - Explorator Adaptation
-        weapons:
-          - plasma-blastgun
-          - hull-heavy-bolter-turret
-          - super-heavy-heavy-bolter-sponsons
-          - lascannon-sponson-turrets
-          - pintle-mounted-heavy-stubber
       - id: leman-russ-vanquisher
         name: Leman Russ Vanquisher
         save: 2
@@ -394,6 +315,86 @@ units:
           - hull-mounted-lascannon
           - hull-autocannon
           - hull-demolisher-cannon
+          - pintle-mounted-heavy-stubber
+    Super-heavy Vehicle:
+      - id: auxilia-baneblade
+        name: Auxilia Baneblade
+        save: 2
+        morale: 4
+        wounds: 3
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - baneblade-cannon
+          - co-axial-autocannon
+          - hull-demolisher-cannon
+          - hull-heavy-bolter-turret
+          - lascannon-sponson-turrets
+          - options:
+            - super-heavy-heavy-bolter-sponsons
+            - super-heavy-autocannon-sponsons
+            - super-heavy-heavy-flamer-sponsons
+          - id: pintle-mounted-heavy-stubber
+            min: 0
+            max: 1
+      - id: stormhammer
+        name: Stormhammer
+        save: 2
+        morale: 4
+        wounds: 3
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - stormhammer-cannon
+          - dual-battlecannon
+          - co-axial-multi-laser
+          - hull-mounted-lascannon
+          - stormhammer-multi-laser-sponsons
+          - stormhammer-lascannon-sponsons
+          - pintle-mounted-multi-laser
+      - id: shadowsword
+        name: Shadowsword
+        save: 2
+        morale: 4
+        wounds: 3
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - volcano-cannon
+          - hull-heavy-bolter-turret
+          - super-heavy-heavy-bolter-sponsons
+          - lascannon-sponson-turrets
+          - pintle-mounted-heavy-stubber
+      - id: stormsword
+        name: Stormsword
+        save: 2
+        morale: 4
+        wounds: 3
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - stormsword-siege-cannon
+          - hull-heavy-bolter-turret
+          - super-heavy-heavy-bolter-sponsons
+          - lascannon-sponson-turrets
+          - pintle-mounted-heavy-stubber
+      - id: stormblade
+        name: Stormblade
+        save: 2
+        morale: 4
+        wounds: 3
+        notes:
+          - Chain of Command
+          - Explorator Adaptation
+        weapons:
+          - plasma-blastgun
+          - hull-heavy-bolter-turret
+          - super-heavy-heavy-bolter-sponsons
+          - lascannon-sponson-turrets
           - pintle-mounted-heavy-stubber
       - id: auxilia-hellhamer
         name: Auxilia Hellhamer

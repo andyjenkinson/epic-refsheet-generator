@@ -744,265 +744,6 @@
           ]
         },
         {
-          "id": "cerberus",
-          "name": "Cerberus",
-          "move": 8,
-          "save": 2,
-          "CAF": 3,
-          "morale": 3,
-          "wounds": 2,
-          "weapons": [
-            {
-              "id": "hull-neutron-laser"
-            },
-            {
-              "options": [
-                {
-                  "id": "heavy-bolter-sponsons"
-                },
-                {
-                  "id": "lascannon-sponsons"
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "id": "pintle-heavy-bolter"
-                },
-                {
-                  "id": "pintle-multi-melta"
-                }
-              ],
-              "min": 0,
-              "max": 1
-            }
-          ]
-        },
-        {
-          "id": "typhon",
-          "name": "Typhon",
-          "move": 8,
-          "save": 2,
-          "CAF": 3,
-          "morale": 2,
-          "wounds": 2,
-          "weapons": [
-            {
-              "id": "hull-dreadhammer"
-            },
-            {
-              "options": [
-                {
-                  "id": "heavy-bolter-sponsons"
-                },
-                {
-                  "id": "lascannon-sponsons"
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "id": "pintle-heavy-bolter"
-                },
-                {
-                  "id": "pintle-multi-melta"
-                }
-              ],
-              "min": 0,
-              "max": 1
-            }
-          ]
-        },
-        {
-          "id": "falchion",
-          "name": "Falchion",
-          "move": 8,
-          "save": 2,
-          "CAF": 4,
-          "morale": 3,
-          "wounds": 3,
-          "weapons": [
-            {
-              "id": "neutron-wave-cannon"
-            },
-            {
-              "options": [
-                {
-                  "id": "quad-lascannon-sponsons"
-                },
-                {
-                  "id": "laser-destroyer-sponsons"
-                },
-                {
-                  "id": "quad-heavy-bolter-sponsons"
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "id": "pintle-heavy-bolter"
-                },
-                {
-                  "id": "pintle-multi-melta"
-                }
-              ],
-              "min": 0,
-              "max": 1
-            }
-          ]
-        },
-        {
-          "id": "fellblade",
-          "name": "Fellblade",
-          "move": 8,
-          "save": 2,
-          "CAF": 4,
-          "morale": 3,
-          "wounds": 3,
-          "weapons": [
-            {
-              "id": "fellblade-accelerator-cannon"
-            },
-            {
-              "id": "hull-demolisher-cannon"
-            },
-            {
-              "id": "hull-heavy-bolter"
-            },
-            {
-              "options": [
-                {
-                  "id": "quad-lascannon-sponsons"
-                },
-                {
-                  "id": "laser-destroyer-sponsons"
-                },
-                {
-                  "id": "quad-heavy-bolter-sponsons"
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "id": "pintle-heavy-bolter"
-                },
-                {
-                  "id": "pintle-multi-melta"
-                }
-              ],
-              "min": 0,
-              "max": 1
-            }
-          ]
-        },
-        {
-          "id": "glaive",
-          "name": "Glaive",
-          "move": 8,
-          "save": 2,
-          "CAF": 4,
-          "morale": 3,
-          "wounds": 3,
-          "weapons": [
-            {
-              "id": "volkite-carronade"
-            },
-            {
-              "id": "hull-heavy-bolter"
-            },
-            {
-              "options": [
-                {
-                  "id": "quad-lascannon-sponsons"
-                },
-                {
-                  "id": "laser-destroyer-sponsons"
-                },
-                {
-                  "id": "quad-heavy-bolter-sponsons"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "ascalon",
-          "name": "Ascalon",
-          "move": 8,
-          "save": 2,
-          "CAF": 4,
-          "morale": 3,
-          "wounds": 3,
-          "weapons": [
-            {
-              "id": "ascalon-inferno-gun"
-            },
-            {
-              "options": [
-                {
-                  "id": "quad-lascannon-sponsons"
-                },
-                {
-                  "id": "laser-destroyer-sponsons"
-                },
-                {
-                  "id": "quad-heavy-bolter-sponsons"
-                }
-              ]
-            },
-            {
-              "options": [
-                {
-                  "id": "pintle-heavy-bolter"
-                },
-                {
-                  "id": "pintle-multi-melta"
-                }
-              ],
-              "min": 0,
-              "max": 1
-            }
-          ]
-        },
-        {
-          "id": "mastodon",
-          "name": "Mastodon",
-          "move": 8,
-          "save": 2,
-          "CAF": 4,
-          "morale": 3,
-          "wounds": 3,
-          "notes": [
-            "Large Assault Transport (8)",
-            "Void Shields (2)"
-          ],
-          "weapons": [
-            {
-              "id": "siege-melta-array"
-            },
-            {
-              "id": "skyreaper-battery"
-            },
-            {
-              "id": "heavy-flamer-sponsons"
-            },
-            {
-              "options": [
-                {
-                  "id": "heavy-bolter-sponsons"
-                },
-                {
-                  "id": "lascannon-sponsons"
-                }
-              ]
-            }
-          ]
-        },
-        {
           "id": "predator",
           "name": "Predator",
           "move": 9,
@@ -1277,6 +1018,267 @@
             },
             {
               "id": "sabre-missiles"
+            }
+          ]
+        }
+      ],
+      "Super-heavy Vehicle": [
+        {
+          "id": "cerberus",
+          "name": "Cerberus",
+          "move": 8,
+          "save": 2,
+          "CAF": 3,
+          "morale": 3,
+          "wounds": 2,
+          "weapons": [
+            {
+              "id": "hull-neutron-laser"
+            },
+            {
+              "options": [
+                {
+                  "id": "heavy-bolter-sponsons"
+                },
+                {
+                  "id": "lascannon-sponsons"
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "id": "pintle-heavy-bolter"
+                },
+                {
+                  "id": "pintle-multi-melta"
+                }
+              ],
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "id": "typhon",
+          "name": "Typhon",
+          "move": 8,
+          "save": 2,
+          "CAF": 3,
+          "morale": 2,
+          "wounds": 2,
+          "weapons": [
+            {
+              "id": "hull-dreadhammer"
+            },
+            {
+              "options": [
+                {
+                  "id": "heavy-bolter-sponsons"
+                },
+                {
+                  "id": "lascannon-sponsons"
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "id": "pintle-heavy-bolter"
+                },
+                {
+                  "id": "pintle-multi-melta"
+                }
+              ],
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "id": "falchion",
+          "name": "Falchion",
+          "move": 8,
+          "save": 2,
+          "CAF": 4,
+          "morale": 3,
+          "wounds": 3,
+          "weapons": [
+            {
+              "id": "neutron-wave-cannon"
+            },
+            {
+              "options": [
+                {
+                  "id": "quad-lascannon-sponsons"
+                },
+                {
+                  "id": "laser-destroyer-sponsons"
+                },
+                {
+                  "id": "quad-heavy-bolter-sponsons"
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "id": "pintle-heavy-bolter"
+                },
+                {
+                  "id": "pintle-multi-melta"
+                }
+              ],
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "id": "fellblade",
+          "name": "Fellblade",
+          "move": 8,
+          "save": 2,
+          "CAF": 4,
+          "morale": 3,
+          "wounds": 3,
+          "weapons": [
+            {
+              "id": "fellblade-accelerator-cannon"
+            },
+            {
+              "id": "hull-demolisher-cannon"
+            },
+            {
+              "id": "hull-heavy-bolter"
+            },
+            {
+              "options": [
+                {
+                  "id": "quad-lascannon-sponsons"
+                },
+                {
+                  "id": "laser-destroyer-sponsons"
+                },
+                {
+                  "id": "quad-heavy-bolter-sponsons"
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "id": "pintle-heavy-bolter"
+                },
+                {
+                  "id": "pintle-multi-melta"
+                }
+              ],
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "id": "glaive",
+          "name": "Glaive",
+          "move": 8,
+          "save": 2,
+          "CAF": 4,
+          "morale": 3,
+          "wounds": 3,
+          "weapons": [
+            {
+              "id": "volkite-carronade"
+            },
+            {
+              "id": "hull-heavy-bolter"
+            },
+            {
+              "options": [
+                {
+                  "id": "quad-lascannon-sponsons"
+                },
+                {
+                  "id": "laser-destroyer-sponsons"
+                },
+                {
+                  "id": "quad-heavy-bolter-sponsons"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "ascalon",
+          "name": "Ascalon",
+          "move": 8,
+          "save": 2,
+          "CAF": 4,
+          "morale": 3,
+          "wounds": 3,
+          "weapons": [
+            {
+              "id": "ascalon-inferno-gun"
+            },
+            {
+              "options": [
+                {
+                  "id": "quad-lascannon-sponsons"
+                },
+                {
+                  "id": "laser-destroyer-sponsons"
+                },
+                {
+                  "id": "quad-heavy-bolter-sponsons"
+                }
+              ]
+            },
+            {
+              "options": [
+                {
+                  "id": "pintle-heavy-bolter"
+                },
+                {
+                  "id": "pintle-multi-melta"
+                }
+              ],
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "id": "mastodon",
+          "name": "Mastodon",
+          "move": 8,
+          "save": 2,
+          "CAF": 4,
+          "morale": 3,
+          "wounds": 3,
+          "notes": [
+            "Large Assault Transport (8)",
+            "Void Shields (2)"
+          ],
+          "weapons": [
+            {
+              "id": "siege-melta-array"
+            },
+            {
+              "id": "skyreaper-battery"
+            },
+            {
+              "id": "heavy-flamer-sponsons"
+            },
+            {
+              "options": [
+                {
+                  "id": "heavy-bolter-sponsons"
+                },
+                {
+                  "id": "lascannon-sponsons"
+                }
+              ]
             }
           ]
         }
@@ -1591,36 +1593,6 @@
           ]
         },
         {
-          "id": "auxilia-baneblade",
-          "name": "Auxilia Baneblade",
-          "save": 2,
-          "morale": 4,
-          "wounds": 3,
-          "notes": [
-            "Chain of Command",
-            "Explorator Adaptation"
-          ],
-          "weapons": [
-            "baneblade-cannon",
-            "co-axial-autocannon",
-            "hull-demolisher-cannon",
-            "hull-heavy-bolter-turret",
-            "lascannon-sponson-turrets",
-            {
-              "options": [
-                "super-heavy-heavy-bolter-sponsons",
-                "super-heavy-autocannon-sponsons",
-                "super-heavy-heavy-flamer-sponsons"
-              ]
-            },
-            {
-              "id": "pintle-mounted-heavy-stubber",
-              "min": 0,
-              "max": 1
-            }
-          ]
-        },
-        {
           "id": "dracosan-lascannon",
           "name": "Dracosan (Lascannon)",
           "save": 2,
@@ -1723,26 +1695,6 @@
           ]
         },
         {
-          "id": "stormhammer",
-          "name": "Stormhammer",
-          "save": 2,
-          "morale": 4,
-          "wounds": 3,
-          "notes": [
-            "Chain of Command",
-            "Explorator Adaptation"
-          ],
-          "weapons": [
-            "stormhammer-cannon",
-            "dual-battlecannon",
-            "co-axial-multi-laser",
-            "hull-mounted-lascannon",
-            "stormhammer-multi-laser-sponsons",
-            "stormhammer-lascannon-sponsons",
-            "pintle-mounted-multi-laser"
-          ]
-        },
-        {
           "id": "medusa",
           "name": "Medusa",
           "save": 3,
@@ -1839,60 +1791,6 @@
           ]
         },
         {
-          "id": "shadowsword",
-          "name": "Shadowsword",
-          "save": 2,
-          "morale": 4,
-          "wounds": 3,
-          "notes": [
-            "Chain of Command",
-            "Explorator Adaptation"
-          ],
-          "weapons": [
-            "volcano-cannon",
-            "hull-heavy-bolter-turret",
-            "super-heavy-heavy-bolter-sponsons",
-            "lascannon-sponson-turrets",
-            "pintle-mounted-heavy-stubber"
-          ]
-        },
-        {
-          "id": "stormsword",
-          "name": "Stormsword",
-          "save": 2,
-          "morale": 4,
-          "wounds": 3,
-          "notes": [
-            "Chain of Command",
-            "Explorator Adaptation"
-          ],
-          "weapons": [
-            "stormsword-siege-cannon",
-            "hull-heavy-bolter-turret",
-            "super-heavy-heavy-bolter-sponsons",
-            "lascannon-sponson-turrets",
-            "pintle-mounted-heavy-stubber"
-          ]
-        },
-        {
-          "id": "stormblade",
-          "name": "Stormblade",
-          "save": 2,
-          "morale": 4,
-          "wounds": 3,
-          "notes": [
-            "Chain of Command",
-            "Explorator Adaptation"
-          ],
-          "weapons": [
-            "plasma-blastgun",
-            "hull-heavy-bolter-turret",
-            "super-heavy-heavy-bolter-sponsons",
-            "lascannon-sponson-turrets",
-            "pintle-mounted-heavy-stubber"
-          ]
-        },
-        {
           "id": "leman-russ-vanquisher",
           "name": "Leman Russ Vanquisher",
           "save": 2,
@@ -1950,6 +1848,112 @@
             "hull-mounted-lascannon",
             "hull-autocannon",
             "hull-demolisher-cannon",
+            "pintle-mounted-heavy-stubber"
+          ]
+        }
+      ],
+      "Super-heavy Vehicle": [
+        {
+          "id": "auxilia-baneblade",
+          "name": "Auxilia Baneblade",
+          "save": 2,
+          "morale": 4,
+          "wounds": 3,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "baneblade-cannon",
+            "co-axial-autocannon",
+            "hull-demolisher-cannon",
+            "hull-heavy-bolter-turret",
+            "lascannon-sponson-turrets",
+            {
+              "options": [
+                "super-heavy-heavy-bolter-sponsons",
+                "super-heavy-autocannon-sponsons",
+                "super-heavy-heavy-flamer-sponsons"
+              ]
+            },
+            {
+              "id": "pintle-mounted-heavy-stubber",
+              "min": 0,
+              "max": 1
+            }
+          ]
+        },
+        {
+          "id": "stormhammer",
+          "name": "Stormhammer",
+          "save": 2,
+          "morale": 4,
+          "wounds": 3,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "stormhammer-cannon",
+            "dual-battlecannon",
+            "co-axial-multi-laser",
+            "hull-mounted-lascannon",
+            "stormhammer-multi-laser-sponsons",
+            "stormhammer-lascannon-sponsons",
+            "pintle-mounted-multi-laser"
+          ]
+        },
+        {
+          "id": "shadowsword",
+          "name": "Shadowsword",
+          "save": 2,
+          "morale": 4,
+          "wounds": 3,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "volcano-cannon",
+            "hull-heavy-bolter-turret",
+            "super-heavy-heavy-bolter-sponsons",
+            "lascannon-sponson-turrets",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "stormsword",
+          "name": "Stormsword",
+          "save": 2,
+          "morale": 4,
+          "wounds": 3,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "stormsword-siege-cannon",
+            "hull-heavy-bolter-turret",
+            "super-heavy-heavy-bolter-sponsons",
+            "lascannon-sponson-turrets",
+            "pintle-mounted-heavy-stubber"
+          ]
+        },
+        {
+          "id": "stormblade",
+          "name": "Stormblade",
+          "save": 2,
+          "morale": 4,
+          "wounds": 3,
+          "notes": [
+            "Chain of Command",
+            "Explorator Adaptation"
+          ],
+          "weapons": [
+            "plasma-blastgun",
+            "hull-heavy-bolter-turret",
+            "super-heavy-heavy-bolter-sponsons",
+            "lascannon-sponson-turrets",
             "pintle-mounted-heavy-stubber"
           ]
         },
